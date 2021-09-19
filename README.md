@@ -36,6 +36,7 @@ GATHERED ADDONS
 - Atmospheric Tint by faction (present in original ODFs, just commented out)
 
 ORIGINAL WORK BY FACTION
+
 Borg
 - Assimilation Nexus (button by Admiral Nat, passive weapons by FleetOps
   dev team)
@@ -44,6 +45,7 @@ Borg
 - Regeneration can be added to cubes by Technology Assimilator
 - XML tech trees to allow Borg to build pods at the Technology Assimilator
 	- I think this is a bug in the 4.0 launcher, so I made a workaround
+
 Cardassians
 - Cardassian Sensor Tap (Fly it near an enemy station!)
 - Scout and cargo ship autocloak 
@@ -52,26 +54,31 @@ Cardassians
 - Buffed repair speed
 	- The faction tooltip says "above average," but it really doesn't differ
 	from Fed/Kli/Rom values by a significant amount. So, I fixed that.
+
 Klingons
 - Cargo ship autocloak
 - Orbital Starbase (This looks familiar)
 - Commando Station
 	- Look, I like stealing things, okay?
+
 Romulans
 - Scout ship autocloak
 - Turret autocloak (with Cloak Enhancer research)
 - Cargo ship automatic phase cloak (with Phase Cloak research)
 - Orbital Starbase 
 	- As you might have guessed by now, all Alpha Quadrant powers get one.
+
 United Federation of Planets
 - Sensor Turret and Starbase automatic Shield Enhancer (with research)
 - Orbital Starbase
+
 Non-8472
 - Repair, scout, and colony ships default to G/H/H autonomy
 - AI build list improvements
 - Can build freighters from mining stations, two at a time
 - Buttons for faster resource conversion
 - Cloaks do not set ships to yellow alert (from red)
+
 Universal
 - Stations snap to a grid when placing them
 	- This results in most stations taking up more space than normal.
