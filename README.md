@@ -6,6 +6,10 @@ mod "Star Trek: Armada 2 Classic". It is dependent on the FleetOps engine, and
 is written for the 4.0 launcher. As the 4.0 launcher fixes several bugs in the
 STA2 Classic addon to begin with, I recommend using it.
 
+This mod is dependent on STA2 Classic and my STA2 Classic Bugfix mod. If you are
+missing either, this mod will not work. As it depends on the Bugfix, all changes
+in the bugfix mod are inherited by this one.
+
 This mod contains both original work and mods made by others. I have not sought
 permission for the mods made by others. This is because most were made over ten
 years ago and contacting these people would be a royal pain in the ass. IF YOU
