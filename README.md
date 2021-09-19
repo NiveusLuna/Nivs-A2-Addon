@@ -25,7 +25,7 @@ GATHERED ADDONS
 - Klingon Field Yard, by FleetOps Dev Team
 	- Backported to A2
 - Romulan Base Alpha, by achilles (SOD/Texture) and Bread4311 (odf)
-- Terok Nor, by jmardlin (odf) and unknown (sod)
+- Terok Nor, by jmardlin (odf) and unknown (sod/texture)
 	- I found the original SOD upload once, but I can't find it now.
 - Cargo Galaxy, by Raphael
 	- Modified to switch back to a normal Galaxy when controlled by an AI
@@ -47,7 +47,7 @@ Borg
 	- I think this is a bug in the 4.0 launcher, so I made a workaround
 
 Cardassians
-- Cardassian Sensor Tap (Fly it near an enemy station!)
+- Cardassian Sensor Tap (Fly the Gul Vystan near an enemy station!)
 - Scout and cargo ship autocloak 
 - Orbital Starbase
 	- Yes, it still mines metal
