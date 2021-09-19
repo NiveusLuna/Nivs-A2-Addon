@@ -86,3 +86,5 @@ Non-8472
 Universal
 - Stations snap to a grid when placing them
 	- This results in most stations taking up more space than normal.
+- If a ship or station can only use its special weapon when at full charge,
+its special weapon energy display is replaced by a countdown
