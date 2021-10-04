@@ -1,0 +1,358 @@
+<techtree>
+	<include File="tech1-orig.xml"/>
+	<include File="capped.xml"/>
+	<include File="borg-special.xml"/>
+	<include File="car-special.xml"/>
+	<include File="fed-special.xml"/>
+	<include File="kli-special.xml"/>
+	<include File="rom-special.xml"/>
+	<include File="faster-trading.tt"/>
+	<!--***[ UNIVERSAL ]**************-->
+	<object ODF="cscout.odf"/>
+	<object ODF="bscout.odf"/>
+	<object ODF="fscout.odf"/>
+	<object ODF="kscout.odf"/>
+	<object ODF="rscout.odf"/>
+	<object ODF="cconst.odf"/>
+	<object ODF="bconst.odf"/>
+	<object ODF="fconst.odf"/>
+	<object ODF="kconst.odf"/>
+	<object ODF="rconst.odf"/>
+	<object ODF="all_halt.odf"/>
+	<!--Allied Repair Upgrade-->
+	<object ODF="all_alliedrepair.odf"/>
+	<!--***[ CARDASSIAN STATIONS ]**************-->
+	<!--Orbital Starbase-->
+	<object ODF="cbase-orbital.odf"/>
+	<!--***[ CARDASSIAN SPECIAL WEAPONS ]**************-->
+	<!--Cardassian scout cloak-->
+	<object ODF="gccloak-scout.odf"/>
+	<!--Cardassian cargo ship cloak-->
+	<object ODF="gccloak-cargo.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+		</requirement>
+	</object>
+	<!--Cardassian Sensor Tap-->
+	<object ODF="Wcardspy.odf">
+		<requirement>
+			<obj>carpod4.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ CARDASSIAN EXTRA OPTIONS DUE TO REPLACEWEAPONS OR OTHER STATIONS ]**************-->
+	<!--Cardassian cargo ship cloak-->
+	<object ODF="gccloak-cargo.odf">
+		<requirement>
+			<obj>ctrading.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ KLINGON STATIONS ]**************-->
+	<!--Klingon Field Yard-->
+	<object ODF="kli_field_yardZ.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+		</requirement>
+	</object>
+	<!--Field Yard Central Facility-->
+	<object ODF="kli_field_yardP1Z.odf">
+		<requirement>
+			<obj>kli_field_yardZ.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--Field Yard Bird of Prey Extension-->
+	<object ODF="kli_field_yardP2Z.odf">
+		<requirement>
+			<obj>kli_field_yardZ.odf</obj>
+		</requirement>
+	</object>
+	<!--Field Yard Special Forces Extension-->
+	<object ODF="kli_field_yardP3Z.odf">
+		<requirement>
+			<obj>kli_field_yardZ.odf</obj>
+			<obj>kresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--Repair section of Field Yard-->
+	<object ODF="kli_field_yardP4.odf"/>
+	<!--Klingon Commando Station-->
+	<object ODF="kbase-commando.odf">
+		<requirement>
+			<obj>klipod3.odf</obj>
+		</requirement>
+	</object>
+	<!--Klingon Commando Station Refit-->
+	<object ODF="kbase-cmdo-upgrade.odf">
+		<requirement>
+			<obj>klipod3.odf</obj>
+		</requirement>
+	</object>
+	<!--Orbital Starbase-->
+	<object ODF="kbase-orbital.odf"/>
+	<!--***[ KLINGON SPECIAL WEAPONS ]**************-->
+	<!--Klingon cargo ship cloak-->
+	<object ODF="gkcloak-cargo.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ KLINGON EXTRA OPTIONS DUE TO REPLACEWEAPONS OR OTHER STATIONS ]**************-->
+	<!--mining freighter-->
+	<object ODF="kfreight.odf">
+		<requirement>
+			<obj>kbase-commando.odf</obj>
+			<obj>kmining.odf</obj>
+		</requirement>
+	</object>
+	<!--cargo ship-->
+	<object ODF="kcargo.odf">
+		<requirement>
+			<obj>kbase-commando.odf</obj>
+			<obj>ktrading.odf</obj>
+		</requirement>
+	</object>
+	<!--repair ship-->
+	<object ODF="ksrepair.odf">
+		<requirement>
+			<obj>kbase-commando.odf</obj>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--sensor array-->
+	<object ODF="ksensor.odf">
+		<requirement>
+			<obj>kbase-commando.odf</obj>
+		</requirement>
+	</object>
+	<!--phaser turret-->
+	<object ODF="kturret.odf">
+		<requirement>
+			<obj>kbase-commando.odf</obj>
+		</requirement>
+	</object>
+	<!--shipyard-->
+	<object ODF="kyard.odf">
+		<requirement>
+			<obj>kbase-commando.odf</obj>
+		</requirement>
+	</object>
+	<!--trading station-->
+	<object ODF="ktrading.odf">
+		<requirement>
+			<obj>kbase-commando.odf</obj>
+		</requirement>
+	</object>
+	<!--weapons center-->
+	<object ODF="kresear.odf">
+		<requirement>
+			<obj>kbase-commando.odf</obj>
+		</requirement>
+	</object>
+	<!--shockwave station-->
+	<object ODF="ksuperbl.odf">
+		<requirement>
+			<obj>kbase-commando.odf</obj>
+			<obj>kyard2.odf</obj>
+			<obj>kresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--Klingon Field Yard-->
+	<object ODF="kli_field_yardZ.odf">
+		<requirement>
+			<obj>kbase-commando.odf</obj>
+		</requirement>
+	</object>
+	<!--scout (nug&apos;duj class)-->
+	<object ODF="kscout.odf">
+		<requirement>
+			<obj>kli_field_yardP2Z.odf</obj>
+		</requirement>
+	</object>
+	<!--destroyer (bird of prey class)-->
+	<object ODF="kdestroy.odf">
+		<requirement>
+			<obj>kli_field_yardP2Z.odf</obj>
+		</requirement>
+	</object>
+	<!--colony ship-->
+	<object ODF="kcolony.odf">
+		<requirement>
+			<obj>kli_field_yardP2Z.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser1 (vor&apos;cha class)-->
+	<object ODF="kcruise1.odf">
+		<requirement>
+			<obj>kli_field_yardP1Z.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser2 (suq&apos;jagh class)-->
+	<object ODF="kcruise2.odf">
+		<requirement>
+			<obj>kli_field_yardP1Z.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser3 (Chuq&apos;Beh class)-->
+	<object ODF="kcruise3.odf">
+		<requirement>
+			<obj>kli_field_yardP1Z.odf</obj>
+			<obj>kresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--colony ship-->
+	<object ODF="kcolony.odf">
+		<requirement>
+			<obj>kli_field_yardP3Z.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--assault ship (chava&apos;kal class)-->
+	<object ODF="kassault.odf">
+		<requirement>
+			<obj>kli_field_yardP3Z.odf</obj>
+			<obj>kresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--advanced shipyard-->
+	<object ODF="kyard2.odf">
+		<requirement>
+			<obj>kli_field_yardZ.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--gre&apos;thor armory-->
+	<object ODF="kresear2.odf">
+		<requirement>
+			<obj>kli_field_yardZ.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--Klingon cargo ship cloak-->
+	<object ODF="gkcloak-cargo.odf">
+		<requirement>
+			<obj>ktrading.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ BORG STATIONS ]**************-->
+	<!--Borg Assimilation Nexus-->
+	<object ODF="bbase-assim.odf">
+		<requirement>
+			<obj>borpod1.odf</obj>
+		</requirement>
+	</object>
+	<!--Borg Assimilation Turret-->
+	<object ODF="bturret-assim.odf">
+		<requirement>
+			<obj>borpod1.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ BORG SPECIAL WEAPONS ]**************-->
+	<!--Borg Auto-Assimilator - Station variant-->
+	<object ODF="borg-bluebeam-station.odf"/>
+	<!--borW_bluebeam-nexus.odf		1	borpod1.odf	// Borg Auto-Assimilator - Nexus variant-->
+	<!--Borg Area Boarding-->
+	<object ODF="borRW_areaboard.odf">
+		<requirement>
+			<obj>borpod2.odf</obj>
+		</requirement>
+	</object>
+	<!--Borg Area Boarding-->
+	<object ODF="uball_effect_areaboard.odf">
+		<requirement>
+			<obj>borpod2.odf</obj>
+		</requirement>
+	</object>
+	<!--Borg Area Boarding-->
+	<object ODF="borW_areaboardA.odf">
+		<requirement>
+			<obj>borpod2.odf</obj>
+		</requirement>
+	</object>
+	<!--Borg Area Recrewing-->
+	<object ODF="borRW_arearecrew.odf"/>
+	<object ODF="borW_arearecrewA.odf"/>
+	<object ODF="borW_generate_crew.odf"/>
+	<object ODF="uball_effect_arearecrew.odf"/>
+	<!--***[ FEDERATION SHIPS ]**************-->
+	<!--Galaxy-class: Cargo ship-->
+	<object ODF="ftgalaxy.odf"/>
+	<!--***[ FEDERATION STATIONS ]**************-->
+	<!--Federation Advanceable Shipyard-->
+	<object ODF="fwfwerft.odf"/>
+	<object ODF="fwfwerfte1.odf"/>
+	<object ODF="fwfwerfte2.odf"/>
+	<object ODF="fwfwerfte3.odf"/>
+	<!--Federation Turnstile 911-->
+	<object ODF="fwcntstati.odf"/>
+	<!--force the AI to make colony ships-->
+	<object ODF="colonize-dammit.odf"/>
+	<!--Orbital Starbase-->
+	<object ODF="fbase-orbital.odf"/>
+	<!--***[ FEDERATION SPECIAL WEAPONS ]**************-->
+	<!--Federation Advanceable Shipyard - Upgrade-->
+	<object ODF="fwwerftevo1.odf"/>
+	<!--Ditto-->
+	<object ODF="fwwerftevo2.odf"/>
+	<!--What he said ^-->
+	<object ODF="fwwerftevo3.odf"/>
+	<!--spawn uball with shield emitter-->
+	<object ODF="fedRW-fstation-shldemt.odf">
+		<requirement>
+			<obj>fedpod16.odf</obj>
+		</requirement>
+	</object>
+	<!--uball with shield emitter-->
+	<object ODF="uball-fstation-shldemt.odf">
+		<requirement>
+			<obj>fedpod16.odf</obj>
+		</requirement>
+	</object>
+	<!--swap galaxy to cargo galaxy-->
+	<object ODF="Wrefit-fgalaxy-trade.odf"/>
+	<!--swap cargo galaxy back to regular galaxy-->
+	<object ODF="Wrefit-ftgalaxy-normal.odf"/>
+	<!--***[ FEDERATION EXTRA OPTIONS DUE TO REPLACEWEAPONS OR OTHER STATIONS ]**************-->
+	<object ODF="ffreight.odf">
+		<requirement>
+			<obj>fwcntstati.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ ROMULAN STATIONS ]**************-->
+	<!--Orbital Starbase-->
+	<object ODF="rbase-orbital.odf"/>
+	<!--***[ ROMULAN SPECIAL WEAPONS ]**************-->
+	<!--Romulan scout cloak-->
+	<object ODF="grcloak-scout.odf"/>
+	<!--Romulan cargo ship phase cloak-->
+	<object ODF="grcloak-cargo.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+			<obj>rompod9.odf</obj>
+		</requirement>
+	</object>
+	<!--Romulan turret cloak-->
+	<object ODF="grcloak-turret.odf">
+		<requirement>
+			<obj>rompod16.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ ROMULAN EXTRA OPTIONS DUE TO REPLACEWEAPONS OR OTHER STATIONS ]**************-->
+	<!--Romulan cargo ship cloak-->
+	<object ODF="grcloak-cargo.odf">
+		<requirement>
+			<obj>rtrading.odf</obj>
+			<obj>rompod9.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ ALL PAINLESS MINING ]**************-->
+	<object ODF="fmining1.odf"/>
+	<object ODF="cmining1.odf"/>
+	<object ODF="bmining1.odf"/>
+	<object ODF="kmining1.odf"/>
+	<object ODF="rmining1.odf"/>
+	<object ODF="uniRW-gen-freighter.odf"/>
+	<object ODF="uniRW-gen-freighter-reset.odf"/>
+</techtree>

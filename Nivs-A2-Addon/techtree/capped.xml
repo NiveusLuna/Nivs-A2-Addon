@@ -1,0 +1,14 @@
+<techtree>
+	<!-- You can only build 1 Terok Nor -->
+	<object ODF="terok-nor.odf">
+		 <requirement>
+			  <cap maxCapValue="1" tooltip="Station available" tooltipOver="Limit Exceeded" tooltipReached="Limit reached" />
+			  <enemy>
+				   <obj mustNotHave="true">terok-nor.odf</obj>
+			  </enemy>
+<!-- 			  <ally>
+				   <obj mustNotHave="true">terok-nor.odf</obj>
+			  </ally> -->
+		 </requirement>
+	</object>
+</techtree>

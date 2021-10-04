@@ -1,0 +1,93 @@
+<techtree>
+	<!--research pod (plasma bank overload)-->
+	<object ODF="carpod1.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+			<obj>cyard.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (micro organisms)-->
+	<object ODF="carpod2.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (drones)-->
+	<object ODF="carpod3.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (flux wave)-->
+	<object ODF="carpod4.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (tachyon detection grid)-->
+	<object ODF="carpod5.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (plasma cannon)-->
+	<object ODF="carpod6.odf">
+		<requirement>
+			<obj>cresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (quantum singularity effect)-->
+	<object ODF="carpod7.odf">
+		<requirement>
+			<obj>cresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (warp coil boost)-->
+	<object ODF="carpod8.odf">
+		<requirement>
+			<obj>cresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield harmonics disruptor)-->
+	<object ODF="carpod9.odf">
+		<requirement>
+			<obj>cresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor scrambler)-->
+	<object ODF="carpod16.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+</techtree>

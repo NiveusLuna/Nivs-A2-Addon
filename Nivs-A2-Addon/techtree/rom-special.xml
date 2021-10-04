@@ -1,0 +1,93 @@
+<techtree>
+	<!--research pod (shield inversion beam)-->
+	<object ODF="rompod1.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+			<obj>ryard2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (romulan spy)-->
+	<object ODF="rompod2.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor jammer)-->
+	<object ODF="rompod3.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (myotronic inhibitor)-->
+	<object ODF="rompod4.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (tachyon detection grid)-->
+	<object ODF="rompod5.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (holo-emitter)-->
+	<object ODF="rompod6.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (psychonic blast)-->
+	<object ODF="rompod7.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield projector)-->
+	<object ODF="rompod8.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (phase cloak)-->
+	<object ODF="rompod9.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (cloak enhancer)-->
+	<object ODF="rompod16.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+</techtree>

@@ -1,0 +1,482 @@
+// Base Tech Tree
+// Each .ODF entry is followed by a 0, -1, -2
+//  0 = Nothing is required to build this .ODF 
+// -1 = Impossible to build.  Anything dependent on this .ODF can not be built.
+// -2 = Impossible to build, but don't touch dependencies, so that if somehow I already existed or was acquired, you could build anything dependent on me.
+
+// ***[ FEDERATION SHIPS ]************************
+//
+fconst.odf    1 fbase.odf                           // construction ship
+ffreight.odf  2 fbase.odf fmining.odf               // mining freighter
+fcargo.odf    2 fbase.odf ftrading.odf              // cargo ship
+fsrepair.odf  2 fbase.odf fupgrade.odf              // repair ship 
+fscout.odf    1 fyard.odf                           // scout (venture class)
+fdestroy.odf  1 fyard.odf                           // destroyer (defiant class)
+fdestroy2.odf 1 fyard.odf                           // destroyer (sabre class)
+fcruise1.odf  2 fyard.odf fresear.odf               // cruiser1 (akira class)
+fcruise2.odf  2 fyard.odf fresear2.odf              // cruiser2 (steamrunner class)
+fcruise3.odf  2 fyard.odf fresear.odf               // cruiser3 (intrepid class)
+fcolony.odf   2 fyard.odf fresear.odf               // colony ship
+fassault.odf  2 fyard.odf fresear2.odf              // assault ship (iwo Jima class)
+fgalaxy.odf   1 fyard2.odf                          // battleship (galaxy class)
+fbattle.odf   2 fyard2.odf fupgrade.odf             // battleship (sovereign class)
+ffrigate.odf  1 fyard2.odf                          // frigate (andor class)
+fspecial.odf  2 fyard2.odf fresear2.odf             // special (nebula class)
+
+// ***[ FEDERATION STATIONS ]*********************
+//
+fbase.odf     0                                     // starbase
+fmining.odf   0                                     // mining station
+forbital.odf  0								        // orbital processing facility
+fsensor.odf   1 fbase.odf                           // sensor array
+fturret.odf   1 fbase.odf                           // phaser turret
+fturret2.odf  1 fresear2.odf                        // photon turret
+fyard.odf     1 fbase.odf                           // shipyard
+fyard2.odf    2 fyard.odf fresear.odf               // advanced shipyard
+ftrading.odf  1 fbase.odf                           // trading station
+fresear.odf   1 fbase.odf                           // research facility
+fresear2.odf  2 fyard.odf fresear.odf               // science station
+fupgrade.odf  2 fresear.odf fresear2.odf            // ship upgrade station
+fsuperbl.odf  3 fbase.odf fyard2.odf fresear2.odf   // temporal research facility
+fedpod1.odf   2 fresear.odf fyard2.odf              // research pod (corbomite reflector)
+fedpod2.odf   1 fresear.odf                         // research pod (chain reaction pulsar)
+fedpod3.odf   1 fresear.odf                         // research pod (engine overload)
+fedpod4.odf   1 fresear.odf                         // research pod (anti-matter mines)
+fedpod5.odf   1 fresear.odf                         // research pod (tachyon detection grid)
+fedpod6.odf   1 fresear2.odf                        // research pod (gemini effect)
+fedpod7.odf   1 fresear2.odf                        // research pod (shield disruptor)
+fedpod8.odf   1 fresear2.odf                        // research pod (engineering team)
+fedpod9.odf   1 fresear2.odf                        // research pod (point defense phaser)
+fedpod16.odf  1 fresear2.odf                        // research pod (shield enhancer)
+fedpod11.odf  1 fupgrade.odf                        // research pod (weapon upgrade level 2)
+fedpod12.odf  1 fupgrade.odf                        // research pod (shield upgrade level 2)
+fedpod13.odf  1 fupgrade.odf                        // research pod (sensor upgrade level 2)
+fedpod14.odf  1 fupgrade.odf                        // research pod (engine upgrade level 2)
+fedpod15.odf  1 fupgrade.odf                        // research pod (life support upgrade level 2)
+fedpod21.odf  1 fedpod11.odf                        // research pod (weapon upgrade level 3)
+fedpod22.odf  1 fedpod12.odf                        // research pod (shield upgrade level 3)
+fedpod23.odf  1 fedpod13.odf                        // research pod (sensor upgrade level 3)
+fedpod24.odf  1 fedpod14.odf                        // research pod (engine upgrade level 3)
+fedpod25.odf  1 fedpod15.odf                        // research pod (life support upgrade level 3)
+
+// ***[ FEDERATION SPECIAL WEAPONS ]**************
+//
+gcorbom.odf        1 fedpod1.odf                    // corbomite manuever (sovereign class)
+gchainp.odf        1 fedpod2.odf                    // chain reaction pulsar (akira class)
+gwcover.odf        1 fedpod3.odf                    // engine overload (steamrunner class)
+gamine.odf         1 fedpod4.odf                    // anti-matter mines (defiant class)
+gdetectf.odf       1 fedpod5.odf                    // detect cloak
+gmanheim.odf       1 fedpod6.odf                    // gemini effect (nebula class)
+gshieldh.odf       1 fedpod7.odf                    // shield disruptor (nebula class)
+gfedrep.odf        1 fedpod8.odf                    // engineering team (nebula class)
+gpdlaser.odf       1 fedpod9.odf                    // point defense laser (nebula class)
+gshldemt.odf       1 fedpod16.odf                   // shield recharger (andor class)
+ggalintegrator.odf 0                                // galaxy class integration
+ggalseparator.odf  0                                // galaxy class separation
+gtempor.odf        0                                // temporal stasis field
+
+
+
+
+
+
+
+
+// ***[ KLINGON SHIPS ]***************************
+//
+kconst.odf   1 kbase.odf                            // construction ship
+kfreight.odf 2 kbase.odf kmining.odf                // mining freighter
+kcargo.odf   2 kbase.odf ktrading.odf               // cargo ship
+ksrepair.odf 2 kbase.odf kupgrade.odf               // repair ship 
+kscout.odf   0                            // scout (nug'duj class)
+kdestroy.odf 0                            // destroyer (bird of prey class)
+kcruise1.odf 1 kresear.odf                // cruiser1 (vor'cha class)
+kcruise2.odf 1 kresear.odf                // cruiser2 (suq'jagh class)
+kcruise3.odf 1 kresear2.odf               // cruiser3 (Chuq'Beh class)
+kcolony.odf  1 kresear.odf                // colony ship
+kassault.odf 1 kresear2.odf               // assault ship (chava'kal class)
+kbattle2.odf 1 kyard2.odf                           // battleship (qeh'ral class)
+kbattle.odf  2 kyard2.odf kupgrade.odf              // battleship (negh'var class)
+kfrigate.odf 1 kyard2.odf                           // frigate (koloth class)
+kspecial.odf 2 kyard2.odf kresear2.odf              // special (fek'lhr class)
+ksuper.odf   1 ksuperbl.odf                         // super weapon (jach'eng class)
+
+// ***[ KLINGON STATIONS ]************************
+//
+kbase.odf    0                                      // starbase
+kmining.odf  0                                      // mining station
+korbital.odf 0			                            // orbital processing facility
+ksensor.odf  1 kbase.odf                            // sensor array
+kturret.odf  1 kbase.odf                            // phaser turret
+kturret2.odf 1 kresear2.odf                         // torpedo turret
+kyard.odf    1 kbase.odf                            // shipyard
+kyard2.odf   1 kresear.odf			                // advanced shipyard
+ktrading.odf 1 kbase.odf                            // trading station
+kresear.odf  1 kbase.odf                            // weapons center
+kresear2.odf 1 kresear.odf                // gre'thor armory
+kupgrade.odf 2 kresear.odf kresear2.odf             // ship upgrade station
+ksuperbl.odf 3 kbase.odf kyard2.odf kresear2.odf    // shockwave station
+klipod1.odf  2 kresear.odf kyard2.odf               // research pod (ion cannon)
+klipod2.odf  1 kresear.odf                          // research pod (polaron torpedo)
+klipod3.odf  1 kresear.odf                          // research pod (commando team)
+klipod4.odf  1 kresear.odf                          // research pod (gravity mines)
+klipod5.odf  1 kresear.odf                          // research pod (tachyon detection grid)
+klipod6.odf  1 kresear2.odf                         // research pod (death chant)
+klipod7.odf  1 kresear2.odf                         // research pod (repulsion wave)
+klipod8.odf  1 kresear2.odf                         // research pod (ion storm)
+klipod9.odf  1 kresear2.odf                         // research pod (energy dissipator)
+klipod16.odf 1 kresear2.odf                         // research pod (weapon enhancer)
+klipod11.odf 1 kupgrade.odf                         // research pod (weapon upgrade level 2)
+klipod12.odf 1 kupgrade.odf                         // research pod (shield upgrade level 2)
+klipod13.odf 1 kupgrade.odf                         // research pod (sensor upgrade level 2)
+klipod14.odf 1 kupgrade.odf                         // research pod (engine upgrade level 2)
+klipod15.odf 1 kupgrade.odf                         // research pod (life support upgrade level 2)
+klipod21.odf 1 klipod11.odf                         // research pod (weapon upgrade level 3)
+klipod22.odf 1 klipod12.odf                         // research pod (shield upgrade level 3)
+klipod23.odf 1 klipod13.odf                         // research pod (sensor upgrade level 3)
+klipod24.odf 1 klipod14.odf                         // research pod (engine upgrade level 3)
+klipod25.odf 1 klipod15.odf                         // research pod (life support upgrade level 3)
+
+// ***[ KLINGON SPECIAL WEAPONS ]*****************
+//
+gplasmac.odf 1 klipod1.odf                          // ion cannon (negh'var class)
+gpoleron.odf 1 klipod2.odf                          // polaron torpedo (vor'cha class)
+gkcteam.odf  1 klipod3.odf                          // commando team (suq'jagh class)
+ggrvmine.odf 1 klipod4.odf                          // gravity mines (bird of prey class)
+gdetectk.odf 1 klipod5.odf                          // detect cloak
+gdchant.odf  1 klipod6.odf                          // death chant (fek'lhr class)
+grfield.odf  1 klipod7.odf                          // repulsion field (fek'lhr)
+gionstm.odf  1 klipod8.odf                          // ion storm (fek'lhr class)
+gmicro.odf   1 klipod9.odf                          // energy dissipator (fek'lhr class)
+wenhance.odf 1 klipod16.odf                         // weapon enhancer (koloth class)
+grwave.odf   0                                      // subspace shockwave (jach'eng class)
+
+
+
+
+
+
+
+
+// ***[ BORG SHIPS ]******************************
+//
+bconst.odf   1 bbase.odf                            // construction ship (assembler)
+bfreight.odf 2 bbase.odf bmining.odf                // dilithium collector (mining freighter)
+bscout.odf   1 byard.odf                            // scout (detector)
+bdestroy.odf 1 byard.odf                            // destroyer (interceptor)
+bcruise1.odf 2 byard.odf bresear.odf                // cruiser1 (sphere)
+bcruise2.odf 2 byard.odf bresear.odf                // cruiser2 (assimilator)
+bcruise3.odf 2 byard.odf bresear2.odf               // cruiser3 (harbinger)
+bcolony.odf  2 byard.odf bresear.odf                // colony ship (pyramid)
+bassault.odf 2 byard.odf bresear2.odf               // assault ship (wedge)
+bbattle1.odf 2 byard2.odf bresear2.odf              // battleship (cube)
+bbattle2.odf 2 byard2.odf bupgrade.odf              // battleship (tactical cube)
+bfrigate.odf 1 byard2.odf                           // frigate (harmonic defender)
+bspecial.odf 2 byard2.odf bresear2.odf              // special (diamond)
+bbattle3.odf 1 bhub.odf                             // battleship (fusion cube)
+bbattle4.odf 1 bhub.odf                             // battleship (tactical fusion cube)
+
+// ***[ BORG STATIONS ]***************************
+//
+bbase.odf    0                                      // nexus
+bmining.odf  0                                      // processing node
+bsensor.odf  1 bbase.odf                            // detection array
+bturret.odf  1 bbase.odf                            // energy cannon
+bturret2.odf 1 bresear2.odf                            // torpedo turret
+byard.odf    1 bbase.odf                            // assembly matrix
+byard2.odf   2 byard.odf bresear.odf                // advanced assembly matrix
+bresear.odf  1 bbase.odf                            // modification center
+bresear2.odf 2 byard.odf bresear.odf                // technology node
+bupgrade.odf 2 bresear.odf bresear2.odf             // ship upgrade station
+btechass.odf 1 bresear.odf                          // technology assimilator
+brecycle.odf 2 byard.odf bresear.odf                // recycler
+bsuperbl.odf 3 bbase.odf byard2.odf bresear2.odf    // super (transwarp gate)
+bhub.odf     1 btechass.odf                         // collective hub
+borpod1.odf  1 bresear.odf                          // research pod (auto-assimilator)
+borpod2.odf  2 bresear.odf byard2.odf               // research pod (holding beam)
+borpod3.odf  1 bresear.odf                          // research pod (regeneration)
+borpod4.odf  1 bresear.odf                          // research pod (transwarp drive)
+borpod5.odf  1 bresear.odf                          // research pod (tachyon detection grid)
+borpod6.odf  1 bresear2.odf                         // research pod (shield remodulation)
+borpod7.odf  1 bresear2.odf                         // research pod (computer override)
+borpod8.odf  1 bresear2.odf                         // research pod (nanites)
+borpod9.odf  1 bresear2.odf                         // research pod (ultritium burst)
+borpod16.odf 1 bresear2.odf                         // research pod (special energy recharger)
+borpod11.odf 1 bupgrade.odf                         // research pod (weapon upgrade level 2)
+borpod12.odf 1 bupgrade.odf                         // research pod (shield upgrade level 2)
+borpod13.odf 1 bupgrade.odf                         // research pod (sensor upgrade level 2)
+borpod14.odf 1 bupgrade.odf                         // research pod (engine upgrade level 2)
+borpod15.odf 1 bupgrade.odf                         // research pod (life support upgrade level 2)
+borpod21.odf 1 borpod11.odf                         // research pod (weapon upgrade level 3)
+borpod22.odf 1 borpod12.odf                         // research pod (shield upgrade level 3)
+borpod23.odf 1 borpod13.odf                         // research pod (sensor upgrade level 3)
+borpod24.odf 1 borpod14.odf                         // research pod (engine upgrade level 3)
+borpod25.odf 1 borpod15.odf                         // research pod (life support upgrade level 3)
+
+// ***[ BORG SPECIAL WEAPONS ]********************
+//
+gborgbor.odf         1 borpod1.odf                  // auto-assimilator (assimilator)
+gholdbm.odf          1 borpod2.odf                  // holding beam (cube)
+fusiongholdbm.odf          1 borpod2.odf                  // holding beam (fusion cube)
+gregen.odf           1 borpod3.odf                  // regeneration (sphere)
+gtwarpd.odf          1 borpod4.odf                  // transwarp drive (interceptor)
+gdetectb.odf         1 borpod5.odf                  // detect cloak
+gremod.odf           1 borpod6.odf                  // shield remodulation (diamond)
+goverrid.odf         1 borpod7.odf                  // computer override (diamond)
+gnanites.odf         1 borpod8.odf                  // nanites (diamond)
+gutribm.odf          1 borpod9.odf                  // ultritium burst (diamond
+gengyemt.odf         1 borpod16.odf                 // special energy recharge (wedge)
+gtechassim.odf       1 btechass.odf                 // Technology Assimilator
+gTechAssimBeam       1 btechass.odf                 // Technology Assimilation Beam
+gmastran.odf         0                              // transwarp gate
+gcubeIntegrator.odf  1 bhub.odf                     // Cube integrator (cube)
+gtcubeintegrator.odf 1 bhub.odf                     // Tactical cube integrator (tactical)
+
+
+
+
+
+
+
+
+
+// ***[ ROMULAN SHIPS ]***************************
+//
+rconst.odf   1 rbase.odf                            // construction ship
+rfreight.odf 2 rbase.odf rmining.odf                // mining freighter
+rcargo.odf   2 rbase.odf rtrading.odf               // cargo ship
+rsrepair.odf 2 rbase.odf rupgrade.odf               // repair ship 
+rscout.odf   1 ryard.odf                            // scout (talon class)
+rdestroy.odf 1 ryard.odf                            // destroyer (shrike class)
+rcruise1.odf 2 ryard.odf rresear.odf                // cruiser (griffin class)
+rcruise2.odf 2 ryard.odf rresear2.odf               // cruiser (raptor class)
+rcruise3.odf 2 ryard.odf rresear.odf                // cruiser (osprey class)
+rcolony.odf  2 ryard.odf rresear.odf                // colony ship
+rassault.odf 2 ryard.odf rresear2.odf               // assault ship (kestrel class)
+rbattle2.odf 1 ryard2.odf                           // battleship (venator class)
+rbattle.odf  2 ryard2.odf rupgrade.odf              // battleship (warbird class)
+rfrigate.odf 1 ryard2.odf                           // frigate (wraith class)
+rspecial.odf 2 ryard2.odf rresear2.odf              // special (shadow class)
+rsuper.odf   1 rsuperbl.odf                         // super (phoenix class)
+
+// ***[ ROMULAN STATIONS ]************************
+//
+rbase.odf    0                                      // starbase
+rmining.odf  0                                      // mining station
+rorbital.odf 0			                            // orbital processing facility
+rsensor.odf  1 rbase.odf                            // sensor array
+rturret.odf  1 rbase.odf                            // phaser turret
+rturret2.odf 1 rresear2.odf                         // torpedo turret
+ryard.odf    1 rbase.odf                            // shipyard
+ryard2.odf   2 ryard.odf rresear.odf                // advanced shipyard
+rtrading.odf 1 rbase.odf                            // trading station
+rresear.odf  1 rbase.odf                            // covert ops facility
+rresear2.odf 2 ryard.odf rresear.odf                // tal shiar facility
+rupgrade.odf 2 rresear.odf rresear2.odf             // ship upgrade station
+rsuperbl.odf 3 rbase.odf ryard2.odf rresear2.odf    // super (phoenix facility)
+rompod1.odf  2 rresear.odf ryard2.odf               // research pod (shield inversion beam)
+rompod2.odf  1 rresear.odf                          // research pod (romulan spy)
+rompod3.odf  1 rresear.odf                          // research pod (sensor jammer)
+rompod4.odf  1 rresear.odf                          // research pod (myotronic inhibitor)
+rompod5.odf  1 rresear.odf                          // research pod (tachyon detection grid)
+rompod6.odf  1 rresear2.odf                         // research pod (holo-emitter)
+rompod7.odf  1 rresear2.odf                         // research pod (psychonic blast)
+rompod8.odf  1 rresear2.odf                         // research pod (shield projector)
+rompod9.odf  1 rresear2.odf                         // research pod (phase cloak)
+rompod16.odf 1 rresear2.odf                         // research pod (cloak enhancer)
+rompod11.odf 1 rupgrade.odf                         // research pod (weapon upgrade level 2)
+rompod12.odf 1 rupgrade.odf                         // research pod (shield upgrade level 2)
+rompod13.odf 1 rupgrade.odf                         // research pod (sensor upgrade level 2)
+rompod14.odf 1 rupgrade.odf                         // research pod (engine upgrade level 2)
+rompod15.odf 1 rupgrade.odf                         // research pod (life support upgrade level 2)
+rompod21.odf 1 rompod11.odf                         // research pod (weapon upgrade level 3)
+rompod22.odf 1 rompod12.odf                         // research pod (shield upgrade level 3)
+rompod23.odf 1 rompod13.odf                         // research pod (sensor upgrade level 3)
+rompod24.odf 1 rompod14.odf                         // research pod (engine upgrade level 3)
+rompod25.odf 1 rompod15.odf                         // research pod (life support upgrade level 3)
+
+// ***[ ROMULAN SPECIAL WEAPONS ]*****************
+//
+gshieldi.odf 1 rompod1.odf                          // shield inversion beam (warbird class)
+gromspy.odf  1 rompod2.odf                          // romulan spy (shrike class)
+gposijam.odf 1 rompod3.odf                          // sensor jammer (griffin class)
+gmyotron.odf 1 rompod4.odf                          // myotronic inhibitor (raptor class)
+gdetectr.odf 1 rompod5.odf                          // detect cloak
+gholoemt.odf 1 rompod6.odf                          // holo-emitter (shadow class)
+gpsyblst.odf 1 rompod7.odf                          // psychonic blast (shadow class)
+gesconv.odf  1 rompod8.odf                          // shield projector (shadow class)
+gpcloak.odf  1 rompod9.odf                          // phase cloak (shadow class)
+gclkenh.odf  1 rompod16.odf                         // cloak enhancer (romulan frigate)
+gbholeg.odf  0                                      // spatial rift (phoenix class)
+
+
+
+
+
+
+
+
+// ***[ CARDASSIAN SHIPS ]************************
+//
+cconst.odf    1 cbase.odf                           // construction ship
+cfreight.odf  2 cbase.odf cmining.odf               // mining freighter
+ccargo.odf    2 cbase.odf ctrading.odf              // cargo ship
+csrepair.odf  2 cbase.odf cresear2.odf              // repair ship 
+cscout.odf    1 cyard.odf                           // scout (hideki class)
+cdestroy.odf  1 cyard.odf                           // destroyer (rasilak class)
+cdestroy2.odf 1 cyard.odf                           // destroyer (sartan class)
+ccruise1.odf  2 cyard.odf cresear.odf               // cruiser1 (brinok class)
+ccruise2.odf  2 cyard.odf cresear.odf               // cruiser2 (gul vystan class)
+ccruise3.odf  2 cyard.odf cresear2.odf              // cruiser3 (legate class)
+ccolony.odf   2 cyard.odf cresear.odf               // colony ship
+cassault.odf  2 cyard.odf cresear2.odf              // assault ship (janissary class)
+cbattle.odf   1 cyard2.odf                          // battleship (galor class)
+cbattle2.odf  2 cyard2.odf cupgrade.odf             // battleship (keldon class)
+cfrigate.odf  1 cyard2.odf                          // frigate (vasad class)
+cspecial.odf  2 cyard2.odf cresear2.odf             // special (kulinor class)
+csuper.odf    1 cardassian_super_station.odf        // super (dreadnought missile)
+
+// ***[ CARDASSIAN STATIONS ]*********************
+//
+cbase.odf    0                                      // starbase
+cmining.odf  0                                      // mining station
+corbital.odf 0			                            // orbital processing facility
+csensor.odf  1 cbase.odf                            // sensor array
+cturret.odf  1 cbase.odf                            // phaser turret
+cturret2.odf 1 cresear2.odf                         // photon turret
+cyard.odf    1 cbase.odf                            // shipyard
+cyard2.odf   2 cyard.odf cresear.odf                // advanced shipyard
+ctrading.odf 1 cbase.odf                            // trading station
+cresear.odf  1 cbase.odf                            // research facility
+cresear2.odf 2 cyard.odf cresear.odf                // science station
+cupgrade.odf 2 cresear.odf cresear2.odf             // ship upgrade station
+cardassian_super_station.odf 3 cbase.odf cyard2.odf cresear2.odf    // advanced robotics institute
+carpod1.odf  2 cresear.odf cyard.odf                // research pod (plasma bank overload)
+carpod2.odf  1 cresear.odf                          // research pod (micro organisms)
+carpod3.odf  1 cresear.odf                          // research pod (drones)
+carpod4.odf  1 cresear.odf                          // research pod (flux wave)
+carpod5.odf  1 cresear.odf                          // research pod (tachyon detection grid)
+carpod6.odf  1 cresear2.odf                         // research pod (plasma cannon)
+carpod7.odf  1 cresear2.odf                         // research pod (quantum singularity effect)
+carpod8.odf  1 cresear2.odf                         // research pod (warp coil boost)
+carpod9.odf  1 cresear2.odf                         // research pod (shield harmonics disruptor)
+carpod16.odf 1 cresear.odf                          // research pod (sensor scrambler)
+carpod11.odf 1 cupgrade.odf                         // ship upgrade pod (weapon level 2)
+carpod12.odf 1 cupgrade.odf                         // ship upgrade pod (shield level 2)
+carpod13.odf 1 cupgrade.odf                         // ship upgrade pod (sensor level 2)
+carpod14.odf 1 cupgrade.odf                         // ship upgrade pod (engine level 2)
+carpod15.odf 1 cupgrade.odf                         // ship upgrade pod (life support level 2)
+carpod21.odf 1 carpod11.odf                         // ship upgrade pod (weapon level 3)
+carpod22.odf 1 carpod12.odf                         // ship upgrade pod (shield level 3)
+carpod23.odf 1 carpod13.odf                         // ship upgrade pod (sensor level 3)
+carpod24.odf 1 carpod14.odf                         // ship upgrade pod (engine level 3)
+carpod25.odf 1 carpod15.odf                         // ship upgrade pod (life support level 3)
+
+// ***[ CARDASSIAN SPECIAL WEAPONS ]**************
+//
+gccloak.odf      0                                  // cardassian specific cloak
+gplasmabank.odf  1 carpod1.odf                      // plasma bank overload (keldon class)
+gmicroorgs.odf   1 carpod2.odf                      // micro organisms (rasilak class)
+gdrones.odf      1 carpod3.odf                      // drones (brinok class)
+gfluxwave.odf    1 carpod4.odf                      // flux wave (gul vystan class)
+gdetectc.odf     1 carpod5.odf                      // tachyon detection grid (hideki class)
+gaccelcannon.odf 1 carpod6.odf                      // plasma cannon (kulinor class)
+gquanteffect.odf 1 carpod7.odf                      // quantum singularity effect (kulinor class)
+gwarpboost.odf   1 carpod8.odf                      // warp coil boost (kulinor class)
+gsdisruptor.odf  1 carpod9.odf                      // shield harmonics disruptor (kulinor class)
+gsensorscram.odf 1 carpod16.odf                     // sensor scramber (vasad class)
+
+
+
+
+
+
+
+
+// ***[ SPECIES 8472 SHIPS ]**********************
+//
+8472_mothership.odf     0                                               // species 8472 mother 
+8472_active.odf     1 8472_mothership.odf                               // species 8472 active embryo
+8472_passive.odf    1 8472_mothership.odf                               // species 8472 passive embryo
+8472_scout.odf      1 8472_active.odf                               // species 8472 scout
+8472_destroy.odf    1 8472_active.odf                               // species 8472 destroyer
+8472_cruise1.odf    1 8472_BasicResearch.odf                        // species 8472 cruise1
+8472_cruise2.odf    2 8472_active.odf 8472_AdvancedResearch.odf     // species 8472 cruise2
+8472_battle.odf     2 8472_FluidicGate.odf 8472_ShipUpgradeResearch.odf                  // Battleship
+8472_collector.odf  1 8472_active.odf                               // species 8472 collector
+8472_defender.odf   1 8472_FluidicGate.odf                          // species 8472 defender 
+8472_transmuter.odf 1 8472_passive.odf                              // species 8472 transmuter
+8472_frigate.odf    1 8472_FluidicGate.odf							// species 8472 frigate
+8472_behemoth.odf   2 8472_FluidicGate.odf 8472_AdvancedResearch.odf                     // species 8472 behemoth
+
+// ***[ SPECIES 8472 STATIONS ]*******************
+//
+8472_mine.odf                1 8472_defender.odf                                        // species 8472 mine
+8472_sentinel                2 8472_defender.odf 8472_BasicResearch.odf                 // species 8472 sentinel
+8472_FluidicGate.odf         1 8472_passive.odf                                         // species 8472 fluidic gate
+8472_BasicResearch.odf       1 8472_passive.odf                                         // species 8472 basic research station
+8472_AdvancedResearch.odf    2 8472_passive.odf 8472_BasicResearch.odf                  // species 8472 advanced research station
+8472_ShipUpgradeResearch.odf 3 8472_passive.odf 8472_BasicResearch.odf 8472_AdvancedResearch.odf    // species 8472 ship upgrade research station
+8472_PodBasic0.odf           1 8472_BasicResearch.odf                                   // species 8472 clairvoyance pod
+8472_PodBasic1.odf           1 8472_BasicResearch.odf                                   // species 8472 clairvoyant link pod
+8472_PodBasic2.odf           1 8472_BasicResearch.odf                                   // species 8472 psionic disruption pod
+8472_PodBasic3.odf           1 8472_BasicResearch.odf                                   // species 8472 psionic insanity pod
+8472_PodBasic4.odf           1 8472_BasicResearch.odf                                   // species 8472 tachyon detection grid pod
+8472_PodAdvanced0.odf        1 8472_AdvancedResearch.odf                                // species 8472 bio-pulse conduit pod
+8472_PodAdvanced1.odf        1 8472_AdvancedResearch.odf                                // species 8472 nebula generation pod
+8472_PodAdvanced2.odf        1 8472_AdvancedResearch.odf                                // species 8472 nebula flux pod
+8472_PodAdvanced3.odf        1 8472_AdvancedResearch.odf                                // species 8472 nebula transient rift pod
+8472_PodShipResearch1.odf    1 8472_ShipUpgradeResearch.odf                             // species 8472 torpedo upgrade
+8472_PodShipResearch2.odf    1 8472_ShipUpgradeResearch.odf                             // species 8472 regeneration upgrade
+8472_PodShipResearch3.odf    1 8472_ShipUpgradeResearch.odf                             // species 8472 sensor upgrade
+8472_PodShipResearch4.odf    1 8472_ShipUpgradeResearch.odf                             // species 8472 engine upgrade
+8472_PodShipResearch21.odf   2 8472_ShipUpgradeResearch.odf 8472_PodShipResearch1.odf   // species 8472 torpedo upgrade lvl2
+8472_PodShipResearch22.odf   2 8472_ShipUpgradeResearch.odf 8472_PodShipResearch2.odf   // species 8472 regeneration upgrade lvl2
+8472_PodShipResearch23.odf   2 8472_ShipUpgradeResearch.odf 8472_PodShipResearch3.odf   // species 8472 sensor upgrade lvl2
+8472_PodShipResearch24.odf   2 8472_ShipUpgradeResearch.odf 8472_PodShipResearch4.odf   // species 8472 engine upgrade lvl2
+
+// ***[ SPECIES 8472 SPECIAL WEAPONS ]************
+//
+gclairvoyance.odf           1 8472_PodBasic0.odf        // species 8472 clairvoyance
+gclairvoyantLink.odf        1 8472_PodBasic1.odf        // species 8472 clairvoyant link
+gpsionicDisruption.odf      1 8472_PodBasic2.odf        // species 8472 psionic disruption
+gpsionicInsanity.odf        1 8472_PodBasic3.odf        // species 8472 psionic insanity
+gtachdetgrid.odf            1 8472_PodBasic4.odf        // species 8472 tachyon detection grid
+gbioPulse.odf               1 8472_PodAdvanced0.odf     // species 8472 bio-pulse conduit
+gnebulaGeneration.odf       1 8472_PodAdvanced1.odf     // species 8472 nebula generation
+gnebulaFlux.odf             1 8472_PodAdvanced2.odf     // species 8472 nebula flux
+gtransientRift.odf          1 8472_PodAdvanced3.odf     // species 8472 transient rift
+gresourceExtractionBeam.odf 0                           // species 8472 resource extraction beam
+
+
+
+
+
+
+
+
+//*************** OTHER SPECIAL WEAPONS***************
+
+hamine.odf   0      	// antimatter mines for hero ship (uss avenger)
+hcorbom.odf  0      	// corbomite reflector for hero ship (uss enterprise)
+hmanheim.odf 0      	// gemini effect for hero ship (uss premonition)
+hplasmac.odf 0      	// ion cannon for hero ship (martok's negh'var)
+hshieldi.odf 0      	// shield inversion beam for hero ship (sela's warbird)
+hholdbm.odf  0     	// holding beam for hero ship for hero ship (locutus's cube)
+hmicro.odf   0      	// energy dissipator for hero ship (cardassian destroyer)
+hpoleron.odf 0      	// poleron torpedo for hero ship (vor'cha)
+hshieldh.odf 0      	// shield disruptor for hero ship (nebula class)
+hplasma2.odf 0      	// plasma ball for hero ship (entity mother)
+hutribm.odf  0		// ultritium burst for hero ship (borg queens diamond)
+hnanites.odf 0		// nanites for hero ship (borg queens diamond)
+hoverrid.odf 0		// computer override for hero ship (borg queens diamond)
+hremod.odf   0		// shield remodulation for hero ship (borg queens diamond)
+gnttblst.odf 0      	// psychonic blast
+gtracbmo.odf 0      	// tractor beam for the omega particle
+gselfdes.odf 0      	// self destruct
+gtracbm.odf  0      	// tractor beam
+gcloak.odf   0      	// cloak
+grcloak.odf  0      	// romulan specific cloak
+gkcloak.odf  0      	// klingon specific cloak
+hcloak.odf   0      	// cloak for hero ship
+shield.odf   0      	// planetary shield

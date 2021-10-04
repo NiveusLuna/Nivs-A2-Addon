@@ -1,0 +1,9 @@
+<techtree>
+	<!-- Assimilation Nexus Bluebeam -->
+	<object ODF="borW_bluebeam-nexus.odf">
+		<requirement>
+			<obj>borpod1.odf</obj>
+			<!-- <obj mustNotHave="true">borpod2.odf</obj> -->
+		</requirement>
+	</object>
+</techtree>

@@ -1,0 +1,2072 @@
+<techtree><!--Base Tech Tree-->
+	<!--Each .ODF entry is followed by a 0, -1, -2-->
+	<!--0 = Nothing is required to build this .ODF-->
+	<!---1 = Impossible to build.  Anything dependent on this .ODF can not be built.-->
+	<!---2 = Impossible to build, but don&apos;t touch dependencies, so that if somehow I already existed or was acquired, you could build anything dependent on me.-->
+	<!--***[ FEDERATION SHIPS ]************************-->
+	<!--construction ship-->
+	<object ODF="fconst.odf">
+		<requirement>
+			<obj>fbase.odf</obj>
+		</requirement>
+	</object>
+	<!--mining freighter-->
+	<object ODF="ffreight.odf">
+		<requirement>
+			<obj>fbase.odf</obj>
+			<obj>fmining.odf</obj>
+		</requirement>
+	</object>
+	<!--cargo ship-->
+	<object ODF="fcargo.odf">
+		<requirement>
+			<obj>fbase.odf</obj>
+			<obj>ftrading.odf</obj>
+		</requirement>
+	</object>
+	<!--repair ship-->
+	<object ODF="fsrepair.odf">
+		<requirement>
+			<obj>fbase.odf</obj>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--scout (venture class)-->
+	<object ODF="fscout.odf">
+		<requirement>
+			<obj>fyard.odf</obj>
+		</requirement>
+	</object>
+	<!--destroyer (defiant class)-->
+	<object ODF="fdestroy.odf">
+		<requirement>
+			<obj>fyard.odf</obj>
+		</requirement>
+	</object>
+	<!--destroyer (sabre class)-->
+	<object ODF="fdestroy2.odf">
+		<requirement>
+			<obj>fyard.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser1 (akira class)-->
+	<object ODF="fcruise1.odf">
+		<requirement>
+			<obj>fyard.odf</obj>
+			<obj>fresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser2 (steamrunner class)-->
+	<object ODF="fcruise2.odf">
+		<requirement>
+			<obj>fyard.odf</obj>
+			<obj>fresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser3 (intrepid class)-->
+	<object ODF="fcruise3.odf">
+		<requirement>
+			<obj>fyard.odf</obj>
+			<obj>fresear.odf</obj>
+		</requirement>
+	</object>
+	<!--colony ship-->
+	<object ODF="fcolony.odf">
+		<requirement>
+			<obj>fyard.odf</obj>
+			<obj>fresear.odf</obj>
+		</requirement>
+	</object>
+	<!--assault ship (iwo Jima class)-->
+	<object ODF="fassault.odf">
+		<requirement>
+			<obj>fyard.odf</obj>
+			<obj>fresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (galaxy class)-->
+	<object ODF="fgalaxy.odf">
+		<requirement>
+			<obj>fyard2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (sovereign class)-->
+	<object ODF="fbattle.odf">
+		<requirement>
+			<obj>fyard2.odf</obj>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--frigate (andor class)-->
+	<object ODF="ffrigate.odf">
+		<requirement>
+			<obj>fyard2.odf</obj>
+		</requirement>
+	</object>
+	<!--special (nebula class)-->
+	<object ODF="fspecial.odf">
+		<requirement>
+			<obj>fyard2.odf</obj>
+			<obj>fresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ FEDERATION STATIONS ]*********************-->
+	<!--starbase-->
+	<object ODF="fbase.odf"/>
+	<!--mining station-->
+	<object ODF="fmining.odf"/>
+	<!--orbital processing facility-->
+	<object ODF="forbital.odf"/>
+	<!--sensor array-->
+	<object ODF="fsensor.odf">
+		<requirement>
+			<obj>fbase.odf</obj>
+		</requirement>
+	</object>
+	<!--phaser turret-->
+	<object ODF="fturret.odf">
+		<requirement>
+			<obj>fbase.odf</obj>
+		</requirement>
+	</object>
+	<!--photon turret-->
+	<object ODF="fturret2.odf">
+		<requirement>
+			<obj>fresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--shipyard-->
+	<object ODF="fyard.odf">
+		<requirement>
+			<obj>fbase.odf</obj>
+		</requirement>
+	</object>
+	<!--advanced shipyard-->
+	<object ODF="fyard2.odf">
+		<requirement>
+			<obj>fyard.odf</obj>
+			<obj>fresear.odf</obj>
+		</requirement>
+	</object>
+	<!--trading station-->
+	<object ODF="ftrading.odf">
+		<requirement>
+			<obj>fbase.odf</obj>
+		</requirement>
+	</object>
+	<!--research facility-->
+	<object ODF="fresear.odf">
+		<requirement>
+			<obj>fbase.odf</obj>
+		</requirement>
+	</object>
+	<!--science station-->
+	<object ODF="fresear2.odf">
+		<requirement>
+			<obj>fyard.odf</obj>
+			<obj>fresear.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade station-->
+	<object ODF="fupgrade.odf">
+		<requirement>
+			<obj>fresear.odf</obj>
+			<obj>fresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--temporal research facility-->
+	<object ODF="fsuperbl.odf">
+		<requirement>
+			<obj>fbase.odf</obj>
+			<obj>fyard2.odf</obj>
+			<obj>fresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 2)-->
+	<object ODF="fedpod11.odf">
+		<requirement>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 2)-->
+	<object ODF="fedpod12.odf">
+		<requirement>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 2)-->
+	<object ODF="fedpod13.odf">
+		<requirement>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 2)-->
+	<object ODF="fedpod14.odf">
+		<requirement>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 2)-->
+	<object ODF="fedpod15.odf">
+		<requirement>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 3)-->
+	<object ODF="fedpod21.odf">
+		<requirement>
+			<obj>fedpod11.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 3)-->
+	<object ODF="fedpod22.odf">
+		<requirement>
+			<obj>fedpod12.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 3)-->
+	<object ODF="fedpod23.odf">
+		<requirement>
+			<obj>fedpod13.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 3)-->
+	<object ODF="fedpod24.odf">
+		<requirement>
+			<obj>fedpod14.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 3)-->
+	<object ODF="fedpod25.odf">
+		<requirement>
+			<obj>fedpod15.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ FEDERATION SPECIAL WEAPONS ]**************-->
+	<!--corbomite manuever (sovereign class)-->
+	<object ODF="gcorbom.odf">
+		<requirement>
+			<obj>fedpod1.odf</obj>
+		</requirement>
+	</object>
+	<!--chain reaction pulsar (akira class)-->
+	<object ODF="gchainp.odf">
+		<requirement>
+			<obj>fedpod2.odf</obj>
+		</requirement>
+	</object>
+	<!--engine overload (steamrunner class)-->
+	<object ODF="gwcover.odf">
+		<requirement>
+			<obj>fedpod3.odf</obj>
+		</requirement>
+	</object>
+	<!--anti-matter mines (defiant class)-->
+	<object ODF="gamine.odf">
+		<requirement>
+			<obj>fedpod4.odf</obj>
+		</requirement>
+	</object>
+	<!--detect cloak-->
+	<object ODF="gdetectf.odf">
+		<requirement>
+			<obj>fedpod5.odf</obj>
+		</requirement>
+	</object>
+	<!--gemini effect (nebula class)-->
+	<object ODF="gmanheim.odf">
+		<requirement>
+			<obj>fedpod6.odf</obj>
+		</requirement>
+	</object>
+	<!--shield disruptor (nebula class)-->
+	<object ODF="gshieldh.odf">
+		<requirement>
+			<obj>fedpod7.odf</obj>
+		</requirement>
+	</object>
+	<!--engineering team (nebula class)-->
+	<object ODF="gfedrep.odf">
+		<requirement>
+			<obj>fedpod8.odf</obj>
+		</requirement>
+	</object>
+	<!--point defense laser (nebula class)-->
+	<object ODF="gpdlaser.odf">
+		<requirement>
+			<obj>fedpod9.odf</obj>
+		</requirement>
+	</object>
+	<!--shield recharger (andor class)-->
+	<object ODF="gshldemt.odf">
+		<requirement>
+			<obj>fedpod16.odf</obj>
+		</requirement>
+	</object>
+	<!--galaxy class integration-->
+	<object ODF="ggalintegrator.odf"/>
+	<!--galaxy class separation-->
+	<object ODF="ggalseparator.odf"/>
+	<!--temporal stasis field-->
+	<object ODF="gtempor.odf"/>
+	<!--***[ KLINGON SHIPS ]***************************-->
+	<!--construction ship-->
+	<object ODF="kconst.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+		</requirement>
+	</object>
+	<!--mining freighter-->
+	<object ODF="kfreight.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+			<obj>kmining.odf</obj>
+		</requirement>
+	</object>
+	<!--cargo ship-->
+	<object ODF="kcargo.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+			<obj>ktrading.odf</obj>
+		</requirement>
+	</object>
+	<!--repair ship-->
+	<object ODF="ksrepair.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--scout (nug&apos;duj class)-->
+	<object ODF="kscout.odf">
+		<requirement>
+			<obj>kyard.odf</obj>
+		</requirement>
+	</object>
+	<!--destroyer (bird of prey class)-->
+	<object ODF="kdestroy.odf">
+		<requirement>
+			<obj>kyard.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser1 (vor&apos;cha class)-->
+	<object ODF="kcruise1.odf">
+		<requirement>
+			<obj>kyard.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser2 (suq&apos;jagh class)-->
+	<object ODF="kcruise2.odf">
+		<requirement>
+			<obj>kyard.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser3 (Chuq&apos;Beh class)-->
+	<object ODF="kcruise3.odf">
+		<requirement>
+			<obj>kyard.odf</obj>
+			<obj>kresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--colony ship-->
+	<object ODF="kcolony.odf">
+		<requirement>
+			<obj>kyard.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--assault ship (chava&apos;kal class)-->
+	<object ODF="kassault.odf">
+		<requirement>
+			<obj>kyard.odf</obj>
+			<obj>kresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (qeh&apos;ral class)-->
+	<object ODF="kbattle2.odf">
+		<requirement>
+			<obj>kyard2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (negh&apos;var class)-->
+	<object ODF="kbattle.odf">
+		<requirement>
+			<obj>kyard2.odf</obj>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--frigate (koloth class)-->
+	<object ODF="kfrigate.odf">
+		<requirement>
+			<obj>kyard2.odf</obj>
+		</requirement>
+	</object>
+	<!--special (fek&apos;lhr class)-->
+	<object ODF="kspecial.odf">
+		<requirement>
+			<obj>kyard2.odf</obj>
+			<obj>kresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--super weapon (jach&apos;eng class)-->
+	<object ODF="ksuper.odf">
+		<requirement>
+			<obj>ksuperbl.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ KLINGON STATIONS ]************************-->
+	<!--starbase-->
+	<object ODF="kbase.odf"/>
+	<!--mining station-->
+	<object ODF="kmining.odf"/>
+	<!--orbital processing facility-->
+	<object ODF="korbital.odf"/>
+	<!--sensor array-->
+	<object ODF="ksensor.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+		</requirement>
+	</object>
+	<!--phaser turret-->
+	<object ODF="kturret.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+		</requirement>
+	</object>
+	<!--torpedo turret-->
+	<object ODF="kturret2.odf">
+		<requirement>
+			<obj>kresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--shipyard-->
+	<object ODF="kyard.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+		</requirement>
+	</object>
+	<!--advanced shipyard-->
+	<object ODF="kyard2.odf">
+		<requirement>
+			<obj>kyard.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--trading station-->
+	<object ODF="ktrading.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+		</requirement>
+	</object>
+	<!--weapons center-->
+	<object ODF="kresear.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+		</requirement>
+	</object>
+	<!--gre&apos;thor armory-->
+	<object ODF="kresear2.odf">
+		<requirement>
+			<obj>kyard.odf</obj>
+			<obj>kresear.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade station-->
+	<object ODF="kupgrade.odf">
+		<requirement>
+			<obj>kresear.odf</obj>
+			<obj>kresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--shockwave station-->
+	<object ODF="ksuperbl.odf">
+		<requirement>
+			<obj>kbase.odf</obj>
+			<obj>kyard2.odf</obj>
+			<obj>kresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 2)-->
+	<object ODF="klipod11.odf">
+		<requirement>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 2)-->
+	<object ODF="klipod12.odf">
+		<requirement>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 2)-->
+	<object ODF="klipod13.odf">
+		<requirement>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 2)-->
+	<object ODF="klipod14.odf">
+		<requirement>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 2)-->
+	<object ODF="klipod15.odf">
+		<requirement>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 3)-->
+	<object ODF="klipod21.odf">
+		<requirement>
+			<obj>klipod11.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 3)-->
+	<object ODF="klipod22.odf">
+		<requirement>
+			<obj>klipod12.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 3)-->
+	<object ODF="klipod23.odf">
+		<requirement>
+			<obj>klipod13.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 3)-->
+	<object ODF="klipod24.odf">
+		<requirement>
+			<obj>klipod14.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 3)-->
+	<object ODF="klipod25.odf">
+		<requirement>
+			<obj>klipod15.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ KLINGON SPECIAL WEAPONS ]*****************-->
+	<!--ion cannon (negh&apos;var class)-->
+	<object ODF="gplasmac.odf">
+		<requirement>
+			<obj>klipod1.odf</obj>
+		</requirement>
+	</object>
+	<!--polaron torpedo (vor&apos;cha class)-->
+	<object ODF="gpoleron.odf">
+		<requirement>
+			<obj>klipod2.odf</obj>
+		</requirement>
+	</object>
+	<!--commando team (suq&apos;jagh class)-->
+	<object ODF="gkcteam.odf">
+		<requirement>
+			<obj>klipod3.odf</obj>
+		</requirement>
+	</object>
+	<!--gravity mines (bird of prey class)-->
+	<object ODF="ggrvmine.odf">
+		<requirement>
+			<obj>klipod4.odf</obj>
+		</requirement>
+	</object>
+	<!--detect cloak-->
+	<object ODF="gdetectk.odf">
+		<requirement>
+			<obj>klipod5.odf</obj>
+		</requirement>
+	</object>
+	<!--death chant (fek&apos;lhr class)-->
+	<object ODF="gdchant.odf">
+		<requirement>
+			<obj>klipod6.odf</obj>
+		</requirement>
+	</object>
+	<!--repulsion field (fek&apos;lhr)-->
+	<object ODF="grfield.odf">
+		<requirement>
+			<obj>klipod7.odf</obj>
+		</requirement>
+	</object>
+	<!--ion storm (fek&apos;lhr class)-->
+	<object ODF="gionstm.odf">
+		<requirement>
+			<obj>klipod8.odf</obj>
+		</requirement>
+	</object>
+	<!--energy dissipator (fek&apos;lhr class)-->
+	<object ODF="gmicro.odf">
+		<requirement>
+			<obj>klipod9.odf</obj>
+		</requirement>
+	</object>
+	<!--weapon enhancer (koloth class)-->
+	<object ODF="wenhance.odf">
+		<requirement>
+			<obj>klipod16.odf</obj>
+		</requirement>
+	</object>
+	<!--subspace shockwave (jach&apos;eng class)-->
+	<object ODF="grwave.odf"/>
+	<!--***[ BORG SHIPS ]******************************-->
+	<!--construction ship (assembler)-->
+	<object ODF="bconst.odf">
+		<requirement>
+			<obj>bbase.odf</obj>
+		</requirement>
+	</object>
+	<!--dilithium collector (mining freighter)-->
+	<object ODF="bfreight.odf">
+		<requirement>
+			<obj>bbase.odf</obj>
+			<obj>bmining.odf</obj>
+		</requirement>
+	</object>
+	<!--scout (detector)-->
+	<object ODF="bscout.odf">
+		<requirement>
+			<obj>byard.odf</obj>
+		</requirement>
+	</object>
+	<!--destroyer (interceptor)-->
+	<object ODF="bdestroy.odf">
+		<requirement>
+			<obj>byard.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser1 (sphere)-->
+	<object ODF="bcruise1.odf">
+		<requirement>
+			<obj>byard.odf</obj>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser2 (assimilator)-->
+	<object ODF="bcruise2.odf">
+		<requirement>
+			<obj>byard.odf</obj>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser3 (harbinger)-->
+	<object ODF="bcruise3.odf">
+		<requirement>
+			<obj>byard.odf</obj>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--colony ship (pyramid)-->
+	<object ODF="bcolony.odf">
+		<requirement>
+			<obj>byard.odf</obj>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--assault ship (wedge)-->
+	<object ODF="bassault.odf">
+		<requirement>
+			<obj>byard.odf</obj>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (cube)-->
+	<object ODF="bbattle1.odf">
+		<requirement>
+			<obj>byard2.odf</obj>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (tactical cube)-->
+	<object ODF="bbattle2.odf">
+		<requirement>
+			<obj>byard2.odf</obj>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--frigate (harmonic defender)-->
+	<object ODF="bfrigate.odf">
+		<requirement>
+			<obj>byard2.odf</obj>
+		</requirement>
+	</object>
+	<!--special (diamond)-->
+	<object ODF="bspecial.odf">
+		<requirement>
+			<obj>byard2.odf</obj>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (fusion cube)-->
+	<object ODF="bbattle3.odf">
+		<requirement>
+			<obj>bhub.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (tactical fusion cube)-->
+	<object ODF="bbattle4.odf">
+		<requirement>
+			<obj>bhub.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ BORG STATIONS ]***************************-->
+	<!--nexus-->
+	<object ODF="bbase.odf"/>
+	<!--processing node-->
+	<object ODF="bmining.odf"/>
+	<!--detection array-->
+	<object ODF="bsensor.odf">
+		<requirement>
+			<obj>bbase.odf</obj>
+		</requirement>
+	</object>
+	<!--energy cannon-->
+	<object ODF="bturret.odf">
+		<requirement>
+			<obj>bbase.odf</obj>
+		</requirement>
+	</object>
+	<!--torpedo turret-->
+	<object ODF="bturret2.odf">
+		<requirement>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--assembly matrix-->
+	<object ODF="byard.odf">
+		<requirement>
+			<obj>bbase.odf</obj>
+		</requirement>
+	</object>
+	<!--advanced assembly matrix-->
+	<object ODF="byard2.odf">
+		<requirement>
+			<obj>byard.odf</obj>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--modification center-->
+	<object ODF="bresear.odf">
+		<requirement>
+			<obj>bbase.odf</obj>
+		</requirement>
+	</object>
+	<!--technology node-->
+	<object ODF="bresear2.odf">
+		<requirement>
+			<obj>byard.odf</obj>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade station-->
+	<object ODF="bupgrade.odf">
+		<requirement>
+			<obj>bresear.odf</obj>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--technology assimilator-->
+	<object ODF="btechass.odf">
+		<requirement>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--recycler-->
+	<object ODF="brecycle.odf">
+		<requirement>
+			<obj>byard.odf</obj>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--super (transwarp gate)-->
+	<object ODF="bsuperbl.odf">
+		<requirement>
+			<obj>bbase.odf</obj>
+			<obj>byard2.odf</obj>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--collective hub-->
+	<object ODF="bhub.odf">
+		<requirement>
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (auto-assimilator)-->
+	<object ODF="borpod1.odf">
+		<requirement>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (holding beam)-->
+	<object ODF="borpod2.odf">
+		<requirement>
+			<obj>bresear.odf</obj>
+			<obj>byard2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (regeneration)-->
+	<object ODF="borpod3.odf">
+		<requirement>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (transwarp drive)-->
+	<object ODF="borpod4.odf">
+		<requirement>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (tachyon detection grid)-->
+	<object ODF="borpod5.odf">
+		<requirement>
+			<obj>bresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield remodulation)-->
+	<object ODF="borpod6.odf">
+		<requirement>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (computer override)-->
+	<object ODF="borpod7.odf">
+		<requirement>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (nanites)-->
+	<object ODF="borpod8.odf">
+		<requirement>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (ultritium burst)-->
+	<object ODF="borpod9.odf">
+		<requirement>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (special energy recharger)-->
+	<object ODF="borpod16.odf">
+		<requirement>
+			<obj>bresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 2)-->
+	<object ODF="borpod11.odf">
+		<requirement>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 2)-->
+	<object ODF="borpod12.odf">
+		<requirement>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 2)-->
+	<object ODF="borpod13.odf">
+		<requirement>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 2)-->
+	<object ODF="borpod14.odf">
+		<requirement>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 2)-->
+	<object ODF="borpod15.odf">
+		<requirement>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 3)-->
+	<object ODF="borpod21.odf">
+		<requirement>
+			<obj>borpod11.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 3)-->
+	<object ODF="borpod22.odf">
+		<requirement>
+			<obj>borpod12.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 3)-->
+	<object ODF="borpod23.odf">
+		<requirement>
+			<obj>borpod13.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 3)-->
+	<object ODF="borpod24.odf">
+		<requirement>
+			<obj>borpod14.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 3)-->
+	<object ODF="borpod25.odf">
+		<requirement>
+			<obj>borpod15.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ BORG SPECIAL WEAPONS ]********************-->
+	<!--auto-assimilator (assimilator)-->
+	<object ODF="gborgbor.odf">
+		<requirement>
+			<obj>borpod1.odf</obj>
+		</requirement>
+	</object>
+	<!--holding beam (cube)-->
+	<object ODF="gholdbm.odf">
+		<requirement>
+			<obj>borpod2.odf</obj>
+		</requirement>
+	</object>
+	<!--holding beam (fusion cube)-->
+	<object ODF="fusiongholdbm.odf">
+		<requirement>
+			<obj>borpod2.odf</obj>
+		</requirement>
+	</object>
+	<!--regeneration (sphere)-->
+	<object ODF="gregen.odf">
+		<requirement>
+			<obj>borpod3.odf</obj>
+		</requirement>
+	</object>
+	<!--transwarp drive (interceptor)-->
+	<object ODF="gtwarpd.odf">
+		<requirement>
+			<obj>borpod4.odf</obj>
+		</requirement>
+	</object>
+	<!--detect cloak-->
+	<object ODF="gdetectb.odf">
+		<requirement>
+			<obj>borpod5.odf</obj>
+		</requirement>
+	</object>
+	<!--shield remodulation (diamond)-->
+	<object ODF="gremod.odf">
+		<requirement>
+			<obj>borpod6.odf</obj>
+		</requirement>
+	</object>
+	<!--computer override (diamond)-->
+	<object ODF="goverrid.odf">
+		<requirement>
+			<obj>borpod7.odf</obj>
+		</requirement>
+	</object>
+	<!--nanites (diamond)-->
+	<object ODF="gnanites.odf">
+		<requirement>
+			<obj>borpod8.odf</obj>
+		</requirement>
+	</object>
+	<!--ultritium burst (diamond-->
+	<object ODF="gutribm.odf">
+		<requirement>
+			<obj>borpod9.odf</obj>
+		</requirement>
+	</object>
+	<!--special energy recharge (wedge)-->
+	<object ODF="gengyemt.odf">
+		<requirement>
+			<obj>borpod16.odf</obj>
+		</requirement>
+	</object>
+	<!--Technology Assimilator-->
+	<object ODF="gtechassim.odf">
+		<requirement>
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--Technology Assimilation Beam-->
+	<object ODF="gTechAssimBeam">
+		<requirement>
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--transwarp gate-->
+	<object ODF="gmastran.odf"/>
+	<!--Cube integrator (cube)-->
+	<object ODF="gcubeIntegrator.odf">
+		<requirement>
+			<obj>bhub.odf</obj>
+		</requirement>
+	</object>
+	<!--Tactical cube integrator (tactical)-->
+	<object ODF="gtcubeintegrator.odf">
+		<requirement>
+			<obj>bhub.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ ROMULAN SHIPS ]***************************-->
+	<!--construction ship-->
+	<object ODF="rconst.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+		</requirement>
+	</object>
+	<!--mining freighter-->
+	<object ODF="rfreight.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+			<obj>rmining.odf</obj>
+		</requirement>
+	</object>
+	<!--cargo ship-->
+	<object ODF="rcargo.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+			<obj>rtrading.odf</obj>
+		</requirement>
+	</object>
+	<!--repair ship-->
+	<object ODF="rsrepair.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--scout (talon class)-->
+	<object ODF="rscout.odf">
+		<requirement>
+			<obj>ryard.odf</obj>
+		</requirement>
+	</object>
+	<!--destroyer (shrike class)-->
+	<object ODF="rdestroy.odf">
+		<requirement>
+			<obj>ryard.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser (griffin class)-->
+	<object ODF="rcruise1.odf">
+		<requirement>
+			<obj>ryard.odf</obj>
+			<obj>rresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser (raptor class)-->
+	<object ODF="rcruise2.odf">
+		<requirement>
+			<obj>ryard.odf</obj>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser (osprey class)-->
+	<object ODF="rcruise3.odf">
+		<requirement>
+			<obj>ryard.odf</obj>
+			<obj>rresear.odf</obj>
+		</requirement>
+	</object>
+	<!--colony ship-->
+	<object ODF="rcolony.odf">
+		<requirement>
+			<obj>ryard.odf</obj>
+			<obj>rresear.odf</obj>
+		</requirement>
+	</object>
+	<!--assault ship (kestrel class)-->
+	<object ODF="rassault.odf">
+		<requirement>
+			<obj>ryard.odf</obj>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (venator class)-->
+	<object ODF="rbattle2.odf">
+		<requirement>
+			<obj>ryard2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (warbird class)-->
+	<object ODF="rbattle.odf">
+		<requirement>
+			<obj>ryard2.odf</obj>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--frigate (wraith class)-->
+	<object ODF="rfrigate.odf">
+		<requirement>
+			<obj>ryard2.odf</obj>
+		</requirement>
+	</object>
+	<!--special (shadow class)-->
+	<object ODF="rspecial.odf">
+		<requirement>
+			<obj>ryard2.odf</obj>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--super (phoenix class)-->
+	<object ODF="rsuper.odf">
+		<requirement>
+			<obj>rsuperbl.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ ROMULAN STATIONS ]************************-->
+	<!--starbase-->
+	<object ODF="rbase.odf"/>
+	<!--mining station-->
+	<object ODF="rmining.odf"/>
+	<!--orbital processing facility-->
+	<object ODF="rorbital.odf"/>
+	<!--sensor array-->
+	<object ODF="rsensor.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+		</requirement>
+	</object>
+	<!--phaser turret-->
+	<object ODF="rturret.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+		</requirement>
+	</object>
+	<!--torpedo turret-->
+	<object ODF="rturret2.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--shipyard-->
+	<object ODF="ryard.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+		</requirement>
+	</object>
+	<!--advanced shipyard-->
+	<object ODF="ryard2.odf">
+		<requirement>
+			<obj>ryard.odf</obj>
+			<obj>rresear.odf</obj>
+		</requirement>
+	</object>
+	<!--trading station-->
+	<object ODF="rtrading.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+		</requirement>
+	</object>
+	<!--covert ops facility-->
+	<object ODF="rresear.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+		</requirement>
+	</object>
+	<!--tal shiar facility-->
+	<object ODF="rresear2.odf">
+		<requirement>
+			<obj>ryard.odf</obj>
+			<obj>rresear.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade station-->
+	<object ODF="rupgrade.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--super (phoenix facility)-->
+	<object ODF="rsuperbl.odf">
+		<requirement>
+			<obj>rbase.odf</obj>
+			<obj>ryard2.odf</obj>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield inversion beam)-->
+	<object ODF="rompod1.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+			<obj>ryard2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (romulan spy)-->
+	<object ODF="rompod2.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor jammer)-->
+	<object ODF="rompod3.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (myotronic inhibitor)-->
+	<object ODF="rompod4.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (tachyon detection grid)-->
+	<object ODF="rompod5.odf">
+		<requirement>
+			<obj>rresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (holo-emitter)-->
+	<object ODF="rompod6.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (psychonic blast)-->
+	<object ODF="rompod7.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield projector)-->
+	<object ODF="rompod8.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (phase cloak)-->
+	<object ODF="rompod9.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (cloak enhancer)-->
+	<object ODF="rompod16.odf">
+		<requirement>
+			<obj>rresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 2)-->
+	<object ODF="rompod11.odf">
+		<requirement>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 2)-->
+	<object ODF="rompod12.odf">
+		<requirement>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 2)-->
+	<object ODF="rompod13.odf">
+		<requirement>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 2)-->
+	<object ODF="rompod14.odf">
+		<requirement>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 2)-->
+	<object ODF="rompod15.odf">
+		<requirement>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 3)-->
+	<object ODF="rompod21.odf">
+		<requirement>
+			<obj>rompod11.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 3)-->
+	<object ODF="rompod22.odf">
+		<requirement>
+			<obj>rompod12.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 3)-->
+	<object ODF="rompod23.odf">
+		<requirement>
+			<obj>rompod13.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 3)-->
+	<object ODF="rompod24.odf">
+		<requirement>
+			<obj>rompod14.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 3)-->
+	<object ODF="rompod25.odf">
+		<requirement>
+			<obj>rompod15.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ ROMULAN SPECIAL WEAPONS ]*****************-->
+	<!--shield inversion beam (warbird class)-->
+	<object ODF="gshieldi.odf">
+		<requirement>
+			<obj>rompod1.odf</obj>
+		</requirement>
+	</object>
+	<!--romulan spy (shrike class)-->
+	<object ODF="gromspy.odf">
+		<requirement>
+			<obj>rompod2.odf</obj>
+		</requirement>
+	</object>
+	<!--sensor jammer (griffin class)-->
+	<object ODF="gposijam.odf">
+		<requirement>
+			<obj>rompod3.odf</obj>
+		</requirement>
+	</object>
+	<!--myotronic inhibitor (raptor class)-->
+	<object ODF="gmyotron.odf">
+		<requirement>
+			<obj>rompod4.odf</obj>
+		</requirement>
+	</object>
+	<!--detect cloak-->
+	<object ODF="gdetectr.odf">
+		<requirement>
+			<obj>rompod5.odf</obj>
+		</requirement>
+	</object>
+	<!--holo-emitter (shadow class)-->
+	<object ODF="gholoemt.odf">
+		<requirement>
+			<obj>rompod6.odf</obj>
+		</requirement>
+	</object>
+	<!--psychonic blast (shadow class)-->
+	<object ODF="gpsyblst.odf">
+		<requirement>
+			<obj>rompod7.odf</obj>
+		</requirement>
+	</object>
+	<!--shield projector (shadow class)-->
+	<object ODF="gesconv.odf">
+		<requirement>
+			<obj>rompod8.odf</obj>
+		</requirement>
+	</object>
+	<!--phase cloak (shadow class)-->
+	<object ODF="gpcloak.odf">
+		<requirement>
+			<obj>rompod9.odf</obj>
+		</requirement>
+	</object>
+	<!--cloak enhancer (romulan frigate)-->
+	<object ODF="gclkenh.odf">
+		<requirement>
+			<obj>rompod16.odf</obj>
+		</requirement>
+	</object>
+	<!--spatial rift (phoenix class)-->
+	<object ODF="gbholeg.odf"/>
+	<!--***[ CARDASSIAN SHIPS ]************************-->
+	<!--construction ship-->
+	<object ODF="cconst.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+		</requirement>
+	</object>
+	<!--mining freighter-->
+	<object ODF="cfreight.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+			<obj>cmining.odf</obj>
+		</requirement>
+	</object>
+	<!--cargo ship-->
+	<object ODF="ccargo.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+			<obj>ctrading.odf</obj>
+		</requirement>
+	</object>
+	<!--repair ship-->
+	<object ODF="csrepair.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--scout (hideki class)-->
+	<object ODF="cscout.odf">
+		<requirement>
+			<obj>cyard.odf</obj>
+		</requirement>
+	</object>
+	<!--destroyer (rasilak class)-->
+	<object ODF="cdestroy.odf">
+		<requirement>
+			<obj>cyard.odf</obj>
+		</requirement>
+	</object>
+	<!--destroyer (sartan class)-->
+	<object ODF="cdestroy2.odf">
+		<requirement>
+			<obj>cyard.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser1 (brinok class)-->
+	<object ODF="ccruise1.odf">
+		<requirement>
+			<obj>cyard.odf</obj>
+			<obj>cresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser2 (gul vystan class)-->
+	<object ODF="ccruise2.odf">
+		<requirement>
+			<obj>cyard.odf</obj>
+			<obj>cresear.odf</obj>
+		</requirement>
+	</object>
+	<!--cruiser3 (legate class)-->
+	<object ODF="ccruise3.odf">
+		<requirement>
+			<obj>cyard.odf</obj>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--colony ship-->
+	<object ODF="ccolony.odf">
+		<requirement>
+			<obj>cyard.odf</obj>
+			<obj>cresear.odf</obj>
+		</requirement>
+	</object>
+	<!--assault ship (janissary class)-->
+	<object ODF="cassault.odf">
+		<requirement>
+			<obj>cyard.odf</obj>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (galor class)-->
+	<object ODF="cbattle.odf">
+		<requirement>
+			<obj>cyard2.odf</obj>
+		</requirement>
+	</object>
+	<!--battleship (keldon class)-->
+	<object ODF="cbattle2.odf">
+		<requirement>
+			<obj>cyard2.odf</obj>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--frigate (vasad class)-->
+	<object ODF="cfrigate.odf">
+		<requirement>
+			<obj>cyard2.odf</obj>
+		</requirement>
+	</object>
+	<!--special (kulinor class)-->
+	<object ODF="cspecial.odf">
+		<requirement>
+			<obj>cyard2.odf</obj>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--super (dreadnought missile)-->
+	<object ODF="csuper.odf">
+		<requirement>
+			<obj>cardassian_super_station.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ CARDASSIAN STATIONS ]*********************-->
+	<!--starbase-->
+	<object ODF="cbase.odf"/>
+	<!--mining station-->
+	<object ODF="cmining.odf"/>
+	<!--orbital processing facility-->
+	<object ODF="corbital.odf"/>
+	<!--sensor array-->
+	<object ODF="csensor.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+		</requirement>
+	</object>
+	<!--phaser turret-->
+	<object ODF="cturret.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+		</requirement>
+	</object>
+	<!--photon turret-->
+	<object ODF="cturret2.odf">
+		<requirement>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--shipyard-->
+	<object ODF="cyard.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+		</requirement>
+	</object>
+	<!--advanced shipyard-->
+	<object ODF="cyard2.odf">
+		<requirement>
+			<obj>cyard.odf</obj>
+			<obj>cresear.odf</obj>
+		</requirement>
+	</object>
+	<!--trading station-->
+	<object ODF="ctrading.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+		</requirement>
+	</object>
+	<!--research facility-->
+	<object ODF="cresear.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+		</requirement>
+	</object>
+	<!--science station-->
+	<object ODF="cresear2.odf">
+		<requirement>
+			<obj>cyard.odf</obj>
+			<obj>cresear.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade station-->
+	<object ODF="cupgrade.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--advanced robotics institute-->
+	<object ODF="cardassian_super_station.odf">
+		<requirement>
+			<obj>cbase.odf</obj>
+			<obj>cyard2.odf</obj>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (plasma bank overload)-->
+	<object ODF="carpod1.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+			<obj>cyard.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (micro organisms)-->
+	<object ODF="carpod2.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (drones)-->
+	<object ODF="carpod3.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (flux wave)-->
+	<object ODF="carpod4.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (tachyon detection grid)-->
+	<object ODF="carpod5.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (plasma cannon)-->
+	<object ODF="carpod6.odf">
+		<requirement>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (quantum singularity effect)-->
+	<object ODF="carpod7.odf">
+		<requirement>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (warp coil boost)-->
+	<object ODF="carpod8.odf">
+		<requirement>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield harmonics disruptor)-->
+	<object ODF="carpod9.odf">
+		<requirement>
+			<obj>cresear2.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor scrambler)-->
+	<object ODF="carpod16.odf">
+		<requirement>
+			<obj>cresear.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (weapon level 2)-->
+	<object ODF="carpod11.odf">
+		<requirement>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (shield level 2)-->
+	<object ODF="carpod12.odf">
+		<requirement>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (sensor level 2)-->
+	<object ODF="carpod13.odf">
+		<requirement>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (engine level 2)-->
+	<object ODF="carpod14.odf">
+		<requirement>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (life support level 2)-->
+	<object ODF="carpod15.odf">
+		<requirement>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (weapon level 3)-->
+	<object ODF="carpod21.odf">
+		<requirement>
+			<obj>carpod11.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (shield level 3)-->
+	<object ODF="carpod22.odf">
+		<requirement>
+			<obj>carpod12.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (sensor level 3)-->
+	<object ODF="carpod23.odf">
+		<requirement>
+			<obj>carpod13.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (engine level 3)-->
+	<object ODF="carpod24.odf">
+		<requirement>
+			<obj>carpod14.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (life support level 3)-->
+	<object ODF="carpod25.odf">
+		<requirement>
+			<obj>carpod15.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ CARDASSIAN SPECIAL WEAPONS ]**************-->
+	<!--cardassian specific cloak-->
+	<object ODF="gccloak.odf"/>
+	<!--plasma bank overload (keldon class)-->
+	<object ODF="gplasmabank.odf">
+		<requirement>
+			<obj>carpod1.odf</obj>
+		</requirement>
+	</object>
+	<!--micro organisms (rasilak class)-->
+	<object ODF="gmicroorgs.odf">
+		<requirement>
+			<obj>carpod2.odf</obj>
+		</requirement>
+	</object>
+	<!--drones (brinok class)-->
+	<object ODF="gdrones.odf">
+		<requirement>
+			<obj>carpod3.odf</obj>
+		</requirement>
+	</object>
+	<!--flux wave (gul vystan class)-->
+	<object ODF="gfluxwave.odf">
+		<requirement>
+			<obj>carpod4.odf</obj>
+		</requirement>
+	</object>
+	<!--tachyon detection grid (hideki class)-->
+	<object ODF="gdetectc.odf">
+		<requirement>
+			<obj>carpod5.odf</obj>
+		</requirement>
+	</object>
+	<!--plasma cannon (kulinor class)-->
+	<object ODF="gaccelcannon.odf">
+		<requirement>
+			<obj>carpod6.odf</obj>
+		</requirement>
+	</object>
+	<!--quantum singularity effect (kulinor class)-->
+	<object ODF="gquanteffect.odf">
+		<requirement>
+			<obj>carpod7.odf</obj>
+		</requirement>
+	</object>
+	<!--warp coil boost (kulinor class)-->
+	<object ODF="gwarpboost.odf">
+		<requirement>
+			<obj>carpod8.odf</obj>
+		</requirement>
+	</object>
+	<!--shield harmonics disruptor (kulinor class)-->
+	<object ODF="gsdisruptor.odf">
+		<requirement>
+			<obj>carpod9.odf</obj>
+		</requirement>
+	</object>
+	<!--sensor scramber (vasad class)-->
+	<object ODF="gsensorscram.odf">
+		<requirement>
+			<obj>carpod16.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ SPECIES 8472 SHIPS ]**********************-->
+	<!--species 8472 mother-->
+	<object ODF="8472_mothership.odf"/>
+	<!--species 8472 active embryo-->
+	<object ODF="8472_active.odf">
+		<requirement>
+			<obj>8472_mothership.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 passive embryo-->
+	<object ODF="8472_passive.odf">
+		<requirement>
+			<obj>8472_mothership.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 scout-->
+	<object ODF="8472_scout.odf">
+		<requirement>
+			<obj>8472_active.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 destroyer-->
+	<object ODF="8472_destroy.odf">
+		<requirement>
+			<obj>8472_active.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 cruise1-->
+	<object ODF="8472_cruise1.odf">
+		<requirement>
+			<obj>8472_BasicResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 cruise2-->
+	<object ODF="8472_cruise2.odf">
+		<requirement>
+			<obj>8472_active.odf</obj>
+			<obj>8472_AdvancedResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--Battleship-->
+	<object ODF="8472_battle.odf">
+		<requirement>
+			<obj>8472_FluidicGate.odf</obj>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 collector-->
+	<object ODF="8472_collector.odf">
+		<requirement>
+			<obj>8472_active.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 defender-->
+	<object ODF="8472_defender.odf">
+		<requirement>
+			<obj>8472_FluidicGate.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 transmuter-->
+	<object ODF="8472_transmuter.odf">
+		<requirement>
+			<obj>8472_passive.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 frigate-->
+	<object ODF="8472_frigate.odf">
+		<requirement>
+			<obj>8472_FluidicGate.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 behemoth-->
+	<object ODF="8472_behemoth.odf">
+		<requirement>
+			<obj>8472_FluidicGate.odf</obj>
+			<obj>8472_AdvancedResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ SPECIES 8472 STATIONS ]*******************-->
+	<!--species 8472 mine-->
+	<object ODF="8472_mine.odf">
+		<requirement>
+			<obj>8472_defender.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 sentinel-->
+	<object ODF="8472_sentinel">
+		<requirement>
+			<obj>8472_defender.odf</obj>
+			<obj>8472_BasicResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 fluidic gate-->
+	<object ODF="8472_FluidicGate.odf">
+		<requirement>
+			<obj>8472_passive.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 basic research station-->
+	<object ODF="8472_BasicResearch.odf">
+		<requirement>
+			<obj>8472_passive.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 advanced research station-->
+	<object ODF="8472_AdvancedResearch.odf">
+		<requirement>
+			<obj>8472_passive.odf</obj>
+			<obj>8472_BasicResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 ship upgrade research station-->
+	<object ODF="8472_ShipUpgradeResearch.odf">
+		<requirement>
+			<obj>8472_passive.odf</obj>
+			<obj>8472_BasicResearch.odf</obj>
+			<obj>8472_AdvancedResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 clairvoyance pod-->
+	<object ODF="8472_PodBasic0.odf">
+		<requirement>
+			<obj>8472_BasicResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 clairvoyant link pod-->
+	<object ODF="8472_PodBasic1.odf">
+		<requirement>
+			<obj>8472_BasicResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 psionic disruption pod-->
+	<object ODF="8472_PodBasic2.odf">
+		<requirement>
+			<obj>8472_BasicResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 psionic insanity pod-->
+	<object ODF="8472_PodBasic3.odf">
+		<requirement>
+			<obj>8472_BasicResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 tachyon detection grid pod-->
+	<object ODF="8472_PodBasic4.odf">
+		<requirement>
+			<obj>8472_BasicResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 bio-pulse conduit pod-->
+	<object ODF="8472_PodAdvanced0.odf">
+		<requirement>
+			<obj>8472_AdvancedResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 nebula generation pod-->
+	<object ODF="8472_PodAdvanced1.odf">
+		<requirement>
+			<obj>8472_AdvancedResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 nebula flux pod-->
+	<object ODF="8472_PodAdvanced2.odf">
+		<requirement>
+			<obj>8472_AdvancedResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 nebula transient rift pod-->
+	<object ODF="8472_PodAdvanced3.odf">
+		<requirement>
+			<obj>8472_AdvancedResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 torpedo upgrade-->
+	<object ODF="8472_PodShipResearch1.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 regeneration upgrade-->
+	<object ODF="8472_PodShipResearch2.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 sensor upgrade-->
+	<object ODF="8472_PodShipResearch3.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 engine upgrade-->
+	<object ODF="8472_PodShipResearch4.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 torpedo upgrade lvl2-->
+	<object ODF="8472_PodShipResearch21.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+			<obj>8472_PodShipResearch1.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 regeneration upgrade lvl2-->
+	<object ODF="8472_PodShipResearch22.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+			<obj>8472_PodShipResearch2.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 sensor upgrade lvl2-->
+	<object ODF="8472_PodShipResearch23.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+			<obj>8472_PodShipResearch3.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 engine upgrade lvl2-->
+	<object ODF="8472_PodShipResearch24.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+			<obj>8472_PodShipResearch4.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ SPECIES 8472 SPECIAL WEAPONS ]************-->
+	<!--species 8472 clairvoyance-->
+	<object ODF="gclairvoyance.odf">
+		<requirement>
+			<obj>8472_PodBasic0.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 clairvoyant link-->
+	<object ODF="gclairvoyantLink.odf">
+		<requirement>
+			<obj>8472_PodBasic1.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 psionic disruption-->
+	<object ODF="gpsionicDisruption.odf">
+		<requirement>
+			<obj>8472_PodBasic2.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 psionic insanity-->
+	<object ODF="gpsionicInsanity.odf">
+		<requirement>
+			<obj>8472_PodBasic3.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 tachyon detection grid-->
+	<object ODF="gtachdetgrid.odf">
+		<requirement>
+			<obj>8472_PodBasic4.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 bio-pulse conduit-->
+	<object ODF="gbioPulse.odf">
+		<requirement>
+			<obj>8472_PodAdvanced0.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 nebula generation-->
+	<object ODF="gnebulaGeneration.odf">
+		<requirement>
+			<obj>8472_PodAdvanced1.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 nebula flux-->
+	<object ODF="gnebulaFlux.odf">
+		<requirement>
+			<obj>8472_PodAdvanced2.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 transient rift-->
+	<object ODF="gtransientRift.odf">
+		<requirement>
+			<obj>8472_PodAdvanced3.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 resource extraction beam-->
+	<object ODF="gresourceExtractionBeam.odf"/>
+	<!--*************** OTHER SPECIAL WEAPONS***************-->
+	<!--antimatter mines for hero ship (uss avenger)-->
+	<object ODF="hamine.odf"/>
+	<!--corbomite reflector for hero ship (uss enterprise)-->
+	<object ODF="hcorbom.odf"/>
+	<!--gemini effect for hero ship (uss premonition)-->
+	<object ODF="hmanheim.odf"/>
+	<!--ion cannon for hero ship (martok&apos;s negh&apos;var)-->
+	<object ODF="hplasmac.odf"/>
+	<!--shield inversion beam for hero ship (sela&apos;s warbird)-->
+	<object ODF="hshieldi.odf"/>
+	<!--holding beam for hero ship for hero ship (locutus&apos;s cube)-->
+	<object ODF="hholdbm.odf"/>
+	<!--energy dissipator for hero ship (cardassian destroyer)-->
+	<object ODF="hmicro.odf"/>
+	<!--poleron torpedo for hero ship (vor&apos;cha)-->
+	<object ODF="hpoleron.odf"/>
+	<!--shield disruptor for hero ship (nebula class)-->
+	<object ODF="hshieldh.odf"/>
+	<!--plasma ball for hero ship (entity mother)-->
+	<object ODF="hplasma2.odf"/>
+	<!--ultritium burst for hero ship (borg queens diamond)-->
+	<object ODF="hutribm.odf"/>
+	<!--nanites for hero ship (borg queens diamond)-->
+	<object ODF="hnanites.odf"/>
+	<!--computer override for hero ship (borg queens diamond)-->
+	<object ODF="hoverrid.odf"/>
+	<!--shield remodulation for hero ship (borg queens diamond)-->
+	<object ODF="hremod.odf"/>
+	<!--psychonic blast-->
+	<object ODF="gnttblst.odf"/>
+	<!--tractor beam for the omega particle-->
+	<object ODF="gtracbmo.odf"/>
+	<!--self destruct-->
+	<object ODF="gselfdes.odf"/>
+	<!--tractor beam-->
+	<object ODF="gtracbm.odf"/>
+	<!--cloak-->
+	<object ODF="gcloak.odf"/>
+	<!--romulan specific cloak-->
+	<object ODF="grcloak.odf"/>
+	<!--klingon specific cloak-->
+	<object ODF="gkcloak.odf"/>
+	<!--cloak for hero ship-->
+	<object ODF="hcloak.odf"/>
+	<!--planetary shield-->
+	<object ODF="shield.odf"/>
+</techtree>

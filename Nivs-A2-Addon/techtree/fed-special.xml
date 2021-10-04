@@ -1,0 +1,123 @@
+<techtree>
+	<!-- research pod (corbomite reflector)-->
+	<object ODF="fedpod1">
+		<!-- Default requirements (to research normally) -->
+		<requirement>
+			<obj>fresear.odf</obj>
+			<obj>fyard2.odf</obj>
+		</requirement>
+		<requirement>
+			<obj>fresear.odf</obj>
+			<ally race="federation">
+				<obj>fyard2.odf</obj>
+			</ally>
+		</requirement>
+		<requirement race="borg">
+			<ally race="federation">
+				<obj>fresear.odf</obj>
+				<obj>fyard2.odf</obj>
+			</ally>
+			<obj>btechass.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<ally race="federation">
+				<obj>fedpod1.odf</obj>
+			</ally>
+			<obj>btechass.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<enemy>
+				<obj>fedpod1.odf</obj>
+			</enemy>
+			<obj>btechass.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>fedpod1.odf</obj>
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (chain reaction pulsar)-->
+	<object ODF="fedpod2.odf">
+		<requirement>
+			<obj>fresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine overload)-->
+	<object ODF="fedpod3.odf">
+		<requirement>
+			<obj>fresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (anti-matter mines)-->
+	<object ODF="fedpod4.odf">
+		<requirement>
+			<obj>fresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (tachyon detection grid)-->
+	<object ODF="fedpod5.odf">
+		<requirement>
+			<obj>fresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (gemini effect)-->
+	<object ODF="fedpod6.odf">
+		<requirement>
+			<obj>fresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield disruptor)-->
+	<object ODF="fedpod7.odf">
+		<requirement>
+			<obj>fresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engineering team)-->
+	<object ODF="fedpod8.odf">
+		<requirement>
+			<obj>fresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (point defense phaser)-->
+	<object ODF="fedpod9.odf">
+		<requirement>
+			<obj>fresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield enhancer)-->
+	<object ODF="fedpod16.odf">
+		<requirement>
+			<obj>fresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+</techtree>

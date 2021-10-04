@@ -1,0 +1,109 @@
+<techtree>
+	<include File="fulltech-orig.tt"/>
+	<include File="faster-trading.tt"/>
+	<!--***[ UNIVERSAL ]**************-->
+	<object ODF="all_halt.odf"/>
+	<!--Allied Repair Upgrade-->
+	<object ODF="all_alliedrepair.odf"/>
+	<!--***[ CARDASSIAN STATIONS ]**************-->
+	<!--Orbital Starbase-->
+	<object ODF="cbase-orbital.odf"/>
+	<!--Most definitely not Starbase Deep Space Nine-->
+	<object ODF="terok-nor.odf"/>
+	<!--***[ CARDASSIAN SPECIAL WEAPONS ]**************-->
+	<!--cardassian freighter specific cloak-->
+	<object ODF="gccloak-freight.odf"/>
+	<!--cardassian scout specific cloak-->
+	<object ODF="gccloak-scout.odf"/>
+	<!--Cardassian Sensor Tap-->
+	<object ODF="Wcardspy.odf"/>
+	<!--***[ KLINGON STATIONS ]**************-->
+	<!--Klingon Field Yard-->
+	<object ODF="kli_field_yardZ.odf"/>
+	<!--Field Yard Central Facility-->
+	<object ODF="kli_field_yardP1Z.odf"/>
+	<!--Field Yard Bird of Prey Extension-->
+	<object ODF="kli_field_yardP2Z.odf"/>
+	<!--Field Yard Special Forces Extension-->
+	<object ODF="kli_field_yardP3Z.odf"/>
+	<!--Repair section of Field Yard-->
+	<object ODF="kli_field_yardP4.odf"/>
+	<!--Klingon Commando Station-->
+	<object ODF="kbase-commando.odf"/>
+	<!--Klingon Commando Station Refit-->
+	<object ODF="kbase-cmdo-upgrade.odf"/>
+	<!--Orbital Starbase-->
+	<object ODF="kbase-orbital.odf"/>
+	<!--***[ KLINGON SPECIAL WEAPONS ]**************-->
+	<!--Klingon cargo ship cloak-->
+	<object ODF="gkcloak-cargo.odf"/>
+	<!--***[ BORG STATIONS ]**************-->
+	<!--Borg Assimilation Nexus-->
+	<object ODF="bbase-assim.odf"/>
+	<!--Borg Assimilation Turret-->
+	<object ODF="bturret-assim.odf"/>
+	<!--***[ BORG SPECIAL WEAPONS ]**************-->
+	<!--Borg Auto-Assimilator - Station variant-->
+	<object ODF="borg-bluebeam-station.odf"/>
+	<!--Borg Auto-Assimilator - Nexus variant-->
+	<object ODF="borW_bluebeam-nexus.odf"/>
+	<!--Borg Area Boarding-->
+	<object ODF="borRW_areaboard.odf"/>
+	<!--Borg Area Boarding-->
+	<object ODF="uball_effect_areaboard.odf"/>
+	<!--Borg Area Boarding-->
+	<object ODF="borW_areaboardA.odf"/>
+	<!--Borg Area Recrewing-->
+	<object ODF="borRW_arearecrew.odf"/>
+	<object ODF="borW_arearecrewA.odf"/>
+	<object ODF="borW_generate_crew.odf"/>
+	<object ODF="uball_effect_arearecrew.odf"/>
+	<!--***[ FEDERATION SHIPS ]**************-->
+	<!--Galaxy-class: Cargo ship-->
+	<object ODF="ftgalaxy.odf"/>
+	<!--***[ FEDERATION STATIONS ]**************-->
+	<!--Federation Advanceable Shipyard-->
+	<object ODF="fwfwerft.odf"/>
+	<object ODF="fwfwerfte1.odf"/>
+	<object ODF="fwfwerfte2.odf"/>
+	<object ODF="fwfwerfte3.odf"/>
+	<!--Federation Turnstile 911-->
+	<object ODF="fwcntstati.odf"/>
+	<!--force the AI to make colony ships-->
+	<object ODF="colonize-dammit.odf"/>
+	<!--Orbital Starbase-->
+	<object ODF="fbase-orbital.odf"/>
+	<!--***[ FEDERATION SPECIAL WEAPONS ]**************-->
+	<!--Federation Advanceable Shipyard - Upgrade-->
+	<object ODF="fwwerftevo1.odf"/>
+	<!--Ditto-->
+	<object ODF="fwwerftevo2.odf"/>
+	<!--What ^ said-->
+	<object ODF="fwwerftevo3.odf"/>
+	<!--spawn uball with shield emitter-->
+	<object ODF="fedRW-fstation-shldemt.odf"/>
+	<!--uball with shield emitter-->
+	<object ODF="uball-fstation-shldemt.odf"/>
+	<!--swap galaxy to cargo galaxy-->
+	<object ODF="Wrefit-fgalaxy-trade.odf"/>
+	<!--swap cargo galaxy back to regular galaxy-->
+	<object ODF="Wrefit-ftgalaxy-normal.odf"/>
+	<!--***[ ROMULAN STATIONS ]**************-->
+	<!--Orbital Starbase-->
+	<object ODF="rbase-orbital.odf"/>
+	<!--***[ ROMULAN SPECIAL WEAPONS ]**************-->
+	<!--Romulan scout specific cloak-->
+	<object ODF="grcloak-scout.odf"/>
+	<!--Romulan cargo ship phase cloak-->
+	<object ODF="grcloak-cargo.odf"/>
+	<!--Romulan turret cloak-->
+	<object ODF="grcloak-turret.odf"/>
+	<!--***[ ALL PAINLESS MINING ]**************-->
+	<object ODF="fmining1.odf"/>
+	<object ODF="cmining1.odf"/>
+	<object ODF="bmining1.odf"/>
+	<object ODF="kmining1.odf"/>
+	<object ODF="rmining1.odf"/>
+	<object ODF="uniRW-gen-freighter.odf"/>
+	<object ODF="uniRW-gen-freighter-reset.odf"/>
+</techtree>

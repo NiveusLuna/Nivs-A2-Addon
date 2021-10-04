@@ -1,0 +1,362 @@
+<techtree><!--TECHTREE-->
+	<!--MULTIPLAYER GAME TYPE - START WITH ACCESS TO EVERYTHING-->
+	<include File="fulltech.xml"/>
+	<!--***[ FEDERATION STATIONS ]*********************-->
+	<!--research pod (weapon upgrade level 2)-->
+	<object ODF="fedpod11.odf">
+		<requirement>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 2)-->
+	<object ODF="fedpod12.odf">
+		<requirement>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 2)-->
+	<object ODF="fedpod13.odf">
+		<requirement>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 2)-->
+	<object ODF="fedpod14.odf">
+		<requirement>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 2)-->
+	<object ODF="fedpod15.odf">
+		<requirement>
+			<obj>fupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 3)-->
+	<object ODF="fedpod21.odf">
+		<requirement>
+			<obj>fedpod11.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 3)-->
+	<object ODF="fedpod22.odf">
+		<requirement>
+			<obj>fedpod12.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 3)-->
+	<object ODF="fedpod23.odf">
+		<requirement>
+			<obj>fedpod13.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 3)-->
+	<object ODF="fedpod24.odf">
+		<requirement>
+			<obj>fedpod14.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 3)-->
+	<object ODF="fedpod25.odf">
+		<requirement>
+			<obj>fedpod15.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ KLINGON STATIONS ]************************-->
+	<!--research pod (weapon upgrade level 2)-->
+	<object ODF="klipod11.odf">
+		<requirement>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 2)-->
+	<object ODF="klipod12.odf">
+		<requirement>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 2)-->
+	<object ODF="klipod13.odf">
+		<requirement>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 2)-->
+	<object ODF="klipod14.odf">
+		<requirement>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 2)-->
+	<object ODF="klipod15.odf">
+		<requirement>
+			<obj>kupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 3)-->
+	<object ODF="klipod21.odf">
+		<requirement>
+			<obj>klipod11.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 3)-->
+	<object ODF="klipod22.odf">
+		<requirement>
+			<obj>klipod12.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 3)-->
+	<object ODF="klipod23.odf">
+		<requirement>
+			<obj>klipod13.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 3)-->
+	<object ODF="klipod24.odf">
+		<requirement>
+			<obj>klipod14.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 3)-->
+	<object ODF="klipod25.odf">
+		<requirement>
+			<obj>klipod15.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ BORG STATIONS ]***************************-->
+	<!--research pod (weapon upgrade level 2)-->
+	<object ODF="borpod11.odf">
+		<requirement>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 2)-->
+	<object ODF="borpod12.odf">
+		<requirement>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 2)-->
+	<object ODF="borpod13.odf">
+		<requirement>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 2)-->
+	<object ODF="borpod14.odf">
+		<requirement>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 2)-->
+	<object ODF="borpod15.odf">
+		<requirement>
+			<obj>bupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 3)-->
+	<object ODF="borpod21.odf">
+		<requirement>
+			<obj>borpod11.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 3)-->
+	<object ODF="borpod22.odf">
+		<requirement>
+			<obj>borpod12.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 3)-->
+	<object ODF="borpod23.odf">
+		<requirement>
+			<obj>borpod13.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 3)-->
+	<object ODF="borpod24.odf">
+		<requirement>
+			<obj>borpod14.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 3)-->
+	<object ODF="borpod25.odf">
+		<requirement>
+			<obj>borpod15.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ ROMULAN STATIONS ]************************-->
+	<!--research pod (weapon upgrade level 2)-->
+	<object ODF="rompod11.odf">
+		<requirement>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 2)-->
+	<object ODF="rompod12.odf">
+		<requirement>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 2)-->
+	<object ODF="rompod13.odf">
+		<requirement>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 2)-->
+	<object ODF="rompod14.odf">
+		<requirement>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 2)-->
+	<object ODF="rompod15.odf">
+		<requirement>
+			<obj>rupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon upgrade level 3)-->
+	<object ODF="rompod21.odf">
+		<requirement>
+			<obj>rompod11.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (shield upgrade level 3)-->
+	<object ODF="rompod22.odf">
+		<requirement>
+			<obj>rompod12.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (sensor upgrade level 3)-->
+	<object ODF="rompod23.odf">
+		<requirement>
+			<obj>rompod13.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (engine upgrade level 3)-->
+	<object ODF="rompod24.odf">
+		<requirement>
+			<obj>rompod14.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (life support upgrade level 3)-->
+	<object ODF="rompod25.odf">
+		<requirement>
+			<obj>rompod15.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ CARDASSIAN STATIONS ]*********************-->
+	<!--ship upgrade pod (weapon level 2)-->
+	<object ODF="carpod11.odf">
+		<requirement>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (shield level 2)-->
+	<object ODF="carpod12.odf">
+		<requirement>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (sensor level 2)-->
+	<object ODF="carpod13.odf">
+		<requirement>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (engine level 2)-->
+	<object ODF="carpod14.odf">
+		<requirement>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (life support level 2)-->
+	<object ODF="carpod15.odf">
+		<requirement>
+			<obj>cupgrade.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (weapon level 3)-->
+	<object ODF="carpod21.odf">
+		<requirement>
+			<obj>carpod11.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (shield level 3)-->
+	<object ODF="carpod22.odf">
+		<requirement>
+			<obj>carpod12.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (sensor level 3)-->
+	<object ODF="carpod23.odf">
+		<requirement>
+			<obj>carpod13.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (engine level 3)-->
+	<object ODF="carpod24.odf">
+		<requirement>
+			<obj>carpod14.odf</obj>
+		</requirement>
+	</object>
+	<!--ship upgrade pod (life support level 3)-->
+	<object ODF="carpod25.odf">
+		<requirement>
+			<obj>carpod15.odf</obj>
+		</requirement>
+	</object>
+	<!--***[ SPECIES 8472 STATIONS ]*******************-->
+	<!--species 8472 torpedo upgrade-->
+	<object ODF="8472_PodShipResearch1.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 regeneration upgrade-->
+	<object ODF="8472_PodShipResearch2.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 sensor upgrade-->
+	<object ODF="8472_PodShipResearch3.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 engine upgrade-->
+	<object ODF="8472_PodShipResearch4.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 torpedo upgrade lvl2-->
+	<object ODF="8472_PodShipResearch21.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+			<obj>8472_PodShipResearch1.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 regeneration upgrade lvl2-->
+	<object ODF="8472_PodShipResearch22.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+			<obj>8472_PodShipResearch2.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 sensor upgrade lvl2-->
+	<object ODF="8472_PodShipResearch23.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+			<obj>8472_PodShipResearch3.odf</obj>
+		</requirement>
+	</object>
+	<!--species 8472 engine upgrade lvl2-->
+	<object ODF="8472_PodShipResearch24.odf">
+		<requirement>
+			<obj>8472_ShipUpgradeResearch.odf</obj>
+			<obj>8472_PodShipResearch4.odf</obj>
+		</requirement>
+	</object>
+</techtree>

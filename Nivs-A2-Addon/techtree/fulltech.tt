@@ -1,0 +1,94 @@
+#include "fulltech-orig.tt"
+#include "faster-trading.tt"
+
+// ***[ UNIVERSAL ]**************
+all_halt.odf			0
+all_alliedrepair.odf	0					// Allied Repair Upgrade
+
+
+
+// ***[ CARDASSIAN STATIONS ]**************
+cbase-orbital.odf	0	// Orbital Starbase
+terok-nor.odf		0	// Most definitely not Starbase Deep Space Nine
+
+// ***[ CARDASSIAN SPECIAL WEAPONS ]**************
+gccloak-freight.odf		0							// cardassian freighter specific cloak
+gccloak-scout.odf		0							// cardassian scout specific cloak
+Wcardspy.odf			0							// Cardassian Sensor Tap
+
+
+
+// ***[ KLINGON STATIONS ]**************
+kli_field_yardZ.odf		0	// Klingon Field Yard
+kli_field_yardP1Z.odf	0	// Field Yard Central Facility
+kli_field_yardP2Z.odf	0	// Field Yard Bird of Prey Extension
+kli_field_yardP3Z.odf	0	// Field Yard Special Forces Extension
+kli_field_yardP4.odf	0	// Repair section of Field Yard
+kbase-commando.odf		0	// Klingon Commando Station
+kbase-cmdo-upgrade.odf	0	// Klingon Commando Station Refit
+kbase-orbital.odf		0	// Orbital Starbase
+
+// ***[ KLINGON SPECIAL WEAPONS ]**************
+gkcloak-cargo.odf		0		// Klingon cargo ship cloak
+
+
+
+// ***[ BORG STATIONS ]**************
+bbase-assim.odf				0	// Borg Assimilation Nexus
+bturret-assim.odf			0	// Borg Assimilation Turret
+
+// ***[ BORG SPECIAL WEAPONS ]**************
+borg-bluebeam-station.odf	0	// Borg Auto-Assimilator - Station variant
+borW_bluebeam-nexus.odf		0	// Borg Auto-Assimilator - Nexus variant
+borRW_areaboard.odf			0	// Borg Area Boarding
+uball_effect_areaboard.odf	0	// Borg Area Boarding
+borW_areaboardA.odf			0	// Borg Area Boarding
+borRW_arearecrew.odf		0				// Borg Area Recrewing
+borW_arearecrewA.odf		0
+borW_generate_crew.odf		0
+uball_effect_arearecrew.odf	0
+
+
+
+
+// ***[ FEDERATION SHIPS ]**************
+ftgalaxy.odf		0					// Galaxy-class: Cargo ship
+
+// ***[ FEDERATION STATIONS ]**************
+fwfwerft.odf		0	// Federation Advanceable Shipyard
+fwfwerfte1.odf		0
+fwfwerfte2.odf		0
+fwfwerfte3.odf		0
+fwcntstati.odf		0	// Federation Turnstile 911
+colonize-dammit.odf	0	// force the AI to make colony ships
+fbase-orbital.odf	0	// Orbital Starbase
+
+// ***[ FEDERATION SPECIAL WEAPONS ]**************
+fwwerftevo1.odf		0	// Federation Advanceable Shipyard - Upgrade
+fwwerftevo2.odf		0	// Ditto
+fwwerftevo3.odf		0	// What ^ said
+fedRW-fstation-shldemt.odf		0					// spawn uball with shield emitter
+uball-fstation-shldemt.odf		0					// uball with shield emitter
+Wrefit-fgalaxy-trade.odf		0					// swap galaxy to cargo galaxy
+Wrefit-ftgalaxy-normal.odf		0					// swap cargo galaxy back to regular galaxy
+
+
+
+// ***[ ROMULAN STATIONS ]**************
+rbase-orbital.odf	0	// Orbital Starbase
+
+// ***[ ROMULAN SPECIAL WEAPONS ]**************
+grcloak-scout.odf		0							// Romulan scout specific cloak
+grcloak-cargo.odf		0							// Romulan cargo ship phase cloak
+grcloak-turret.odf		0							// Romulan turret cloak
+
+
+
+// ***[ ALL PAINLESS MINING ]**************
+fmining1.odf					0
+cmining1.odf					0
+bmining1.odf					0
+kmining1.odf					0
+rmining1.odf					0
+uniRW-gen-freighter.odf			0
+uniRW-gen-freighter-reset.odf	0

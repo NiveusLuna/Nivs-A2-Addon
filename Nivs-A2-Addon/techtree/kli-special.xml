@@ -1,0 +1,93 @@
+<techtree>
+	<!--research pod (ion cannon)-->
+	<object ODF="klipod1.odf">
+		<requirement>
+			<obj>kresear.odf</obj>
+			<obj>kyard2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (polaron torpedo)-->
+	<object ODF="klipod2.odf">
+		<requirement>
+			<obj>kresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (commando team)-->
+	<object ODF="klipod3.odf">
+		<requirement>
+			<obj>kresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (gravity mines)-->
+	<object ODF="klipod4.odf">
+		<requirement>
+			<obj>kresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (tachyon detection grid)-->
+	<object ODF="klipod5.odf">
+		<requirement>
+			<obj>kresear.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (death chant)-->
+	<object ODF="klipod6.odf">
+		<requirement>
+			<obj>kresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (repulsion wave)-->
+	<object ODF="klipod7.odf">
+		<requirement>
+			<obj>kresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (ion storm)-->
+	<object ODF="klipod8.odf">
+		<requirement>
+			<obj>kresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (energy dissipator)-->
+	<object ODF="klipod9.odf">
+		<requirement>
+			<obj>kresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+	<!--research pod (weapon enhancer)-->
+	<object ODF="klipod16.odf">
+		<requirement>
+			<obj>kresear2.odf</obj>
+		</requirement>
+		<requirement race="borg">
+			<obj>btechass.odf</obj>
+		</requirement>
+	</object>
+</techtree>
