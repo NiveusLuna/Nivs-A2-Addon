@@ -1,0 +1,99 @@
+//
+// Borg_Build_List.aip
+//
+// Contains a default build list for the klingon AI
+//
+// edited by the Nord
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+int checkTechnologyAvailable = 1;
+
+Way_Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//--------------------------------------------------------------------  
+
+//
+// Syntax: "ODF name", number to build, base to build at, max number from this line, min tech level
+//
+
+	//
+	// Phase I. Base & Yard
+	//
+
+	"bbase",	1,0, -1,  1,	// starbase
+	"bconst",	1,0, -1,  0,	// construction ship 
+	"bmining",	1,1, -1,  0,	// mining stations
+	"bmining",	1,2, -1,  0,	// for mining metal
+	"bfreight",	4,0, -1,  0,	// mining freighter - two freighters for each station
+	"byard",	1,0, -1,  0,	// basic shipyard
+
+	//
+	// Phase II. Research
+	//
+	"bresear",	1,0, -1,  2,	// basic research
+	"bmining",	1,3, -1,  0,	// more dilithium
+	"bfreight", 2,0, -1,  0,	// more freighters
+	"borpod1",	1,0, -1,  0,	// Auto-Assimilator
+	"borpod3",	1,0, -1,  0,	// Regeneration
+
+	//
+	// Phase III. Advanced Shipyard
+	//
+
+	"byard2",	1,0, -1,  3,	// advanced shipyard
+	"bcruise1",	3,0, -1, -3,	// Sphere
+	"bcruise2",	3,0, -1, -3,	// Assimilator
+
+	//
+	// Phase IV. Advanced Research
+	//
+	
+	"bresear2",	1,0, -1,  4,	// advanced research station
+	"borpod2",  1,0, -1,  0,    // Holding Beam
+	"bspecial",	1,0, -1, -4,	// Diamond
+	"borpod16", 1,0, -1,  0,	// Special Energy Recharger
+	"borpod8",	1,0, -1,  0,	// Nanites
+	"borpod9",  1,0, -1,  0,    // Ultritium Burst
+
+	//
+	// Phase V. Ship Upgrade and Endgame
+	//
+
+	"bupgrade", 1,0, -1,  5,	// ship upgrade station
+	"borpod6", 	1,0, -1,  0,	// Shield Remodulation
+	"bbattle2",	4,0, -1,  0,	// Tactical Cube
+
+	"bbattle2",	4,0, -1,  0,	// Tactical Cube
+
+	"bspecial",	1,0, -1,  0,	// Diamond
+	"bbattle2",	4,0, -1,  0,	// Tactical Cube
+	"btechass", 1,0, -1,  0,	// Technology Assimilator
+	"bcruise3",	2,0, -1,  0,	// Harbringer (Artillery)
+
+	"bspecial",	1,0, -1,  0,	// Diamond
+	"bbattle2",	4,0, -1,  0,	// Tactical Cube
+
+	"bsuperbl", 1,0, -1,  0,	// Transwarp Gate
+
+	"borpod11", 1,0, -1,  0,	// weapon upgrade level 2
+	"borpod12", 1,0, -1,  0,	// shield upgrade level 2
+	"borpod14", 1,0, -1,  0,	// engine upgrade level 2
+	"borpod7",	1,0, -1,  0,	// Computer Override
+
+	"bbattle2",	4,0, -1,  0,	// Tactical Cube
+	"borpod21", 1,0, -1,  0,	// weapon upgrade level 3
+	"borpod22", 1,0, -1,  0,	// shield upgrade level 3	
+
+	"bbattle2",	4,0, -1,  0,	// Tactical Cube
+	"borpod24", 1,0, -1,  0,	// engine upgrade level 3
+	"borpod13", 1,0, -1,  0,	// sensor upgrade level 2
+	"borpod23", 1,0, -1,  0,	// sensor upgrade level 3
+	"borpod15", 1,0, -1,  0,	// life support upgrade level 2
+	"borpod25", 1,0, -1,  0,	// life support upgrade level 3
+
+	"bbattle2",	100,0, -1, 0,	// Tactical Cube
+
+}; 
+

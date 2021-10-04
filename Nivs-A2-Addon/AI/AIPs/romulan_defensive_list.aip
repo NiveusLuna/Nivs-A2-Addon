@@ -1,0 +1,141 @@
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+// This aip needs to play by the rules
+int checkTechnologyAvailable = 1;
+
+Way_Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//--------------------------------------------------------------------  
+
+//
+// Syntax: "ODF name", number to build, base to build at, max number from this line, min tech level
+//
+
+	//
+	// Phase I. Base & Yard
+	//
+
+	"rbase",	1,0, -1,  1,	// starbase
+	"rconst",	1,0, -1,  0,	// construction ship 
+	"rconst",	1,0, -1,  0,	// second construction ship
+	"rmining",	1,1, -1,  0,	// mining stations
+	"rturret",  2,1,  4, -3,    // basic mining defense
+	"rorbital",	1,1, -1,  0,	// build an orbital station
+	"rfreight",	3,0, -1,  0,	// mining freighter - two freighters for each station
+	"ryard",	1,0, -1,  0,	// basic shipyard
+	"rscout",	1,0, -1,  0,	// scout
+	"rdestroy",	2,0,  4, -2,	// Shrike
+
+	//
+	// Phase II. Research
+	//
+	"rresear",	1,0, -1,  2,	// basic research
+	"rcolony",  1,0,  4,  0,	// colony ship
+	"rorbital",	1,1, -1,  0,	// second orbital station
+	"rcruise1", 2,0,  4, -2,	// Griffin
+	"rmining",	1,2, -1,  0,	// second mining station
+	"rfreight",	3,0, -1,  0,	// mining freighters
+	"rturret",	2,2,  4, -3,	// mining defense
+
+	"rcruise1",	2,0,  2, -2,	// Griffin
+	"rompod3",  1,0, -1,  0,	// Sensor Jammer (Griffin)
+	"rcruise3", 2,0,  2, -2,	// Osprey
+	"rompod5",  1,0, -1,  0,	// Tachyon Detection Grid ( Scout )
+
+	"rcruise1",	2,0, -1, -3,	// Griffin
+	"rcruise3", 2,0, -1, -3,	// Osprey
+
+	"rtrading", 1,0, -1,  0,	// first trading station
+
+	//
+	// Phase III. Advanced Shipyard
+	//
+
+	"ryard2",	1,0, -1,  3,	// advanced shipyard
+	"rcruise1",	2,0, -1, -3,	// Griffin
+	"rcruise3", 2,0, -1, -3,	// Osprey
+	"rbattle2",	3,0, -1, -3,	// Venator
+	"rbattle2",	3,0, -1, -4,	// Venator 
+	"rorbital",	1,0,  2,  0,	// third orbital processing facility
+	"rmining",	1,3,  2,  0,	// third mining station
+	"rompod2",  1,0, -1,  0,    // Romulan Spy ( Shrike )
+	"rbattle2",	3,0, -1, -4,	// Venator
+
+	//
+	// Phase IV. Advanced Research
+	//
+	
+	"rconst",	1,0, -1,  0,	// construction ship 
+	"rresear2",	1,0, -1,  4,	// advanced research station
+	"rfrigate", 1,0, -1, -4,	// Veles
+	"rcruise2",	2,0, -1, -4,	// Raptor (Artillery)
+	"rspecial",	1,0, -1,  0,	// Shadow
+	"rturret2", 3,1, -1,  0,	// torpedo turret
+	"rompod16", 1,0, -1,  0,	// Weapon Enhancer
+	"rbattle2",	3,0, -1,  0,	// Venator 
+	"rturret2", 3,2, -1,  0,	// torpedo turret
+	"rompod6",  1,0, -1,  0,	// Holo Emitter
+	"rbattle2",	3,0, -1,  0,	// Venator 
+	"rturret2", 3,0, -1,  0,	// torpedo turret
+	"rfrigate", 1,0, -1, -4,	// Veles
+	"rtrading", 1,3,  3,  0,    // another trading station
+	"rcargo",   3,0,  6,  0,	// and some cargo ships
+	"rompod4",  1,0, -1,  0,	// Myotronic Inhibitor
+	"rompod7",  1,0, -1,  0,	// Psychonic Blast
+
+	//
+	// Phase V. Ship Upgrade and Endgame
+	//
+
+	"rupgrade", 1,0, -1,  5,	// ship upgrade station
+	"rcolony",  1,0,  2,  0,	// colony ship
+	"rbattle2",	4,0, -1,  0,	// Venator
+	"rsrepair", 2,0, -1,  0,	// repair ship
+	"rbase",	1,0, -1,  0,	// extra starbase
+	"rassault", 2,0, -1,  0,	// Kestrel
+
+	"rompod11", 1,0, -1,  0,	// weapon upgrade level 2
+	"rompod1",  1,0, -1,  0,	// Shield Inversion Beam
+	"rbattle",	4,0, -1,  0,	// Warbird
+	"rfrigate", 1,0, -1,  0,	// Veles
+
+	"rspecial",	1,0, -1,  0,	// Shadow 
+	"rbattle",	4,0, -1,  0,	// Warbird
+	"rompod8",	1,0, -1,  0,	// Shield Projector
+	"rcruise2",	2,0, -1,  0,	// Raptor (Artillery)
+	"rfrigate", 1,0, -1,  0,	// Veles
+
+	"rsuperbl", 1,0, -1,  0,
+
+	"rompod12", 1,0, -1,  0,	// shield upgrade level 2
+	"rspecial",	1,0, -1,  0,	// Shadow
+	"rbattle",	4,0, -1,  0,	// Warbird
+	"rcruise2",	2,0, -1,  0,	// Raptor (Artillery)
+	"rsrepair", 1,0, -1,  0,	// repair ship
+
+	"rsuper",   1,0, -1,  0,    // Phoenix Ship
+
+	"rompod14", 1,0, -1,  0,	// engine upgrade level 2
+	"rompod9",	1,0, -1,  0,	// Phase Cloak
+
+	"rbattle",	4,0, -1,  0,	// Warbird
+	"rompod21", 1,0, -1,  0,	// weapon upgrade level 3
+	"rbattle",	4,0, -1,  0,	// Warbird
+	"rompod22", 1,0, -1,  0,	// shield upgrade level 3	
+
+	"rompod24", 1,0, -1,  0,	// engine upgrade level 3
+	"rbattle",	4,0, -1,  0,	// Warbird
+	"rompod13", 1,0, -1,  0,	// sensor upgrade level 2
+	"rbattle",	4,0, -1,  0,	// Warbird
+	"rompod23", 1,0, -1,  0,	// sensor upgrade level 3
+	"rompod15", 1,0, -1,  0,	// life support upgrade level 2
+	"rbattle",	4,0, -1,  0,	// Warbird
+	"rompod25", 1,0, -1,  0,	// life support upgrade level 3
+
+	"rbattle",	100,0, -1, 0,	// Warbird
+
+}; 
+
+

@@ -1,0 +1,141 @@
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+// This aip needs to play by the rules
+int checkTechnologyAvailable = 1;
+
+Way_Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//--------------------------------------------------------------------  
+
+//
+// Syntax: "ODF name", number to build, base to build at, max number from this line, min tech level
+//
+
+	//
+	// Phase I. Base & Yard
+	//
+
+	"kbase",	1,0, -1,  1,	// starbase
+	"kconst",	1,0, -1,  0,	// construction ship 
+	"kconst",	1,0, -1,  0,	// second construction ship
+	"kmining",	1,1, -1,  0,	// mining stations
+	"kturret",  2,1,  4, -3,    // basic mining defense
+	"korbital",	1,1, -1,  0,	// build an orbital station
+	"kfreight",	3,0, -1,  0,	// mining freighter - two freighters for each station
+	"kyard",	1,0, -1,  0,	// basic shipyard
+	"kscout",	1,0, -1,  0,	// scout
+	"kdestroy",	2,0,  4, -2,	// Bird of Prey
+
+	//
+	// Phase II. Research
+	//
+	"kresear",	1,0, -1,  2,	// basic research
+	"kcolony",  1,0,  4,  0,	// colony ship
+	"korbital",	1,1, -1,  0,	// second orbital station
+	"kcruise1", 2,0,  4, -2,	// Vorcha
+	"kmining",	1,2, -1,  0,	// second mining station
+	"kfreight",	3,0, -1,  0,	// mining freighters
+	"kturret",	2,2,  4, -3,	// mining defense
+
+	"kcruise1",	2,0,  2, -2,	// Vorcha
+	"klipod2",  1,0, -1,  0,	// Polaron Torpedo (Vorcha)
+	"kcruise2", 2,0,  2, -2,	// Suqjagh
+	"klipod4",  1,0, -1,  0,	// Gravity Mines ( Bird Of Prey)
+
+	"kcruise1",	2,0, -1, -3,	// Vorcha
+	"kli_field_yardZ",	1,2, -1,  0,	// Field Yard
+	"kcruise2", 2,0, -1, -3,	// Suqjagh
+	"klipod5",  1,0, -1,  0,	// Tachyon Detection Grid (Scout)
+
+	"ktrading", 1,0, -1,  0,	// first trading station
+
+	//
+	// Phase III. Advanced Shipyard
+	//
+
+	"kyard2",	1,0, -1,  3,	// advanced shipyard
+	"kcruise1",	2,0, -1, -3,	// Vorcha
+	"kcruise2", 2,0, -1, -3,	// Suqjagh
+	"kbattle2",	3,0, -1, -3,	// Qehral
+	"kbattle2",	3,0, -1, -4,	// Qehral 
+	"korbital",	1,0,  2,  0,	// third orbital processing facility
+	"kmining",	1,3,  2,  0,	// third mining station
+	"klipod3",  1,0, -1,  0,    // Commando Teams (Suqjagh)
+	"kyard2",	1,2, -1,  0,	// advanced shipyard
+	"kbattle2",	3,0, -1, -4,	// Qehral
+
+	//
+	// Phase IV. Advanced Research
+	//
+	
+	"kconst",	1,0, -1,  0,	// construction ship 
+	"kresear2",	1,0, -1,  4,	// advanced research station
+	"kfrigate", 1,0, -1, -4,	// Koloth
+	"kcruise3",	2,0, -1, -4,	// Chuqbeh (Artillery)
+	"kspecial",	1,0, -1,  0,	// Feklhr
+	"kturret2", 3,1, -1,  0,	// torpedo turret
+	"klipod16", 1,0, -1,  0,	// Weapon Enhancer
+	"kbattle2",	3,0, -1,  0,	// Qehral 
+	"kturret2", 3,2, -1,  0,	// torpedo turret
+	"klipod6",  1,0, -1,  0,	// Death Chant
+	"kbattle2",	3,0, -1,  0,	// Qehral 
+	"kturret2", 3,0, -1,  0,	// torpedo turret
+	"kfrigate", 1,0, -1, -4,	// Koloth
+	"ktrading", 1,3,  3,  0,    // another trading station
+	"kcargo",   3,0,  6,  0,	// and some cargo ships
+
+	//
+	// Phase V. Ship Upgrade and Endgame
+	//
+
+	"kupgrade", 1,0, -1,  5,	// ship upgrade station
+	"kcolony",  1,0,  4,  0,	// colony ship
+	"kbattle2",	4,0, -1,  0,	// Qehral
+	"ksrepair", 2,0, -1,  0,	// repair ship
+	"kassault", 2,0, -1,  0,	// Chava'kal
+
+	"klipod11", 1,0, -1,  0,	// weapon upgrade level 2
+	"klipod1",  1,0, -1,  0,	// Ion Cannon
+	"kbase",	1,2, -1,  0,	// extra starbase
+	"kbattle",	4,0, -1,  0,	// Neghvar
+	"kfrigate", 1,0, -1,  0,	// Koloth
+
+	"kspecial",	1,0, -1,  0,	// Feklhr 
+	"kbattle",	4,0, -1,  0,	// Neghvar
+	"kcruise3",	2,0, -1,  0,	// Chuqbeh (Artillery)
+	"kfrigate", 1,0, -1,  0,	// Koloth
+
+	"ksuperbl", 1,0, -1,  0,
+
+	"klipod12", 1,0, -1,  0,	// shield upgrade level 2
+	"klipod8",	1,0, -1,  0,	// Ion Storm
+	"kspecial",	1,0, -1,  0,	// Feklhr
+	"kbattle",	4,0, -1,  0,	// Neghvar
+	"kcruise3",	2,0, -1,  0,	// Chuqbeh (Artillery)
+	"ksrepair", 1,0, -1,  0,	// repair ship
+	"ksuper",   1,0, -1,  0,    // Shockwave Ship
+
+	"klipod14", 1,0, -1,  0,	// engine upgrade level 2
+	"klipod7",	1,0, -1,  0,	// Shield Harmonics Disruptor
+
+	"kbattle",	4,0, -1,  0,	// Neghvar
+	"klipod9",  1,0, -1,  0,	// Energy Dissipator
+	"klipod21", 1,0, -1,  0,	// weapon upgrade level 3
+	"kbattle",	4,0, -1,  0,	// Neghvar
+	"klipod22", 1,0, -1,  0,	// shield upgrade level 3	
+
+	"klipod24", 1,0, -1,  0,	// engine upgrade level 3
+	"kbattle",	4,0, -1,  0,	// Neghvar
+	"klipod13", 1,0, -1,  0,	// sensor upgrade level 2
+	"kbattle",	4,0, -1,  0,	// Neghvar
+	"klipod23", 1,0, -1,  0,	// sensor upgrade level 3
+	"klipod15", 1,0, -1,  0,	// life support upgrade level 2
+	"kbattle",	4,0, -1,  0,	// Neghvar
+	"klipod25", 1,0, -1,  0,	// life support upgrade level 3
+
+	"kbattle",	100,0, -1, 0,	// Neghvar
+
+}; 
+

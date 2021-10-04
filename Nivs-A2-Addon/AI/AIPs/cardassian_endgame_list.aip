@@ -1,0 +1,113 @@
+
+// Load up the basic structures...
+#include "aipdef.h"
+
+// This aip needs to play by the rules
+int checkTechnologyAvailable = 1;
+
+Way_Better_Build_List_Element the_build_list[MAX_ELEMENTS] = 
+{
+//--------------------------------------------------------------------  
+
+//
+// Syntax: "ODF name", number to build, base to build at, max number from this line, min tech level
+//
+
+	//
+	// Phase I. Base & Yard
+	//
+
+	"cbase",	1,0, -1,  1,	// starbase
+	"cconst",	1,0, -1,  0,	// construction ship 
+	"cmining",	1,1, -1,  0,	// mining stations
+	"corbital",	1,1, -1,  0,	// build an orbital station
+	"cfreight",	2,0, -1,  0,	// mining freighter - two freighters for each station
+	"cyard",	1,0, -1,  0,	// basic shipyard
+
+	//
+	// Phase II. Research
+	//
+	"cresear",	1,0, -1,  2,	// basic research
+	"corbital",	1,1, -1,  0,	// second orbital station
+	"carpod3",	1,0, -1,  0,	// Drones (Brinok)
+	"carpod4",  1,0, -1,  0,	// Flux Wave ( Gul Vystan)
+	"ccruise1",	2,0, -1, -3,	// Brinok
+	"ccruise2", 2,0, -1, -3,	// Gul Vystan
+	"carpod5",	1,0, -1,  0,	// Tachyon Detection Grid (WScout)
+	"ctrading", 1,0, -1,  0,	// trading station
+
+	//
+	// Phase III. Advanced Shipyard
+	//
+
+	"cyard2",	1,0, -1,  3,	// advanced shipyard
+	"cbattle",	3,0, -1, -3,	// Galor
+	"cbattle",	3,0, -1, -4,	// Galor 
+	"corbital",	1,0,  2,  0,	// third orbital processing facility
+	"cmining",	1,3,  2,  0,	// third mining station
+	"carpod2",  1,0, -1,  0,    // Micro-Organisms (Rasilak)
+	"cbattle",	3,0, -1, -4,	// Galor
+
+	//
+	// Phase IV. Advanced Research
+	//
+	
+	"cconst",	1,0, -1,  0,	// construction ship 
+	"cresear2",	1,0, -1,  4,	// advanced research station
+	"cfrigate", 1,0, -1, -4,	// Vasad
+	"cturret2", 3,1, -1,  0,	// torpedo turret
+	"carpod16", 1,0, -1,  0,	// Sensor Scrambler
+	"carpod9",	1,0, -1,  0,	// Shield Harmonics Dusruptor
+	"cbattle",	3,0, -1,  0,	// Galor 
+	"cturret2", 3,0, -1,  0,	// torpedo turret
+
+	//
+	// Phase V. Ship Upgrade and Endgame
+	//
+
+	"cupgrade", 1,0, -1,  5,	// ship upgrade station
+	"cbattle2",	4,0, -1,  0,	// Keldon
+	"csrepair", 2,0, -1,  0,	// repair ship
+	"cassault", 2,0, -1,  0,	// Janissary
+
+	"cbattle2",	4,0, -1,  0,	// Keldon
+	"carpod1", 	1,0, -1,  0,	// Plasma Bank Overload
+	"cfrigate", 1,0, -1,  0,	// Vasad
+
+	"cspecial",	1,0, -1,  0,	// Kulinor
+	"cbattle2",	4,0, -1,  0,	// Keldon
+	"cfrigate", 1,0, -1,  0,	// Vasad
+
+	"cardassian_super_station", 1,0, -1,  0,
+
+	"cspecial",	1,0, -1,  0,	// Kulinor
+	"cbattle2",	4,0, -1,  0,	// Keldon
+	"csuper",   1,0, -1,  0,    // Dreadnought Missile
+
+	"carpod11", 1,0, -1,  0,	// weapon upgrade level 2
+	"carpod12", 1,0, -1,  0,	// shield upgrade level 2
+	"carpod14", 1,0, -1,  0,	// engine upgrade level 2
+	"carpod6",	1,0, -1,  0,	// Plasma Cannon
+	"carpod9",	1,0, -1,  0,	// Shield Harmonics Disruptor
+
+	"cbattle2",	4,0, -1,  0,	// Keldon
+	"carpod8",	1,0, -1,  0,	// Speed Boost (Kulinor)
+	"carpod21", 1,0, -1,  0,	// weapon upgrade level 3
+	"carpod22", 1,0, -1,  0,	// shield upgrade level 3	
+
+	"cbattle2",	4,0, -1,  0,	// Keldon
+	"carpod24", 1,0, -1,  0,	// engine upgrade level 3
+	"carpod13", 1,0, -1,  0,	// sensor upgrade level 2
+	"carpod23", 1,0, -1,  0,	// sensor upgrade level 3
+	"carpod15", 1,0, -1,  0,	// life support upgrade level 2
+	"carpod25", 1,0, -1,  0,	// life support upgrade level 3
+	
+	"cbase",	1,0, 10,  0,	// starbase
+	"ccolony",  1,0,  4,  0,	// colony ship
+	"cbattle2",	1,0, -1,  0,	// Keldon
+	"cyard2",	1,0, -1,  0,	// advanced shipyard
+
+	"cbattle2",	100,0, -1, 0,	// Keldon
+
+}; 
+
