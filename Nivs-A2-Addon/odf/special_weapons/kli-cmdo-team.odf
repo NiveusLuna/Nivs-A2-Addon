@@ -1,0 +1,57 @@
+//Name of the ODF file for the ordinance for this weapon
+ordName = "kli-cmdo-team-ord"
+
+//Display name for this weapon
+wpnName = "Commando Team"
+
+// How long out of combat until we reset the cycle
+shotcycleresettime = 7.75
+
+// delay betweenshots
+shotdelay0 = 0.25
+shotdelay1 = 0.25
+shotdelay2 = 0.25
+shotdelay3 = 0.25
+shotdelay4 = 0.25
+shotdelay5 = 0.25
+shotdelay6 = 0.25
+shotdelay7 = 0.25
+shotdelay8 = 0.25
+shotdelay9 = 7.75
+
+// do we let the player tell us what to do?
+// Of course not! We're overeager!
+useprimarytarget = 0
+
+// loop between all available targets?
+targetloop = 1
+
+// Switch between firing hardpoints if possible
+hardpointShift = 1
+
+// Range within which the weapon will fire.
+range = 900.0f
+
+//Sound which is played when the weapon fires
+fireSound = "swkcommf.wav"
+
+//Programming Stuff DO NOT CHANGE
+classLabel = "cannonimp"
+
+// Chance to hit.
+hitChance = 1.0f
+
+// need a target?
+needTarget = 1
+
+// to allow multiple commando teams to be fired at once
+// don't check to see if is valid as target
+ignoreValidAsTarget = 1
+
+
+// don't let others attack this either
+forceInvalidateTarget = 1
+
+// don't start attacking when you use this weapon
+// its a take-over attempt
+switchToAttack = 0

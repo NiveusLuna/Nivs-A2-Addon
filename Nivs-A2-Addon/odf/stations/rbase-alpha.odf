@@ -1,0 +1,205 @@
+#include "station.odf"
+unitName = "Starbase"
+tooltip = "Starbase"
+verboseTooltip = "This new Romluan Starbase was designed during the Dominion Wars at first to counter the Dominion, but when the conflict ended the Tal Shiar advised the Senate to make the design standard for outpost starbases."
+race = "romulan"
+
+//Amount of time required to build the ship
+buildTime = 120.0
+
+//Number of officers required to build this ship
+officerCost = 20
+
+//Number of crew required to build ship & Starting crew
+crewCost = 800
+
+//Number of maximum crew (only specified if different from crewCost)
+maximumCrew = 1500
+
+//The number of crew added to the capacity
+maxCrewGain = 3000
+
+//Dilithium Cost to build
+dilithiumCost = 2500
+
+//Metal cost to build
+metalCost = 2500
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 6000
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 9.2
+
+//Shield absorbs all damage until it's gone
+shieldProtection = 1.0
+
+// Rate at which latinum is unloaded from freighters
+latinumTransferRate = 15.0
+
+// Rate at which dilithium is unloaded from freighters
+dilithiumTransferRate = 15.0
+
+//Possible Craft Names
+possibleCraftNames = 
+	"D'deras Station" "Ludanian Station" "Muturiun Station" "D'quirilian Station"
+	"Vigus Station" "Cirgius Station" "Atreuis Station" "D'durun Station"
+
+//
+// ***********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Pulse Phaser
+weapon1 = "rbpulse"
+weaponHardpoints1 = "hp09"
+
+// Pulse Phaser
+weapon2 = "rbpulse"
+weaponHardpoints2 = "hp10"
+
+// Pulse Phaser
+weapon3 = "rbpulse"
+weaponHardpoints3 = "hp11"
+
+// Pulse Phaser
+weapon4 = "rbpulse"
+weaponHardpoints4 = "hp12"
+
+// Pulse Phaser
+weapon5 = "rbpulse"
+weaponHardpoints5 = "hp13"
+
+// Pulse Phaser
+weapon6 = "rbpulse"
+weaponHardpoints6 = "hp14"
+
+// Pulse Phaser
+weapon7 = "rbpulse"
+weaponHardpoints7 = "hp15" "hp16" "hp17"
+
+// Pulse Phaser
+weapon8 = "rbpulse"
+weaponHardpoints8 = "hp18" "hp19" "hp20"
+
+enginesTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06" "hp07" "hp08"
+lifeSupportTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06" "hp07" "hp08"
+weaponsTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06" "hp07" "hp08"
+shieldGeneratorTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06" "hp07" "hp08"
+sensorsTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06" "hp07" "hp08"
+hullTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06" "hp07" "hp08"
+criticalTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06" "hp07" "hp08"
+
+//**********************************************************************
+
+//Construction Parameters
+buildItem0 = "rconst"
+buildItem1 = "rfreight"
+buildItem2 = "rcargo"
+buildItem3 = "rsrepair"
+buildItem4 = "rscout"
+buildItem5 = "rdestroy"
+buildItem6 = "rcruise1"
+buildItem7 = "rcruise3"
+buildItem8 = "rfrigate"
+buildItem9 = "rbattle2"
+buildItem10 = "rspecial"
+buildItem11 = "rbattle"
+
+//Hardpoint locations
+buildHardpoint = "build"
+dockinghardpoint = "dock"
+repairHardpoint = "repair"
+repairSide = 0
+repairFacility = 1
+decommissionFacility = 1
+
+//**********************************************************************
+
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.50f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 2.00f
+
+//**********************************************************************
+
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.5f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.5f
+//**********************************************************************
+
+//SYSTEM HITPOINTS
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 1000
+enginesHitPoints = 0
+weaponsHitPoints = 1000
+lifeSupportHitPoints = 1000
+sensorsHitPoints = 1000
+
+//**********************************************************************
+
+//SYSTEM DAMAGE DISTRIBUTION
+//The following section's values should add up to 100
+//Percent Chance out of 100 of engines being destroyed
+enginesHitPercent = 0.0f
+
+//Percent Chance out of 100 of life support being destroyed
+lifeSupportHitPercent = 10.5f
+
+//Percent Chance out of 100 of weapons being destroyed
+weaponsHitPercent = 10.0f
+
+//Percent Chance out of 100 of shields being destroyed
+shieldGeneratorHitPercent = 13.0f
+
+//Percent Chance out of 100 of sensors being destroyed
+sensorsHitPercent = 13.0f
+
+//Percent Chance out of 100 of hull being hit (crew dying)
+crewHitPercent = 13.5f
+
+//Percent Chance out of 100 of entire ship exploding
+hullHitPercent = 40.0f
+//**********************************************************************
+
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "StarbaseSelect"
+eventAcknowledge = "StarbaseAcknowledge"
+eventAttack = "StarbaseAttack"
+eventDecommission = "StarbaseDecommission"
+
+//**********************************************************************
+//PROGRAMMING PARAMETERS WHICH SHOULD NOT BE CHANGED & UNUSED PARAMETERS
+
+//Runtime class label for instantiation of object.
+classLabel = "starbase"
+
+//**********************************************************************
+//KEYMAP LABEL
+// Obsolete, use hotkeyLabel
+// keymapLabel = "starbase"
+hotkeyLabel = "HOTKEY_F1"
+
+//************************************************************
+// Brian additions for context sensitive menus
+alert = 1
+combat = 1
+builder_ship = 1
+transporter = 1
+SHOW_MOVEMENT_AUTONOMY = 1
+SHOW_SW_AUTONOMY = 1
+
+// let's make this a bit bigger
+ScaleSOD = 2.5

@@ -1,0 +1,38 @@
+// Swap Galaxy class to its cargo ship version
+
+// conditional replace based on class
+replacementMode = 2
+
+// Starbase
+replacement0Condition = "fgalaxy" // this ship becomes...
+replacement0Class0 = "ftgalaxy" // this ship
+
+// This is a replaceWeapon
+classlabel = "replaceweapon"
+
+// Yes, this is a special weapon. Gotta check the techtree
+special = 1
+
+// no button for you
+buttonSlot = 0
+
+// For the AI, never use; will muck up their build list
+// and result in the refitted ship never being sent into combat
+replacementInstantAI = 0
+
+// For players, automatically use after five sesconds
+replacementInstantPlayer = 1
+replacementInstantDelay = 5
+
+// This is just a refit, not an entirely new ship. Act like it.
+replacementkeepname = 1
+replacementdontremovefootprint = 1
+overrideceasefire = 1 // doing a refit isn't firing a weapon (lore-wise)
+replacementmaintainorders = 1
+replacementregisterasnew = 0
+replacementcreationtype = 1 // it just evolved, don't worry
+overridesubsystem = 1 // doing a refit shouldn't need the weapons working
+
+// don't say anything when you do it
+speakonattack = 0
+attackspeech = 0

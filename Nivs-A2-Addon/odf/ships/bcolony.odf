@@ -1,0 +1,108 @@
+#include "colony.odf"
+
+//MAIN DESIGN PARAMETERS
+
+//Race which can build ship & starting race of ship
+race = "borg"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Colony Ship"
+
+//tooltips
+tooltip = "BORG_COLONY"
+verboseTooltip = "BORG_COLONY_V"
+
+//Amount of time required to build ship
+buildTime = 30.0
+
+//Number of officers required to build this ship
+officerCost = 4
+
+//Number of crew required to build ship & Starting crew
+crewCost = 100
+
+//Dilithium Cost to build
+dilithiumCost = 600
+
+//Metal Cost to build
+metalCost = 50
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 400
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 1000
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 8
+
+// show as seconds until ready
+specialenergydisplaymode = 2
+
+// We can only attack planets
+canOnlyAttackPlanets = 1
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 80
+enginesHitPoints = 30
+weaponsHitPoints = 80
+lifeSupportHitPoints = 130
+sensorsHitPoints = 80
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 1.5
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = 
+	"PA35-73743" "PA35-34632" "PA35-46818" "PA35-86287"
+	"PA35-48648" "PA35-86248" "PA35-76119" "PA35-16448"
+	"PA35-38424" "PA35-84388" "PA35-79244" "PA35-15784"
+	"PA35-94684" "PA35-15497" "PA35-84487" "PA35-71967"
+	"PA35-48962" "PA35-16845" "PA35-58471" "PA35-54835"
+	"PA35-18978" "PA35-38482" "PA35-74564" "PA35-54891"
+
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+//Colonizing beam
+weapon1 = "gcolbeam"
+weaponHardpoints1 = "hp01"
+
+// Borg Death Ray
+weapon2 = "gborgionbeam"
+weaponHardpoints2 = "hp31"
+cleansingWeaponIndex = 1
+
+// Hardpoints to hit for various systems and other locations.
+//enginesTargetHardpoints = "hp02" "hp03"
+//lifeSupportTargetHardpoints = "hp04" "hp05" "hp06"
+//weaponsTargetHardpoints = "hp01"
+//shieldGeneratorTargetHardpoints = "hp07" "hp08" "hp09"
+//sensorsTargetHardpoints = "hp10" "hp11" "hp12"
+//hullTargetHardpoints = "hp13" "hp14" "hp15" "hp16"
+//criticalTargetHardpoints = "hp17" "hp18" "hp19"
+
+//**********************************************************************
+//KEYMAP LABEL
+// Obsolete, use hotkeylabel
+// keymapLabel = "placeholder"
+hotkeyLabel = "HOTKEY_F3"
+
+shieldGeneratorHitPoints = 100
+enginesHitPoints = 50
+weaponsHitPoints = 100
+lifeSupportHitPoints = 150
+sensorsHitPoints = 60
+
+
+//physics file for all other physics stuff
+physicsFile = "bbatphys.odf"
+
+animation = 2
+
+

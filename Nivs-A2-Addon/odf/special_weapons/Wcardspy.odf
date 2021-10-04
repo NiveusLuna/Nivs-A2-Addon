@@ -1,0 +1,138 @@
+//Name of the ODF file for the ordinance for this weapon
+ordName = "WOcardspy"
+
+//Display name for this weapon
+wpnName = "Cardassian Sensor Tap"
+
+//tooltips
+tooltip = "Cardassian Sensor Tap"
+verboseTooltip = "Requires Flux Wave research. Twice a minute while cloaked, the Gul Vystan taps into the systems of a nearby station and transmits its findings to the nearest allied starbase. While investigating an information leak, Gul Nilrom caught a Tal'Shiar operative on one of his mining stations. Impressed by the spy's work, he commissioned an equivalent that did not require an inside agent."
+
+//Location of the button in the speed panel
+buttonSlot = -1
+
+// location of the button in the popup palette
+popupSlot = 2
+
+// Priority of button in the speed panel, this is only
+// used if it is non-zero.
+buttonPriority = 10
+
+//Type of border to use for this button.
+//0 = No border.
+//1 = Offensive border.
+//2 = Defensive border.
+//buttonBorder = 1
+
+// Special
+special = 1
+
+//Time Delay between shots
+shotDelay = 30.0f
+
+// Range within which the weapon will fire.
+range = 600.0f
+
+//Sound which is played when the weapon fires
+fireSound = "swrspysh.wav"
+
+//Programming Stuff DO NOT CHANGE
+classLabel = "cannon"
+
+// Chance to hit.
+hitChance = 1.0f
+
+//This weapon can trigger while cloaked
+cloakEnable = 1
+
+//Don't switch to attack mode after using
+switchToAttack = 0
+
+// Do we need a target?
+needTarget = 1
+
+// this is handled by the ship's systems, not by the crew
+crewAffectsWeaponDelay = 0
+
+//this special weapon cannot be assimilated by the borg tech assimilator
+//assimilatable = "rompod2"
+
+// We can hit only stations
+validTargets = 0
+	"fbase"				1
+	"fyard"				1
+	"fsensor"			1
+	"fturret"			1
+	"fmining"			1
+	"fresear"			1
+	"fresear2"			1
+	"fyard2"			1
+	"fturret2"			1
+	"fsuperbl"			1
+	"forbital"			1
+	"ftrading"			1
+	"fupgrade"			1
+	"kbase"				1
+	"kyard"				1
+	"ksensor"			1
+	"kturret"			1
+	"kmining"			1
+	"kresear"			1
+	"kresear2"			1
+	"kyard2"			1
+	"kturret2"			1
+	"ksuperbl"			1
+	"korbital"			1
+	"ktrading"			1
+	"kupgrade"			1
+	"rbase"				1
+	"ryard"				1
+	"rsensor"			1
+	"rturret"			1
+	"rmining"			1
+	"rresear"			1
+	"rresear2"			1
+	"ryard2"			1
+	"rturret2"			1
+	"rsuperbl"			1
+	"rorbital"			1
+	"rtrading"			1
+	"rupgrade"			1
+	"cbase"				1
+	"cyard"				1
+	"csensor"			1
+	"cturret"			1
+	"cmining"			1
+	"cresear"			1
+	"cresear2"			1
+	"cyard2"			1
+	"cturret2"			1
+	"csuperbl"			1
+	"corbital"			1
+	"ctrading"			1
+	"cupgrade"			1
+	"bbase"				1
+	"byard"				1
+	"bsensor"			1
+	"bturret"			1
+	"bmining"			1
+	"bresear"			1
+	"bresear2"			1
+	"byard2"			1
+	"bturret2"			1
+	"bsuperbl"			1
+	"btechass"			1
+	"brecycle"			1
+	"bupgrade"			1
+	"fwcntstati"		1
+	"fwfwerft"			1
+	"fwfwerfte1"		1
+	"fwfwerfte2"		1
+	"fwfwerfte3"		1
+	"terok-nor"			1
+	"bbase-assim"		1
+	"kbase-commando"	1
+	"fbase-orbital"		1
+	"kbase-orbital"		1
+	"rbase-orbital"		1
+	"cbase-orbital"		1

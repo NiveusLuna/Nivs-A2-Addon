@@ -1,0 +1,34 @@
+// Upgrade Federation starbase and sensor station
+// to versions with the Aegian's Shield Enhancer
+
+// default replacement - straight up replace
+//replacementMode = 0
+
+// What do we spawn?
+replacement0Class0 = "uball-fstation-shldemt"
+
+// This is a replaceWeapon
+classlabel = "replaceweapon"
+
+// Yes, this is a special weapon. Gotta check the techtree
+special = 1
+
+buttonslot = 0
+
+// Automatically use three seconds after becoming available
+replacementInstantPlayer = 1
+replacementInstantAI = 1
+replacementInstantDelay = 3.0
+replacementInstantCycle = 86 // Keep it going
+
+// We are firing a weapon. Act like it.
+//replacementdontremovefootprint = 1
+//overrideceasefire = 0
+//overridesubsystem = 0
+
+// for the love of God, please don't convert my starbase to shield energy
+replacementKeepOwner = 1
+
+// don't say anything when you do it
+speakonattack = 0
+attackspeech = 0

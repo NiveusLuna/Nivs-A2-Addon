@@ -1,0 +1,55 @@
+#include "fwfymain.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Special Yard + Repair"
+
+//tooltips
+tooltip = "Special Yard + Repair"
+verboseTooltip = "This station has the same features like the advanced shipyard, but you can add a docking and a weapon station."
+
+//Amount of time required to build ship
+buildTime = 40.0
+
+//Metal cost to build
+metalCost = 1000
+
+//Possible Craft Names
+possibleCraftNames = 
+	"H-100" "H-101" "H-102" "H-103" "H-104" "H-105" "H-106" "H-107" "H-108" "H-109"
+	"H-200" "H-201" "H-202" "H-203" "H-204" "H-205" "H-206" "H-207" "H-208" "H-209" 
+	"H-300" "H-301" "H-302" "H-303" "H-304" "H-305" "H-306" "H-307" "H-308" "H-309"
+	"H-400" "H-401" "H-402" "H-403" "H-404" "H-405" "H-406" "H-407" "H-408" "H-409"
+//
+***********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// 
+weapon1 = "fwwerftevo2"
+weaponHardpoints1 = "hp01"
+
+//**********************************************************************
+
+//**********************************************************************
+
+//Hardpoint locations
+buildHardpoint = "build"
+//dockinghardpoint = "dock"
+repairHardpoint = "repair"
+repairSide = 0
+repairFacility = 1
+decommissionFacility = 1
+
+
+//**********************************************************************
+
+//**********************************************************************
+
+//**********************************************************************
+//KEYMAP LABEL
+// Obsolete, use hotkeyLabel
+// keymapLabel = "starbase"
+hotkeyLabel = "HOTKEY_F6"
+

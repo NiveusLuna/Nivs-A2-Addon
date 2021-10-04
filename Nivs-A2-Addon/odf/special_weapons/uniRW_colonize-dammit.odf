@@ -1,0 +1,37 @@
+// Swap uball for appropriate faction's shipyard
+
+// conditional replace based on faction
+replacementMode = 1
+
+// I turn into...
+replacement0condition = "federation"
+replacement0Class0 = "colonize-dammit-fed"
+replacement1condition = "klingon"
+replacement1Class0 = "colonize-dammit-kli"
+replacement2condition = "romulan"
+replacement2Class0 = "colonize-dammit-rom"
+replacement3condition = "cardassian"
+replacement3Class0 = "colonize-dammit-car"
+replacement4condition = "borg"
+replacement4Class0 = "colonize-dammit-bor"
+
+// This is a replaceWeapon
+classlabel = "replaceweapon"
+
+// Yes, this is a special weapon. Gotta check the techtree
+special = 1
+
+// no button for you
+buttonSlot = 0
+
+// For the AI, always use
+replacementInstantAI = 1
+replacementInstantDerelict = 1
+replacementInstantDelay = 1
+
+// For players, never use
+replacementInstantPlayer = 0
+
+// don't say anything when you do it
+speakonattack = 0
+attackspeech = 0

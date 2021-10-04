@@ -1,0 +1,102 @@
+#include "fwfymain.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Full Special Yard"
+
+//tooltips
+tooltip = "Full Special Yard"
+verboseTooltip = "This station has everything which you need and makes it to the best station during the war."
+
+//Amount of time required to build ship
+buildTime = 40.0
+
+//Metal cost to build
+metalCost = 2800
+
+// Rate at which latinum is transfered from freighters
+latinumTransferRate = 15.0
+
+//Dilithium transfer rate from freighter to station
+dilithiumTransferRate = 15.0
+
+//Possible Craft Names
+possibleCraftNames = 
+	"H-100" "H-101" "H-102" "H-103" "H-104" "H-105" "H-106" "H-107" "H-108" "H-109"
+	"H-200" "H-201" "H-202" "H-203" "H-204" "H-205" "H-206" "H-207" "H-208" "H-209" 
+	"H-300" "H-301" "H-302" "H-303" "H-304" "H-305" "H-306" "H-307" "H-308" "H-309"
+	"H-400" "H-401" "H-402" "H-403" "H-404" "H-405" "H-406" "H-407" "H-408" "H-409"
+//
+***********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// phaser
+weapon1 = "fbphas"
+weaponHardpoints1 = "hp01" "hp02" "hp03" "hp04" "hp09" "hp12" "hp14" "hp15"  "hp18" "hp19"
+
+// phaser
+weapon2 = "fbphas"
+weaponHardpoints2 = "hp05" "hp06" "hp07" "hp08" "hp10" "hp11" "hp13" "hp16"  "hp17" "hp20"
+
+// phaser
+weapon3 = "fbphas"
+weaponHardpoints3 = "hp22" "hp24" "hp26" "hp28"
+
+// phaser
+weapon4 = "fbphas"
+weaponHardpoints4 = "hp21" "hp23" "hp25" "hp27"
+
+// Point Defense Laser
+weapon5 = "gpdlaser"
+weaponHardpoints5 = "hp01" "hp02" "hp03" "hp04" "hp09" "hp12" "hp14" "hp15"  "hp18" "hp19" "hp22" "hp24" "hp26" "hp28"
+
+//Fed Repair Team
+weapon6 = "gfedrep"
+weaponHardpoints6 = "hp05" "hp06" "hp07" "hp08" "hp10" "hp11" "hp13" "hp16"  "hp17" "hp20" "hp21" "hp23" "hp25" "hp27"
+
+//Self Destruct
+weapon7 = "gselfdes"
+weaponHardpoints7 = "hp02"
+
+// Cloaking Device
+// weapon8 = "grcloak"
+weapon8 = "gcloak"
+weaponHardpoints8 = "hp01"
+
+//**********************************************************************
+
+//**********************************************************************
+//Construction Parameters
+buildItem5 = "fcruise3"
+buildItem6 = "fcruise2"
+
+//Hardpoint locations
+buildHardpoint = "build"
+dockinghardpoint = "dock"
+repairHardpoint = "repair"
+repairSide = 0
+repairFacility = 1
+decommissionFacility = 1
+
+
+//**********************************************************************
+
+//**********************************************************************
+
+//AI Type DO NOT CHANGE
+aiName = "CraftProcess"
+
+//**********************************************************************
+//KEYMAP LABEL
+// Obsolete, use hotkeyLabel
+// keymapLabel = "starbase"
+hotkeyLabel = "HOTKEY_F6"
+
+//************************************************************
+// Brian additions for context sensitive menus
+
+combat = 1
+
+//************************************************************

@@ -1,0 +1,73 @@
+#include "craft.odf"
+
+//This is for stat accumulation
+shipclass = "cargo"
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.00f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.50f
+
+//**********************************************************************
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+enginesHitPoints = 10
+lifeSupportHitPoints = 10
+weaponsHitPoints = 10
+shieldGeneratorHitPoints = 10
+sensorsHitPoints = 10
+//**********************************************************************
+ 
+
+//**********************************************************************
+
+// This is the size of the build animation sparks.
+weldingRadius = 0.5
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "CargoSelect"
+eventAcknowledge = "CargoAcknowledge"
+eventStop = "CargoStop"
+eventMove = "CargoMove"
+eventRepair = "CargoRepair"
+
+//**********************************************************************
+// Programming parameters
+keymapLabel = "cargo_ship"
+classLabel = "cargo_ship"
+
+//AI Type DO NOT CHANGE
+aiName = "CargoShipProcess"
+
+//PHYSICS Parameters
+
+physicsFile = "scargophys.odf"
+avoidanceClass = 5
+
+//************************************************************
+// Tara additions for context sensitive menus
+alert = 1
+cargo_ship = 1
+SHOW_MOVEMENT_AUTONOMY = 1
+can_explore = 1
+
+//************************************************************
+// ship type for formations
+shipType = "X"
+
+// How much cargo can we hold
+m_maxResource = 2000

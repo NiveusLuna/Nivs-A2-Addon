@@ -1,0 +1,15 @@
+// Runtime class of object.
+classLabel = "u_ball_obj"
+
+// Name of type.
+unitName = "Colonize, dammit!"
+
+//lifespan 
+lifeTimer = 2
+
+// do not avoid
+avoidMe = 0
+
+// weapon on this thing
+weapon1 = "uniRW_colonize-dammit"
+weaponHardpoints1 = "null14"

@@ -1,0 +1,3 @@
+#include "gregen.odf"
+//this special weapon can be assimilated by the borg tech assimilator
+assimilatable = "borpod3"

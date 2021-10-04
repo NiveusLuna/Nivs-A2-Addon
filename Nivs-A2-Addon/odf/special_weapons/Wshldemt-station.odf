@@ -1,0 +1,58 @@
+//Name of the ODF file for the ordinance for this weapon
+ordName = "WOshldemt-station"
+
+// Mark this as not a special weapon.
+special = 0
+
+//Display name for this weapon
+wpnName = "Shield Enhancer"
+
+//tooltips
+tooltip = "FED_POD16"
+verboseTooltip = "FED_POD16_V"
+
+//Time Delay between shots
+shotDelay = 5
+
+// Range within which the weapon will fire.
+range = 600.0f
+
+//Sound which is played when the weapon fires
+fireSound = "shldemt.wav"
+
+//Programming Stuff DO NOT CHANGE
+classLabel = "areacannon"
+
+//Should not be used
+wpnReticle = "gblast"
+
+//UNKNOWN
+wpnPriority = 0
+
+//UNKNOWN
+wpnCategory = "ARCA"
+
+// try to make it always fire; toggled "on"
+toggle = 1
+
+// 	HIT_EVERYONE = 0,
+//	HIT_ALLIES = 1,
+//	HIT_ENEMIES = 2
+hitCondition = 1
+
+//Don't automatically switch to attack mode 
+switchToAttack = 0
+
+// set wave effect
+waveEffect = 1
+
+// set wave name
+waveName = "Wshldwav"
+
+//this non-special weapon cannot be assimilated by the borg tech assimilator
+//assimilatable = "fedpod16"
+
+// Do not say "attack" when turned on.
+attackSpeech = 0;
+
+hotkeyLabel = "HOTKEY_F5"

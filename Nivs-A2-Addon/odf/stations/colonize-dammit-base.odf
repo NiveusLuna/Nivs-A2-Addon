@@ -1,0 +1,50 @@
+// Define our existence
+unitName = "Colonize, Dammit"
+tooltip = "Only builds colony ships"
+verboseTooltip = "Force the AI to build colony ships"
+classLabel = "shipyard"
+aiName = "StarbaseProcess"
+
+// Hardpoint location for building.
+buildHardpoint = "build"
+
+// make it very clear that this is not a standard shipyard
+possibleCraftNames = "Human Resources Generator"
+
+// No benefit or burden except building colony ships
+crewCost = 0
+maximumCrew = 0
+dilithiumCost = 0
+metalCost = 0
+repairFacility = 0
+decommissionFacility = 0
+officerCost = 0
+rangeScan = 1
+clearsFog = 0
+damagedScan = 1
+// Doesn't create a footprint
+// isStarbase = 0
+
+// no subsystems to speak of
+maxHealth = 0
+sensorsHitpoints = 0
+shieldGeneratorHitpoints = 0
+enginesHitpoints = 0
+lifeSupportHitpoints = 0
+weaponsHitpoints = 0
+
+// Get rid of it when we're done
+autoExpireTime = 301.0
+
+// Don't attack me, etc
+intrinsicValue = 0.0 // I'm worthless!
+avoidMe = 0
+invincible = 1
+invalidastarget = 1
+ignoredastarget = 1
+
+// make it bigger
+ScaleSOD = 1.50
+
+//Explosion to use
+fireball = "x_no_explosion"

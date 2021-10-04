@@ -1,0 +1,77 @@
+//GENERAL FILE for colony ships
+
+// include Craft defaults
+#include "craft.odf"
+
+// include new autonomy defaults
+#include "0low-high-high.oif"
+
+//This is for stat accumulation
+shipclass = "colony"
+
+colonists = 1000
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.0f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.75f
+
+//**********************************************************************
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+enginesHitPoints = 10
+lifeSupportHitPoints = 10
+weaponsHitPoints = 10
+shieldGeneratorHitPoints = 10
+sensorsHitPoints = 10
+
+//**********************************************************************
+// This is the size of the build animation sparks.
+weldingRadius = 0.5
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "ColonySelect"
+eventAcknowledge = "ColonyAcknowledge"
+eventStop = "ColonyStop"
+eventMove = "ColonyMove"
+eventRepair = "ColonyRepair"
+
+//**********************************************************************
+//PROGRAMMING PARAMETERS WHICH SHOULD NOT BE CHANGED & UNUSED PARAMETERS
+
+//programming thing DO NOT CHANGE
+classLabel = "colony"
+
+//AI Type DO NOT CHANGE
+aiName = "ColonyShipProcess"
+
+//**********************************************************************
+//PHYSICS Parameters
+
+physicsFile = "sbattphys.odf"
+avoidanceClass = 5
+
+//************************************************************
+// Tara additions for context sensitive menus
+alert = 1
+colony_ship = 1
+SHOW_MOVEMENT_AUTONOMY = 1
+can_explore = 1
+
+//************************************************************
+// ship type for formations
+shipType = "X"

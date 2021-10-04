@@ -1,0 +1,7 @@
+#include "fgalaxy.odf"
+
+// Towing Beam
+weapon4 = "gtracbm"
+weaponhardpoints4 = "hp27" "hp28"
+
+weapon5 = "Wrefit-fgalaxy-trade"

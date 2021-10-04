@@ -1,0 +1,76 @@
+#include "cargo1.odf"
+
+//This is for stat accumulation
+shipclass = "battleship"
+
+//This is the main file for the battleship
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 1.00f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.50f
+
+//**********************************************************************
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+enginesHitPoints = 10000
+lifeSupportHitPoints = 10000
+weaponsHitPoints = 10000
+shieldGeneratorHitPoints = 10000
+sensorsHitPoints = 10000
+//**********************************************************************
+ 
+
+
+
+//**********************************************************************
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "BattleSelect"
+eventAcknowledge = "BattleAcknowledge"
+eventAttack = "BattleAttack"
+eventStop = "BattleStop"
+eventMove = "BattleMove"
+eventRepair = "BattleRepair"
+
+//**********************************************************************
+
+//John avoidance stuff DO NOT CHANGE
+avoidanceClass = 8
+
+// All battleships can attack planets
+canAttackPlanets = 1
+
+//**********************************************************************
+//PHYSICS PARAMETERS
+
+
+//physics file for all other physics stuff
+physicsFile = "sbatt2phys.odf"
+
+//Explosion to use
+fireball = "xfireblg"
+
+
+//************************************************************
+// Tara additions for context sensitive menus
+combat = 1
+alert = 1
+can_sandd = 1
+
+// ship type for formations
+shipType = "B"

@@ -1,0 +1,133 @@
+#include "frigate.odf"
+
+//MAIN DESIGN PARAMETERS
+
+//Race which can build ship & starting race of ship
+race = "federation"
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Aegian Class"
+
+//tooltips
+tooltip = "FED_FRIGATE"
+verboseTooltip = "FED_FRIGATE_V"
+
+//Amount of time required to build ship
+buildTime = 17.0
+
+//Number of officers required to build this ship
+officerCost = 5
+
+//Number of crew required to build ship & Starting crew
+crewCost = 200
+
+//Dilithium Cost to build
+dilithiumCost = 150
+
+//Metal Cost to build
+metalCost = 33
+
+//Max Shield Strength & Begining Shield Strength <500
+maxHealth = 285
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 60
+enginesHitPoints = 34
+weaponsHitPoints = 44
+lifeSupportHitPoints = 44
+sensorsHitPoints = 44
+
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 1.0
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 600
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 7
+
+// show as seconds until ready
+specialenergydisplaymode = 2
+
+
+//**********************************************************************
+//SHIP NAMES
+
+//Possible Craft Names
+possibleCraftNames = 
+	"USS Almirante" "USS Espora" "USS Hercules" "USS Yingtan" "USS Xiamen"
+	"USS Minerva" "USS Isikari" "USS Kongo" "USS Haruna"
+	"USS Anzac" "USS Blackpool" "USS Boxer" "USS Broadsword" "USS Salisbury"
+	"USS Leopard" "USS Whitby" "USS Tribal" "USS Tallinn" "USS Minsk"
+	"USS Knox" "USS Bronstein" "USS Bainbridge" "USS Leahy" "USS Bremen"
+	"USS Brandenburg" "USS Barbaros" "USS Yavuz" "USS Halifax" "USS Loch"
+	"USS Yang" "USS Buckley" "USS Visby" "USS Caldwell" "USS Aylwin"
+	"USS Leander" "USS Argyll" "USS Kent" "USS Grafton" "USS Sutherland"
+	"USS D. Robinson" "USS Brasi"
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Phaser
+weapon1 = "ffphas"
+weaponHardpoints1 = "hp01" "hp02" "hp03"
+
+// Photon
+weapon2 = "ffphot"
+weaponhardpoints2 = "hp04" "hp05"
+
+// Shield-Emitter
+weapon3 = "gshldemt"
+weaponHardpoints3 = "hp26""hp01" "hp02" "hp03" "hp04" "hp05" "hp26"
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp06" "hp07" "hp08" "hp09" "hp10"
+lifeSupportTargetHardpoints = "hp11" "hp12" "hp13" "hp14" "hp15"
+weaponsTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp26"
+shieldGeneratorTargetHardpoints = "hp16" "hp17" "hp18" "hp19" "hp20"
+sensorsTargetHardpoints = "hp21" "hp22" "hp23" "hp24" "hp25"
+hullTargetHardpoints = "hp11" "hp12" "hp13" "hp14" "hp15"
+criticalTargetHardpoints = "hp21" "hp22" "hp23" "hp24" "hp25"
+
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.50f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.50f
+
+//**********************************************************************
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.0f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 1.0f
+//**********************************************************************
+
+//**********************************************************************
+//KEYMAP LABEL
+// Obsolete, use hotkeyLabel
+// keymapLabel = "placeholder"
+hotkeyLabel = "HOTKEY_F1"
+
+
+// let's make this a bit bigger
+ScaleSOD = 1.75
+
+
+
+
+
+

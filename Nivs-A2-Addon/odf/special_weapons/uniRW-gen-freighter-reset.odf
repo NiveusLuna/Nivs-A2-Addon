@@ -1,0 +1,56 @@
+// Upgrade Federation starbase and sensor station
+// to versions with the Aegian's Shield Enhancer
+
+// Conditional replace based on class
+replacementMode = 2
+
+// Federation
+replacement0Condition = "fmining1" // this station becomes...
+replacement0Class0 = "fmining" // this station
+
+// Klingon
+replacement1Condition = "kmining1" // this station becomes...
+replacement1Class0 = "kmining" // this station
+
+// Romulan
+replacement2Condition = "rmining1" // this station becomes...
+replacement2Class0 = "rmining" // this station
+
+// Cardassian
+replacement3Condition = "cmining1" // this station becomes...
+replacement3Class0 = "cmining" // this station
+
+// Borg
+replacement4Condition = "bmining1" // this station becomes...
+replacement4Class0 = "bmining" // this station
+
+// This is a replaceWeapon
+classlabel = "replaceweapon"
+
+// Yes, this is a special weapon. Gotta check the techtree
+special = 1
+
+// no button
+buttonSlot = 0
+
+// For players, automatically use three seconds after becoming available
+replacementInstantPlayer = 1
+replacementInstantDelay = 3.0
+//replacementInstantCycle = 1.0
+
+// For the AI, use. Will reset their build list.
+replacementInstantAI = 1
+
+// This is just a refit, not an entirely new station. Act like it.
+replacementkeepname = 1
+replacementdontremovefootprint = 1
+overrideceasefire = 1 // doing a refit isn't firing a weapon (lore-wise)
+replacementmaintainorders = 1
+replacementregisterasnew = 0
+replacementcreationtype = 1 // it just evolved, don't worry
+overridesubsystem = 1 // doing a refit shouldn't need the weapons working
+preservestatus = 1 // remember cooldowns
+
+// don't say anything when you do it
+speakonattack = 0
+attackspeech = 0

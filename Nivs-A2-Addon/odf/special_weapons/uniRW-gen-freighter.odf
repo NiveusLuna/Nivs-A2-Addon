@@ -1,0 +1,62 @@
+// Upgrade Federation starbase and sensor station
+// to versions with the Aegian's Shield Enhancer
+
+wpnName = "Build Freighters"
+tooltip = "Build Freighters"
+verboseTooltip = "Build two freighters from this station. They will proceed to mine."
+
+// Conditional replace based on class
+replacementMode = 2
+
+// Federation
+replacement0Condition = "fmining" // this station becomes...
+replacement0Class0 = "fmining1" // this station
+
+// Klingon
+replacement1Condition = "kmining" // this station becomes...
+replacement1Class0 = "kmining1" // this station
+
+// Romulan
+replacement2Condition = "rmining" // this station becomes...
+replacement2Class0 = "rmining1" // this station
+
+// Cardassian
+replacement3Condition = "cmining" // this station becomes...
+replacement3Class0 = "cmining1" // this station
+
+// Borg
+replacement4Condition = "bmining" // this station becomes...
+replacement4Class0 = "bmining1" // this station
+
+// This is a replaceWeapon
+classlabel = "replaceweapon"
+
+// Yes, this is a special weapon. Gotta check the techtree
+special = 1
+
+// Yes button
+buttonSlot = 10
+
+// Not automatic. We don't want an infinite loop.
+replacementInstantPlayer = 0
+replacementInstantAI = 0
+shotDelay = 30 // Also don't want it being available immediately
+
+// Also not free.
+DilithiumCost = 300
+CrewCost = 200
+requiredOfficers = 2
+
+// This is just a refit, not an entirely new station. Act like it.
+replacementkeepname = 1
+replacementdontremovefootprint = 1
+overrideceasefire = 1 // doing a refit isn't firing a weapon (lore-wise)
+replacementmaintainorders = 1
+replacementregisterasnew = 0
+replacementcreationtype = 1 // it just evolved, don't worry
+overridesubsystem = 1 // doing a refit shouldn't need the weapons working
+preservestatus = 1 // remember cooldowns
+
+// don't say anything when you do it
+speakonattack = 0
+attackspeech = 0

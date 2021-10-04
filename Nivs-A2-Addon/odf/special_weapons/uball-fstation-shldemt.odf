@@ -1,0 +1,18 @@
+// Uball for the Station variant of the Shield Emitter
+classlabel = "u_ball_obj"
+
+// invisible, untargetable
+hidden = 1
+
+maxSpecialEnergy = 600
+specialEnergyRate = 0
+
+baseName = "effect_empty"
+mapicon = "mapicon_empty"
+
+// exists for six seconds
+lifeTimer = 6.0f
+
+weapon1 = "Wshldemt-station"
+weaponHardpoints1 = "root"
+//weapon2 = "suckysuckyspecialenergy"

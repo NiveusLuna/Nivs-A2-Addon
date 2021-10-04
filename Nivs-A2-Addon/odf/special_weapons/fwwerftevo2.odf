@@ -1,0 +1,11 @@
+#include "fwwerftevo-base.odf"
+
+//Display name for this weapon
+wpnName = "docken"
+
+//tooltips
+tooltip = "Dilithium & Latinum station"
+verboseTooltip = "Adds a dilithium und latinum station for 600 metal"
+
+// How much metal must we spend to fuse this?
+metalCost = 600

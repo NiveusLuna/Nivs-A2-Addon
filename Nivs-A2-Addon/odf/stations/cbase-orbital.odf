@@ -1,0 +1,190 @@
+#include "orbital.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Orbital Starbase"
+
+// *Orbital* starbase? Where?
+baseName = "cbase"
+
+//tooltips
+tooltip = "Orbital Starbase"
+verboseTooltip = "An orbital mining station capable of planetary defense."
+
+//Race which can build ship & starting race of ship
+race = "federation"
+
+//Amount of time required to build ship
+buildTime = 120.0
+
+//Number of officers required to build this ship
+officerCost = 10
+
+//Number of crew required to build ship & Starting crew
+crewCost = 150
+
+//Number of maximum crew (only specified if different from crewCost)
+maximumCrew = 1500
+
+//The number of crew added to the capacity
+//maxCrewGain = 3000
+
+//Dilithium Cost to build
+dilithiumCost = 2000
+
+//Metal cost to build
+metalCost = 2000
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 6000
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 5.0
+
+//Shield absorbs all damage until it's gone
+shieldProtection = 1.0
+
+//Possible Craft Names
+possibleCraftNames = 
+	"Cefta Nor-7R" "Cefta Nor-6D" "Cefta Nor-0P" "Cefta Nor-3E"
+	"Cefta Nor-9H" "Cefta Nor-3W" "Cefta Nor-1Q" "Cefta Nor-7U"
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Mining Beam
+weapon1 = "gOrbitalBeam"
+weaponHardpoints1 = "build" // uses build hardpoint
+//weaponHardpoints1 = "hp31" // uses docking hardpoint
+
+// Pulse Phaser
+weapon2 = "cbpulse"
+weaponHardpoints2 = "HP02"
+
+// Pulse Phaser
+weapon3 = "cbpulse"
+weaponHardpoints3 = "HP03"
+
+// Pulse Phaser
+weapon4 = "cbpulse"
+weaponHardpoints4 = "HP04"
+
+// Pulse Phaser
+weapon5 = "cbpulse"
+weaponHardpoints5 = "HP05"
+
+// Pulse Phaser 
+weapon6 = "cbpulse"
+weaponHardpoints6 = "HP06"
+
+// Pulse Phaser
+weapon7 = "cbpulse"
+weaponHardpoints7 = "HP07"
+
+// Pulse Phaser
+weapon8 = "cbpulse"
+weaponHardpoints8 = "HP08"
+
+// Pulse Phaser
+weapon9 = "cbpulse"
+weaponHardpoints9 = "HP01"
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "HP01" "HP02" "HP03" "HP04" "HP05" "HP06" 
+"HP07" "HP08" "HP09"
+lifeSupportTargetHardpoints = "HP01" "HP02" "HP03" "HP04" "HP05" "HP06" 
+"HP07" "HP08" "HP09"
+weaponsTargetHardpoints = "HP01" "HP02" "HP03" "HP04" "HP05" "HP06" 
+"HP07" "HP08" "HP09"
+shieldGeneratorTargetHardpoints = "HP01" "HP02" "HP03" "HP04" "HP05" "HP06" 
+"HP07" "HP08" "HP09"
+sensorsTargetHardpoints = "HP01" "HP02" "HP03" "HP04" "HP05" "HP06" 
+"HP07" "HP08" "HP09"
+hullTargetHardpoints = "HP01" "HP02" "HP03" "HP04" "HP05" "HP06" 
+"HP07" "HP08" "HP09"
+criticalTargetHardpoints = "HP01" "HP02" "HP03" "HP04" "HP05" "HP06" 
+"HP07" "HP08" "HP09"
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.50f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 2.00f
+
+
+//**********************************************************************
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.5f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.5f
+//**********************************************************************
+
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 1000
+enginesHitPoints = 0
+weaponsHitPoints = 1000
+lifeSupportHitPoints = 1000
+sensorsHitPoints = 1000
+
+//**********************************************************************
+
+
+
+//**********************************************************************
+//SYSTEM DAMAGE DISTRIBUTION
+//The following section's values should add up to 100
+//Percent Chance out of 100 of engines being destroyed
+enginesHitPercent = 0.0f
+
+//Percent Chance out of 100 of life support being destroyed
+lifeSupportHitPercent = 10.5f
+
+//Percent Chance out of 100 of weapons being destroyed
+weaponsHitPercent = 10.0f
+
+//Percent Chance out of 100 of shields being destroyed
+shieldGeneratorHitPercent = 13.0f
+
+//Percent Chance out of 100 of sensors being destroyed
+sensorsHitPercent = 13.0f
+
+//Percent Chance out of 100 of hull being hit (crew dying)
+crewHitPercent = 13.5f
+
+//Percent Chance out of 100 of entire ship exploding
+hullHitPercent = 40.0f
+//**********************************************************************
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+//**********************************************************************
+
+eventSelect = "StarbaseSelect"
+eventAcknowledge = "StarbaseAcknowledge"
+eventAttack = "StarbaseAttack"
+eventDecommission = "StarbaseDecommission"
+
+orbitTime = 45.0
+
+alert = 1
+combat = 1
+transporter = 1
+scaleSOD = 0.66666

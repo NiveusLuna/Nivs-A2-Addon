@@ -1,0 +1,11 @@
+#include "fwwerftevo-base.odf"
+
+//Display name for this weapon
+wpnName = "repair"
+
+//tooltips
+tooltip = "Repairstation"
+verboseTooltip = "Adds a repairstation for 300 metal. After adding this, the station is similar to the advanced shipyard and you have spent the same ressources."
+
+// How much metal must we spend to fuse this?
+metalCost = 300

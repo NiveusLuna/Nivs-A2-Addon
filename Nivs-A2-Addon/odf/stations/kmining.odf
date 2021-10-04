@@ -1,0 +1,10 @@
+//#include "station.odf"
+#include "kmining.odf"
+
+// Do I look like a chair to you?
+//baseName = "kmining.odf"
+
+//SYSTEM HITPOINTS
+weaponsHitPoints = 600
+
+weapon1 = "uniRW-gen-freighter"

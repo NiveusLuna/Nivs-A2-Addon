@@ -1,0 +1,52 @@
+#include "kbase-orig.odf"
+
+// including only that which differs from the original starbase
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Commando Station"
+
+// What's the name of our sod?
+baseName = "kbase"
+
+//tooltips
+tooltip = "Commando Station"
+verboseTooltip = "A station filled with overeager Klingon warriors"
+
+//Number of maximum crew (only specified if different from crewCost)
+maximumCrew = 10000
+
+//**********************************************************************
+// MORE STUFF TO BUILD
+
+// Hey, we're a commando station. Why *not* build commando ships?
+buildItem4 = "kcruise2"
+buildItem5 = "kassault"
+
+//**********************************************************************
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Commando Team - Station variant
+weapon1 = "kli-cmdo-team"
+weaponHardpoints1 = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06" "hp07" "hp08" "hp09"
+
+// no other weapons
+
+//**********************************************************************
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 1000
+enginesHitPoints = 0
+weaponsHitPoints = 1000
+lifeSupportHitPoints = 1000
+sensorsHitPoints = 1000
+
+//**********************************************************************

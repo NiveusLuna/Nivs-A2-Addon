@@ -1,0 +1,15 @@
+#include "phaser.odf"
+
+//Name of the ODF file for the ordinance for this weapon
+ordName = "ds9phaso"
+
+//Display name for this weapon
+wpnName = "Phaser"
+
+//Time Delay between shots
+shotDelay = 1.0f
+
+//Sound which is played when the weapon fires
+fireSound = "phfwea.wav"
+
+range = 1100.0f

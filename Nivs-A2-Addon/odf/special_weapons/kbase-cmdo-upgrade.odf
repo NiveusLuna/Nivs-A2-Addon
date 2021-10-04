@@ -1,0 +1,35 @@
+// Upgrade from base Klingon starbase to Commando Station
+
+// straight replace
+//replacementMode = 0
+//replacement0Class0 = "kbase-commando"
+
+// conditional replace
+replacementMode = 2
+
+// change from...
+replacement0condition = "kbase"
+
+// Change into...
+replacement0Class0 = "kbase-commando"
+
+// require 1000 of each resource...
+dilithiumCost = 1000
+metalCost = 1000
+latinumCost = 1000
+
+// ... and 8500 crew
+// Only use when starbase is fully crewed, folks
+crewCost = 8500
+
+replacementkeepname = 1
+replacementdontremovefootprint = 1
+overrideceasefire = 1
+classlabel = "replaceweapon"
+special = 1
+replacementmaintainorders = 1
+replacementregisterasnew = 0
+replacementcreationtype = 1
+overridesubsystem = 1
+speakonattack = 0
+attackspeech = 0

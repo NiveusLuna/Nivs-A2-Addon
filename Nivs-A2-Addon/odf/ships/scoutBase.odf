@@ -1,0 +1,86 @@
+//GENERAL FILE for Scout ships
+
+// include Craft defaults
+#include "craft.odf"
+
+// include new autonomy defaults
+#include "0low-high-high.oif"
+
+//This is for stat accumulation
+shipclass = "scout"
+
+//Maximum Value of Special Energy
+maxSpecialEnergy = 0
+
+//Rate at which special energy recharges (points per second... we think)
+specialEnergyRate = 0
+
+//This is the range in meters which the ships sensors can see (LOS)
+rangeScan = 1250.0f
+
+//default to scout mode in instant action
+scout = 1
+
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.10f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 0.15f
+
+//**********************************************************************
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+enginesHitPoints = 20
+lifeSupportHitPoints = 20
+weaponsHitPoints = 20
+shieldGeneratorHitPoints = 20
+sensorsHitPoints = 20
+//**********************************************************************
+ 
+
+
+
+// This is the size of the build animation sparks.
+weldingRadius = 0.25
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "ScoutSelect"
+eventAcknowledge = "ScoutAcknowledge"
+eventAttack = "ScoutAttack"
+eventStop = "ScoutStop"
+eventMove = "ScoutMove"
+eventRepair = "ScoutRepair"
+
+//**********************************************************************
+//PHYSICS PARAMETERS
+
+//physics file for all other physics stuff
+physicsFile = "sscoutphys.odf"
+
+//for obstacle avoidance
+avoidanceClass = 1
+
+//Explosion to use
+fireball = "xfirebsm"
+
+//************************************************************
+// Tara additions for context sensitive menus
+combat = 1
+alert = 1
+can_sandd = 1
+
+// ship type for formations
+shipType = "S"

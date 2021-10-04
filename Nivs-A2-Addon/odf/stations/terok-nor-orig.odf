@@ -1,0 +1,205 @@
+#include "station.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "CARD_DS9"
+tooltip = "CARD_DS9_V"
+verboseTooltip = "The most heavily armed fortress in the Alpha Quadrant."
+
+//Ship label provided because this is a unique ship.
+label = "Deep Space Nine"
+
+//Race which can build ship & starting race of ship
+race = "cardassian"
+
+//Amount of time required to build ship
+buildTime = 150
+
+//Number of officers required to build this ship
+officerCost = 20
+
+//Number of crew required to build ship & Starting crew
+crewCost = 3000
+
+//Number of maximum crew (only specified if different from crewCost)
+maximumCrew = 6000
+
+//Dilithium Cost to build
+dilithiumCost = 4000
+
+//The number of crew added to the capacity
+maxCrewGain = 5000
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 8000
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 7.5
+
+// rate at which latinum is removed from freighters
+latinumTransferRate = 20.0
+
+//Shield absorbs all damage until it's gone
+shieldProtection = 1.0
+
+//Possible Craft Names
+possibleCraftNames = "Terok Nor" 
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// phaser inner ring
+weapon1 = "cbphas"
+weaponHardpoints1 = "hp23" "hp26"
+
+// photon inner ring
+weapon2 = "cbplas"
+weaponHardpoints2 = "hp40" "hp42" 
+
+// phaser upper pylons
+weapon3 = "cbphas"
+weaponHardpoints3 = "hp25" "hp22" 
+
+// phaser upper pylons
+weapon4 = "cbphas"
+weaponHardpoints4 = "hp39" "hp43"   
+
+// photon upper pylons
+weapon5 = "cbplas"
+weaponHardpoints5 = "hp38" "hp41" 
+
+// phaser upper pylons
+weapon6 = "cbphas"
+weaponHardpoints6 = "hp27" "hp24" 
+
+// photon inner ring
+weapon7 = "cbplas"
+weaponHardpoints7 = "hp46" "hp48"
+
+// photon inner ring
+weapon8 = "cbplas"
+weaponHardpoints8 = "hp45" "hp49"  
+
+// phaser inner ring
+weapon9 = "cbphas"
+weaponHardpoints9 = "hp44" "hp47" 
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp28"
+lifeSupportTargetHardpoints = "hp30" "hp31" "hp32" "hp33"
+weaponsTargetHardpoints = "hp19" "hp21" "hp20"
+shieldGeneratorTargetHardpoints = "hp28"
+sensorsTargetHardpoints = "hp29"
+hullTargetHardpoints = "hp34" "hp35" "hp36" "hp37"
+criticalTargetHardpoints = "hp28"
+
+//**********************************************************************
+
+//**********************************************************************
+
+//Construction Parameters
+buildItem0 = "cconst"
+buildItem1 = "cfreight"
+buildItem2 = "ccargo"
+buildItem3 = "csrepair"
+
+//Hardpoint location for building.
+buildHardpoint = "hp17"
+
+dockinghardpoint = "hp01"
+//repair
+repairhardpoint = "hp01"
+//**********************************************************************
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 1.0f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 2.00f
+
+
+//**********************************************************************
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.5f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.5f
+//**********************************************************************
+
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+//These values are the hitpoint values of the systems
+//If the value is set to zero the ship does not have that system
+weaponsHitPoints = 1000
+//**********************************************************************
+
+
+//**********************************************************************
+//SYSTEM DAMAGE DISTRIBUTION
+//The following section's values should add up to 100
+
+//Percent Chance out of 100 of life support being destroyed
+lifeSupportHitPercent = 5.0f
+
+//Percent Chance out of 100 of weapons being destroyed
+weaponsHitPercent = 7.5f
+
+//Percent Chance out of 100 of shields being destroyed
+shieldGeneratorHitPercent = 7.5f
+
+//Percent Chance out of 100 of sensors being destroyed
+sensorsHitPercent = 7.5f
+
+//Percent Chance out of 100 of hull being hit (crew dying)
+hullHitPercent = 70.0f
+
+//Percent Chance out of 100 of entire ship exploding
+criticalHitPercent = 2.5f
+//**********************************************************************
+
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+//**********************************************************************
+
+eventSelect = "StarbaseSelect"
+eventAcknowledge = "StarbaseAcknowledge"
+eventAttack = "StarbaseAttack"
+eventDecommission = "StarbaseDecommission"
+
+
+//**********************************************************************
+//PROGRAMMING PARAMETERS WHICH SHOULD NOT BE CHANGED & UNUSED PARAMETERS
+
+//Runtime class label for instantiation of object.
+classLabel = "starbase"
+
+//**********************************************************************
+
+
+//**********************************************************************
+//KEYMAP LABEL
+//keymapLabel = "starbase"
+builder_ship = 1
+transporter = 1
+alert = 1
+combat = 1
+SHOW_MOVEMENT_AUTONOMY = 1
+SHOW_SW_AUTONOMY = 1
+
+hotkeyLabel = "HOTKEY_S"
+scaleSod = 1.8f

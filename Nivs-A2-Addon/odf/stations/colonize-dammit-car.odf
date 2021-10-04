@@ -1,0 +1,15 @@
+#include "colonize-dammit-base.odf"
+baseName = "cyard"
+race = "cardassian"
+
+// Queue up the colony ships
+pushbuilditem0 = "ccolony"
+pushbuilditem1 = "ccolony"
+pushbuilditem2 = "ccolony"
+pushbuilditem3 = "ccolony"
+pushbuilditem4 = "ccolony"
+pushbuilditem5 = "ccolony"
+pushbuilditem6 = "ccolony"
+pushbuilditem7 = "ccolony"
+pushbuilditem8 = "ccolony"
+pushbuilditem9 = "ccolony"

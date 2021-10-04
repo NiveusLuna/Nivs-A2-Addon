@@ -1,0 +1,53 @@
+//Programming Stuff DO NOT CHANGE
+classLabel = "replaceweapon"
+
+// class-based replace
+replacementMode = 2
+
+// First refit
+replacement0Condition = "fwfwerft" // becomes...
+replacement0Class0 = "fwfwerfte1"
+// Second refit
+replacement1Condition = "fwfwerfte1" // becomes...
+replacement1Class0 = "fwfwerfte2"
+// Third refit
+replacement2Condition = "fwfwerfte2" // becomes...
+replacement2Class0 = "fwfwerfte3"
+
+// Just an upgrade
+replacementkeepname = 1
+replacementdontremovefootprint = 1
+replacementmaintainorders = 1
+replacementregisterasnew = 0
+replacementcreationtype = 1
+overridesubsystem = 1 // Yes, do this even if weapons are destroyed.
+overrideceasefire = 1 // Yes, do this even during a ceasefire.
+
+
+// ******************
+// other stuff
+
+// Mark this as a special weapon.
+special = 1
+
+//Location of the button in the speed panel
+//buttonSlot = 1
+buttonSlot = 2
+
+// Priority of button in the speed panel, this is only
+// used if it is non-zero.
+buttonPriority = 5
+
+//Type of border to use for this button.
+//0 = No border.
+//1 = Offensive border.
+//2 = Defensive border.
+buttonBorder = 2
+
+//Don't automatically switch to attack mode 
+switchToAttack = 0
+
+// Dont speak on attacking, it does special stuff.
+speakOnAttack = 0
+
+hotkeyLabel = "HOTKEY_F6"

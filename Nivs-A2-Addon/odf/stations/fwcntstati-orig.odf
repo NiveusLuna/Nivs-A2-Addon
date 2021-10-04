@@ -1,0 +1,219 @@
+#include "station.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Turnstile 911"
+
+//tooltips
+tooltip = "Turnstile 911"
+verboseTooltip = "This Station is perfect to found new bases, can build and repair big ships and has a lot of space for Latinum and Dilithium"
+
+//Race which can build ship & starting race of ship
+race = "federation"
+
+//Amount of time required to build ship
+buildTime = 90.0
+
+//Number of officers required to build this ship
+officerCost = 15
+
+//Number of crew required to build ship & Starting crew
+crewCost = 600
+
+//Number of maximum crew (only specified if different from crewCost)
+maximumCrew = 2000
+
+//Dilithium Cost to build
+dilithiumCost = 3000
+
+//Metal cost to build
+metalCost = 1000
+
+//Number of Officers starbase gives by default
+officerGain = 20
+
+//Maximum number of officer quarters
+maximumUpgrades = 6
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 7000
+
+// Rate at which latinum is transfered from freighters
+latinumTransferRate = 15.0
+
+//Dilithium transfer rate from freighter to station
+dilithiumTransferRate = 15.0
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 5.2
+
+//Shield absorbs all damage until it's gone
+shieldProtection = 1.0
+
+//Possible Craft Names
+possibleCraftNames = 
+	"Outpost 3" "Starbase 911-4" "Base Alpha" "Planet Defend 1" "Frontier Saver 911" 
+	"Outpost 2" "Starbase 911-1" "Base Beta" "Planet Defend 2" "Frontier Saver 912" 
+	"Outpost 1" "Starbase 911-2" "Base Gamma" "Planet Defend 3" "Frontier Saver 913" 
+	"Outpost 4" "Starbase 911-3" "Base Delta" "Planet Defend 4" "Frontier Saver 914" 
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Phaser
+weapon1 = "fwi2phas"
+weaponHardpoints1 = "hp01" "hp02" "hp05" "hp06" "hp09"
+
+// Phaser
+weapon2 = "fwi2phas"
+weaponHardpoints2 = "hp03" "hp04" "hp07" "hp08" 
+
+// Phaser
+weapon3 = "fwi1phas"
+weaponHardpoints3 = "hp18" "hp19" "hp20" "hp21"
+
+// Pulse Phaser
+weapon4 = "fwi1phas"
+weaponHardpoints4 = "hp10" "hp11" "hp12" "hp13" "hp22" "hp23" "hp24" "hp25" "hp35" "hp36" "hp37" "hp39"
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp10" "hp11" "hp12" "hp13" "hp14" "hp16"
+lifeSupportTargetHardpoints = "hp17" "hp18" "hp19" "hp20" "hp14" "hp21"
+weaponsTargetHardpoints = "hp22" "hp23" "hp24" "hp25" "hp26" "hp27"
+shieldGeneratorTargetHardpoints = "hp28" "hp29" "hp30" "hp31" "hp32" "hp33"
+sensorsTargetHardpoints = "hp34" "hp35" "hp36" "hp37" "hp38" "hp39"
+hullTargetHardpoints = "hp40" "hp41" "hp42" "hp43" "hp44" "hp45"
+criticalTargetHardpoints = "hp46" "hp47" "hp48" "hp49" "hp50" "hp15"
+
+//**********************************************************************
+
+
+//**********************************************************************
+//Construction Parameters
+
+buildItem0 = "fbattle"
+buildItem1 = "fgalaxy"
+buildItem2 = "fcruise3"
+buildItem3 = "fdestroy"
+buildItem4 = "fcruise1"
+buildItem5 = "fcruise2"
+buildItem6 = "fspecial"
+buildItem7 = "ffrigate"
+
+//Hardpoint locations
+buildHardpoint = "build"
+dockinghardpoint = "dock"
+repairHardpoint = "repair"
+repairSide = 2
+repairFacility = 1
+decommissionFacility = 1
+//**********************************************************************
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.50f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 2.00f
+
+
+//**********************************************************************
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.5f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.5f
+//**********************************************************************
+
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 1000
+enginesHitPoints = 0
+weaponsHitPoints = 1000
+lifeSupportHitPoints = 1000
+sensorsHitPoints = 1000
+
+//**********************************************************************
+
+
+
+//**********************************************************************
+//SYSTEM DAMAGE DISTRIBUTION
+//The following section's values should add up to 100
+//Percent Chance out of 100 of engines being destroyed
+enginesHitPercent = 0.0f
+
+//Percent Chance out of 100 of life support being destroyed
+lifeSupportHitPercent = 10.5f
+
+//Percent Chance out of 100 of weapons being destroyed
+weaponsHitPercent = 10.0f
+
+//Percent Chance out of 100 of shields being destroyed
+shieldGeneratorHitPercent = 13.0f
+
+//Percent Chance out of 100 of sensors being destroyed
+sensorsHitPercent = 13.0f
+
+//Percent Chance out of 100 of hull being hit (crew dying)
+crewHitPercent = 13.5f
+
+//Percent Chance out of 100 of entire ship exploding
+hullHitPercent = 40.0f
+//**********************************************************************
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+//**********************************************************************
+
+eventSelect = "StarbaseSelect"
+eventAcknowledge = "StarbaseAcknowledge"
+eventAttack = "StarbaseAttack"
+eventDecommission = "StarbaseDecommission"
+
+
+//**********************************************************************
+//PROGRAMMING PARAMETERS WHICH SHOULD NOT BE CHANGED & UNUSED PARAMETERS
+
+//Runtime class label for instantiation of object.
+classLabel = "starbase"
+
+//**********************************************************************
+
+
+//**********************************************************************
+//KEYMAP LABEL
+keymapLabel = "starbase"
+// Obsolete, use hotkeyLabel
+// keymapLabel = "adv_shipyard"
+hotkeyLabel = "HOTKEY_F8"
+
+//************************************************************
+// Brian additions for context sensitive menus
+alert = 1
+combat = 1
+builder_ship = 1
+transporter = 1
+SHOW_MOVEMENT_AUTONOMY = 1
+SHOW_SW_AUTONOMY = 1
+facility = 1
+
+// let's make this a bit bigger
+ScaleSOD = 1.4
+

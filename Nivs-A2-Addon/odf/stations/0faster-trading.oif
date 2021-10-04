@@ -1,0 +1,11 @@
+// these stations don't build, so no special weapons or movement buttons
+SHOW_MOVEMENT_AUTONOMY = 0
+SHOW_SW_AUTONOMY = 0
+
+weapon1 = "uniRW-buy-di"
+weapon2 = "uniRW-buy-metal"
+weapon3 = "uniRW-sell-di"
+weapon4 = "uniRW-sell-metal"
+
+// We cannot use ReplaceWeapons without a weapons system
+weaponsHitPoints = 300

@@ -1,0 +1,243 @@
+#include "orbital.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Orbital Starbase"
+
+// *Orbital* starbase? Where?
+// baseName = "rbase"
+
+//tooltips
+tooltip = "Orbital Starbase"
+verboseTooltip = "An orbital mining station capable of planetary defense."
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Starbase"
+
+//tooltips
+tooltip = "ROM_BASE"
+verboseTooltip = "ROM_BASE_V"
+
+//Race which can build ship & starting race of ship
+race = "romulan"
+
+//Amount of time required to build ship
+buildTime = 120.0
+
+//Number of officers required to build this ship
+officerCost = 10
+
+//Number of crew required to build ship & Starting crew
+crewCost = 150
+
+//Number of maximum crew (only specified if different from crewCost)
+maximumCrew = 1500
+
+//The number of crew added to the capacity
+maxCrewGain = 3000
+
+//Dilithium Cost to build
+dilithiumCost = 2000
+
+//Metal cost to build
+metalCost = 2000
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 6000
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 5.0
+
+//Shield absorbs all damage until it's gone
+shieldProtection = 1.0
+
+//Possible Craft Names
+possibleCraftNames = 
+	"D'deras Station" "Ludanian Station" "Muturiun Station" "D'quirilian Station"
+	"Vigus Station" "Cirgius Station" "Atreuis Station" "D'durun Station"
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// Mining Beam
+weapon1 = "gOrbitalBeam"
+weaponHardpoints1 = "build" // uses build hardpoint
+//weaponHardpoints1 = "hp31" // uses docking hardpoint
+
+// Pulse Phaser
+weapon2 = "rbpulse"
+weaponHardpoints2 = "hp201" 
+
+// Pulse Phaser
+weapon3 = "rbpulse"
+weaponHardpoints3 = "hp202"
+
+// Pulse Phaser
+weapon4 = "rbpulse"
+weaponHardpoints4 = "hp203"
+
+// Pulse Phaser
+weapon5 = "rbpulse"
+weaponHardpoints5 = "hp204"
+
+// Pulse Phaser
+weapon6 = "rbpulse"
+weaponHardpoints6 = "hp205" 
+
+// Pulse Phaser
+weapon7 = "rbpulse"
+weaponHardpoints7 = "hp206"
+
+// Pulse Phaser
+weapon8 = "rbpulse"
+weaponHardpoints8 = "hp207"
+
+// Pulse Phaser
+weapon9 = "rbpulse"
+weaponHardpoints9 = "hp200"
+
+// generate crew at the same rate as a starbase
+weapon10 = "uniW-gen-starbase-crew"
+
+// Photon Torpedo
+//weapon2 = "fdphot"
+//weaponHardpoints2 = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06"
+
+// Cloaking Device
+//weapon8 = "gcloak"
+//weaponHardpoints8 = "hp200"
+
+// Hardpoints to hit for various systems and other locations.
+enginesTargetHardpoints = "hp30" "hp34" "hp35" "hp36" "hp37" "hp39"
+"hp41" "hp42" "hp45"
+lifeSupportTargetHardpoints = "hp30" "hp34" "hp35" "hp36" "hp37" "hp39"
+"hp41" "hp42" "hp45"
+weaponsTargetHardpoints = "hp30" "hp34" "hp35" "hp36" "hp37" "hp39"
+"hp41" "hp42" "hp45"
+shieldGeneratorTargetHardpoints = "hp30" "hp34" "hp35" "hp36" "hp37" "hp39"
+"hp41" "hp42" "hp45"
+sensorsTargetHardpoints = "hp30" "hp34" "hp35" "hp36" "hp37" "hp39"
+"hp41" "hp42" "hp45"
+hullTargetHardpoints = "hp30" "hp34" "hp35" "hp36" "hp37" "hp39"
+"hp41" "hp42" "hp45"
+criticalTargetHardpoints = "hp30" "hp34" "hp35" "hp36" "hp37" "hp39"
+"hp41" "hp42" "hp45"
+
+//**********************************************************************
+
+//**********************************************************************
+//Construction Parameters
+
+//Hardpoint location for building.
+//buildHardpoint = "build"
+//**********************************************************************
+//**********************************************************************
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.50f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 2.00f
+
+
+//**********************************************************************
+
+//**********************************************************************
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.5f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.5f
+//**********************************************************************
+
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 1000
+enginesHitPoints = 0
+weaponsHitPoints = 1000
+lifeSupportHitPoints = 1000
+sensorsHitPoints = 1000
+
+//**********************************************************************
+
+
+
+//**********************************************************************
+//SYSTEM DAMAGE DISTRIBUTION
+//The following section's values should add up to 100
+//Percent Chance out of 100 of engines being destroyed
+enginesHitPercent = 0.0f
+
+//Percent Chance out of 100 of life support being destroyed
+lifeSupportHitPercent = 10.5f
+
+//Percent Chance out of 100 of weapons being destroyed
+weaponsHitPercent = 10.0f
+
+//Percent Chance out of 100 of shields being destroyed
+shieldGeneratorHitPercent = 13.0f
+
+//Percent Chance out of 100 of sensors being destroyed
+sensorsHitPercent = 13.0f
+
+//Percent Chance out of 100 of hull being hit (crew dying)
+crewHitPercent = 13.5f
+
+//Percent Chance out of 100 of entire ship exploding
+hullHitPercent = 40.0f
+//**********************************************************************
+
+
+
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+//**********************************************************************
+
+eventSelect = "StarbaseSelect"
+eventAcknowledge = "StarbaseAcknowledge"
+eventAttack = "StarbaseAttack"
+eventDecommission = "StarbaseDecommission"
+
+
+//**********************************************************************
+//PROGRAMMING PARAMETERS WHICH SHOULD NOT BE CHANGED & UNUSED PARAMETERS
+
+// We move really fast
+orbitTime = 45.0
+
+//**********************************************************************
+//KEYMAP LABEL
+// Obsolete, use hotkeyLabel
+// keymapLabel = "starbase"
+//hotkeyLabel = "HOTKEY_F1"
+
+//************************************************************
+// Brian additions for context sensitive menus
+transporter = 1
+alert = 1
+combat = 1
+
+// make it bigger
+//ScaleSOD = 1.5
+ScaleSOD = 0.66666

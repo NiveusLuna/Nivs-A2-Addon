@@ -1,0 +1,11 @@
+#include "fwwerftevo-base.odf"
+
+//Display name for this weapon
+wpnName = "docken"
+
+//tooltips
+tooltip = "Weaponstation"
+verboseTooltip = "Adds a weaponstation for 1200 metal"
+
+// How much metal must we spend to fuse this?
+metalCost = 1200

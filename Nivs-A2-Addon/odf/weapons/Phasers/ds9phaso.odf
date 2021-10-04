@@ -1,0 +1,6 @@
+#include "phasero.odf"
+
+//The sprite which is used for this ordinance
+Sprite = "cphaser"
+
+damageBase = 70

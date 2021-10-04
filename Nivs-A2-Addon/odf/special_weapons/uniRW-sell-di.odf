@@ -1,0 +1,18 @@
+#include "uniRW-buy-di.odf"
+
+// Say my name
+wpnname = "Sell More Dilithium"
+
+// my description
+tooltip = "Sell More Dilithium"
+verboseTooltip = "Sell 1000 Dilithium"
+
+// My true purpose in life: MONEY
+dilithiumCost = 1000
+latinumCost = -700
+
+// Where do you want me?
+buttonslot = 12
+
+// You bad man, using people is bad!
+hotkeyLabel = "GAME-HOTKEY-CONTROL_SHIFT_D"

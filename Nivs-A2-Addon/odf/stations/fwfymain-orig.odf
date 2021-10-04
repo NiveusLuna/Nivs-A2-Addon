@@ -1,0 +1,150 @@
+//Generic Federation Advanceable Shipyard ODF file
+
+// We aren't overriding much from the generic station ODF
+#include "station.odf"
+
+//Default values for ALL Advanceable Shipyard versions (can be overriden in successive ODF files)
+
+//Race which can build ship & starting race of ship
+race = "federation"
+
+//Number of officers required to build this ship
+officerCost = 5
+
+//Number of crew required to build ship & Starting crew
+crewCost = 500
+
+//Dilithium Cost to build
+dilithiumCost = 300
+
+//Max Shield Strength & Begining Shield Strength <1000
+maxHealth = 2500
+
+//Rate at which shield recharges (points per second... we think)
+shieldRate = 16.6
+
+//maximum special energy (stations don't have any)
+maxSpecialEnergy = 1000
+
+//special energy recharge rate
+specialEnergyRate = 21
+
+***********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+enginesTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp19" "hp06" "hp07" "hp08"
+lifeSupportTargetHardpoints = "hp09" "hp02" "hp03" "hp04" "hp05" "hp06" "hp07" "hp08"
+weaponsTargetHardpoints = "hp10" "hp02" "hp11" "hp14" "hp05" "hp06" "hp07" "hp08"
+shieldGeneratorTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp06" "hp17" "hp08"
+sensorsTargetHardpoints = "hp01" "hp02" "hp03" "hp12" "hp05" "hp06" "hp07" "hp08"
+hullTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp05" "hp16" "hp13" "hp08"
+criticalTargetHardpoints = "hp01" "hp02" "hp03" "hp04" "hp15" "hp06" "hp07" "hp18"
+
+//**********************************************************************
+//SYSTEM HITPOINTS
+
+// Hitpoints
+
+shieldGeneratorHitPoints = 1000
+enginesHitPoints = 0
+weaponsHitPoints = 1000
+lifeSupportHitPoints = 1000
+sensorsHitPoints = 1000
+
+//SYSTEM DAMAGE DISTRIBUTION
+//The following section's values should add up to 100
+//Percent Chance out of 100 of engines being destroyed
+enginesHitPercent = 0.0f
+
+//Percent Chance out of 100 of life support being destroyed
+lifeSupportHitPercent = 10.5f
+
+//Percent Chance out of 100 of weapons being destroyed
+weaponsHitPercent = 10.0f
+
+//Percent Chance out of 100 of shields being destroyed
+shieldGeneratorHitPercent = 13.0f
+
+//Percent Chance out of 100 of sensors being destroyed
+sensorsHitPercent = 13.0f
+
+//Percent Chance out of 100 of hull being hit (crew dying)
+crewHitPercent = 13.5f
+
+//Percent Chance out of 100 of entire ship exploding
+hullHitPercent = 40.0f
+
+//**********************************************************************
+//Construction Parameters
+buildItem0 = "ffrigate"
+buildItem1 = "fgalaxy"
+buildItem2 = "fspecial"
+buildItem3 = "fbattle"
+buildItem4 = "ffreight"
+//**********************************************************************
+
+// how often should we check to see if we have a valid resource?
+checkValidResourceInterval = 10.0f
+
+//**********************************************************************
+
+//CREW STATUS MULTIPLIERS
+//The multiplier for the delay between shots for weapons while in yellow status
+weaponYellow = 1.5f
+
+//The multiplier for the delay between shots for weapons while in red status
+weaponRed = 2.5f
+
+//**********************************************************************
+
+//AI system parameters
+//These parameters influence how the AI evaluates and compares craft.
+
+//An abstract number that represents how much extra strength must be
+//used to attack this craft due to its weapons. 
+// (0.0=no weapons, 0.5 = average weapons, 1.0=many good weapons)
+attackPower = 0.50f
+
+//The normalized intrinsic value of a target.  High value craft make good
+//attack targets. (0.0=lowest value, 1.0=highest value)
+intrinsicValue = 2.00f
+
+//**********************************************************************
+//MESSAGE & SOUND PARAMETERS
+
+eventSelect = "StarbaseSelect"
+eventAcknowledge = "StarbaseAcknowledge"
+eventAttack = "StarbaseAttack"
+eventDecommission = "StarbaseDecommission"
+
+//**********************************************************************
+//PROGRAMMING PARAMETERS WHICH SHOULD NOT BE CHANGED & UNUSED PARAMETERS
+
+//Runtime class label for instantiation of object.
+classLabel = "starbase"
+
+//AI Type DO NOT CHANGE
+aiName = "StarbaseProcess"
+
+//************************************************************
+// Brian additions for context sensitive menus
+
+alert = 1
+combat = 0
+builder_ship = 1
+transporter = 1
+SHOW_MOVEMENT_AUTONOMY = 1
+SHOW_SW_AUTONOMY = 1
+can_repair = 0
+can_explore = 0
+can_attack = 0
+
+// let's make this a bit bigger
+ScaleSOD = 2
+
+facility = 1
+has_crew = 1
+has_hitpoints = 1
+recyclesInPlace = 1
+
+//************************************************************

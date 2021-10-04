@@ -1,0 +1,39 @@
+#include "station.odf"
+#include "0faster-trading.oif"
+
+// Basic Trading Station Cargos
+cargoKey1 = "GUI_SD_CARGO_SAURIAN_BRANDY"
+cargoValue1 = 1.0
+
+cargoKey2 = "GUI_SD_CARGO_TRIBBLES"
+cargoValue2 = .8
+
+cargoKey3 = "GUI_SD_CARGO_WARP_CORES"
+cargoValue3 = 1.5
+
+cargoKey4 = "GUI_SD_TRADE_GOODS"
+cargoValue4 = 1.0
+
+cargoKey5 = "GUI_SD_ROMULAN_ALE"
+cargoValue5 = 1.5
+
+cargoKey6 = "GUI_SD_REPLICATORS"
+cargoValue6 = 1.8
+
+cargoKey7 = "GUI_SD_GAGH"
+cargoValue7 = 1.1
+
+cargoKey8 = "GUI_SD_HOLOGENERATOR"
+cargoValue8 = 1.9
+
+cargoKey9 = "GUI_SD_MEDICAL_SUPPLIES"
+cargoValue9 = 2.0
+
+cargoKey10 = "GUI_SD_ANTIGRAV"
+cargoValue10 = 1.1
+
+cargoKey11 = "GUI_SD_QUADROTRITICALE"
+cargoValue11 = 0.5
+
+cargoKey12 = "GUI_SD_RAKTAJINO"
+cargoValue12 = 1.0

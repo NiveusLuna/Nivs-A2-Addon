@@ -1,0 +1,99 @@
+#include "terok-nor-orig.odf"
+
+//**********************************************************************
+//MAIN DESIGN PARAMETERS
+
+//Name of Ship class in Ship Display window & in edit mode & tooltip
+unitName = "Terok Nor"
+tooltip = "Terok Nor"
+verboseTooltip = "The most heavily armed fortress in the Alpha Quadrant."
+
+dilithiumCost = 1000
+metalCost = 3000
+
+baseName = "ds9"
+
+// This *was* first and foremost a mining station. So let's offload!
+// Oh, and do it better than the originals, too.
+latinumTransferRate = 20.0 // specified in original ODF
+dilithiumTransferRate = 20.0
+metalTransferRate = 20.0 // ORBITAL mining station, remember?
+
+//**********************************************************************
+//ART PARAMETERS & WEAPON NAMES
+
+// phaser inner ring
+weapon1 = "ds9phas"
+// weaponHardpoints1 = "hp23" "hp26"
+
+// photon inner ring
+weapon2 = "ds9plas"
+// weaponHardpoints2 = "hp40" "hp42" 
+
+// phaser upper pylons
+weapon3 = "ds9phas"
+// weaponHardpoints3 = "hp25" "hp22" 
+
+// phaser upper pylons
+weapon4 = "ds9phas"
+// weaponHardpoints4 = "hp39" "hp43"   
+
+// photon upper pylons
+weapon5 = "ds9plas"
+// weaponHardpoints5 = "hp38" "hp41" 
+
+// phaser upper pylons
+weapon6 = "ds9phas"
+// weaponHardpoints6 = "hp27" "hp24" 
+
+// photon inner ring
+weapon7 = "ds9plas"
+// weaponHardpoints7 = "hp46" "hp48"
+
+// photon inner ring
+weapon8 = "ds9plas"
+// weaponHardpoints8 = "hp45" "hp49"  
+
+// phaser inner ring
+weapon9 = "ds9phas"
+// weaponHardpoints9 = "hp44" "hp47" 
+
+// Hardpoints to hit for various systems and other locations.
+// enginesTargetHardpoints = "hp28"
+// lifeSupportTargetHardpoints = "hp30" "hp31" "hp32" "hp33"
+// weaponsTargetHardpoints = "hp19" "hp21" "hp20"
+// shieldGeneratorTargetHardpoints = "hp28"
+// sensorsTargetHardpoints = "hp29"
+// hullTargetHardpoints = "hp34" "hp35" "hp36" "hp37"
+// criticalTargetHardpoints = "hp28"
+
+//**********************************************************************
+
+//**********************************************************************
+
+//Construction Parameters
+buildItem0 = "cfrigate"
+buildItem1 = "cbattle"
+buildItem2 = "cspecial"
+buildItem3 = "cbattle2"
+buildItem4 = "ccruise1"
+buildItem5 = "ccruise2"
+buildItem6 = "ccruise3"
+
+//Hardpoint location for building.
+//buildHardpoint = "hp17"
+
+//dockinghardpoint = "hp01"
+//repair
+//repairhardpoint = "hp01"
+repairSide = 1
+repairFacility = 1
+
+// No, don't decom here. We don't need the lines getting any longer.
+decommissionFacility = 0
+
+//**********************************************************************
+
+
+hotkeyLabel = "HOTKEY_O"
+//scaleSOD = 1.0f
