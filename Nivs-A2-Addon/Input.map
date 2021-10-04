@@ -546,29 +546,29 @@ wc_gRepairBeam {
 
 # Cardassian Cloak (Keldon class, Brinok class, Gul Vystan class, Hideki class)
 wc_gccloak {
-	+ keyboard	BackQuote
-	- keyboard 	Control
+	+ keyboard	C
+	+ keyboard	Control
 	- keyboard	Shift
 	- keyboard	Alt
 }
-# Cardassian Cloak (Cardassian Cargo Ship)
+# Generic Cloak
 wc_gcloak {
 	+ keyboard	BackQuote
-	- keyboard 	Control
+	- keyboard	Control
 	- keyboard	Shift
 	- keyboard	Alt
 }
 # Klingon Cloak (Vor-cha class, Chuq'Beh class, B'Rel class, Martok's Negh'var)
 wc_gkcloak {
-	+ keyboard	BackQuote
-	- keyboard 	Control
+	+ keyboard	C
+	+ keyboard	Control
 	- keyboard	Shift
 	- keyboard	Alt
 }
 # Romulan Cloak (Talon class, Shrike class, Griffin class, Raptor class, Osprey class, Venator class, D'Deridex class, Wraith class, Phoenix class)
 wc_grcloak {
-	+ keyboard	BackQuote
-	- keyboard 	Control
+	+ keyboard	C
+	+ keyboard	Control
 	- keyboard	Shift
 	- keyboard	Alt
 }
@@ -1362,7 +1362,7 @@ cancel {
 ### Starbase / Nexus
 # In general:
 # Construction	F1
-# Freighter		F2
+# Freighter		F
 # Cargo			(F3)
 # Repair		(F4)
 
@@ -1405,35 +1405,35 @@ bc_rconst {
 # Mining Freighter / Collector
 # Borg Collector
 bc_bfreight {
-	+ keyboard	F2
+	+ keyboard	F
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
 }
 # Cardassian Dilithium Freighter
 bc_cfreight {
-	+ keyboard	F2
+	+ keyboard	F
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
 }
 # Federation Dilithium Freighter
 bc_ffreight {
-	+ keyboard	F2
+	+ keyboard	F
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
 }
 # Klingon Dilithium Freighter
 bc_kfreight {
-	+ keyboard	F2
+	+ keyboard	F
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
 }
 # Romulan Dilithium Freighter
 bc_rfreight {
-	+ keyboard	F2
+	+ keyboard	F
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2096,7 +2096,7 @@ bc_8472_mine {
 }
 # 8472 Sentinel
 bc_8472_sentinel {
-	+ keyboard	F2
+	+ keyboard	D
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2617,7 +2617,7 @@ bc_8472_podshipresearch1 {
 	- keyboard	Alt
 }
 bc_8472_podshipresearch21 {
-	+ keyboard	F1
+	+ keyboard	F6
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2629,7 +2629,7 @@ bc_borpod11 {
 	- keyboard	Alt
 }
 bc_borpod21 {
-	+ keyboard	F1
+	+ keyboard	F6
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2641,7 +2641,7 @@ bc_carpod11 {
 	- keyboard	Alt
 }
 bc_carpod21 {
-	+ keyboard	F1
+	+ keyboard	F6
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2653,7 +2653,7 @@ bc_fedpod11 {
 	- keyboard	Alt
 }
 bc_fedpod21 {
-	+ keyboard	F1
+	+ keyboard	F6
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2665,7 +2665,7 @@ bc_klipod11 {
 	- keyboard	Alt
 }
 bc_klipod21 {
-	+ keyboard	F1
+	+ keyboard	F6
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2677,7 +2677,7 @@ bc_rompod11 {
 	- keyboard	Alt
 }
 bc_rompod21 {
-	+ keyboard	F1
+	+ keyboard	F6
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2691,7 +2691,7 @@ bc_8472_podshipresearch2 {
 	- keyboard	Alt
 }
 bc_8472_podshipresearch22 {
-	+ keyboard	F2
+	+ keyboard	F7
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2703,7 +2703,7 @@ bc_borpod12 {
 	- keyboard	Alt
 }
 bc_borpod22 {
-	+ keyboard	F2
+	+ keyboard	F7
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2715,7 +2715,7 @@ bc_carpod12 {
 	- keyboard	Alt
 }
 bc_carpod22 {
-	+ keyboard	F2
+	+ keyboard	F7
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2727,7 +2727,7 @@ bc_fedpod12 {
 	- keyboard	Alt
 }
 bc_fedpod22 {
-	+ keyboard	F2
+	+ keyboard	F7
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2739,7 +2739,7 @@ bc_klipod12 {
 	- keyboard	Alt
 }
 bc_klipod22 {
-	+ keyboard	F2
+	+ keyboard	F7
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2751,7 +2751,7 @@ bc_rompod12 {
 	- keyboard	Alt
 }
 bc_rompod22 {
-	+ keyboard	F2
+	+ keyboard	F7
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2765,7 +2765,7 @@ bc_8472_podshipresearch3 {
 	- keyboard	Alt
 }
 bc_8472_podshipresearch23 {
-	+ keyboard	F3
+	+ keyboard	F8
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2777,7 +2777,7 @@ bc_borpod13 {
 	- keyboard	Alt
 }
 bc_borpod23 {
-	+ keyboard	F3
+	+ keyboard	F8
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2789,7 +2789,7 @@ bc_carpod13 {
 	- keyboard	Alt
 }
 bc_carpod23 {
-	+ keyboard	F3
+	+ keyboard	F8
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2801,7 +2801,7 @@ bc_fedpod13 {
 	- keyboard	Alt
 }
 bc_fedpod23 {
-	+ keyboard	F3
+	+ keyboard	F8
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2813,7 +2813,7 @@ bc_klipod13 {
 	- keyboard	Alt
 }
 bc_klipod23 {
-	+ keyboard	F3
+	+ keyboard	F8
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2825,7 +2825,7 @@ bc_rompod13 {
 	- keyboard	Alt
 }
 bc_rompod23 {
-	+ keyboard	F3
+	+ keyboard	F8
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2839,7 +2839,7 @@ bc_8472_podshipresearch4 {
 	- keyboard	Alt
 }
 bc_8472_podshipresearch24 {
-	+ keyboard	F4
+	+ keyboard	F9
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2851,7 +2851,7 @@ bc_borpod14 {
 	- keyboard	Alt
 }
 bc_borpod24 {
-	+ keyboard	F4
+	+ keyboard	F9
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2863,7 +2863,7 @@ bc_carpod14 {
 	- keyboard	Alt
 }
 bc_carpod24 {
-	+ keyboard	F4
+	+ keyboard	F9
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2875,7 +2875,7 @@ bc_fedpod14 {
 	- keyboard	Alt
 }
 bc_fedpod24 {
-	+ keyboard	F4
+	+ keyboard	F9
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2887,7 +2887,7 @@ bc_klipod14 {
 	- keyboard	Alt
 }
 bc_klipod24 {
-	+ keyboard	F4
+	+ keyboard	F9
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2899,7 +2899,7 @@ bc_rompod14 {
 	- keyboard	Alt
 }
 bc_rompod24 {
-	+ keyboard	F4
+	+ keyboard	F9
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2912,7 +2912,7 @@ bc_borpod15 {
 	- keyboard	Alt
 }
 bc_borpod25 {
-	+ keyboard	F5
+	+ keyboard	F10
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2924,7 +2924,7 @@ bc_carpod15 {
 	- keyboard	Alt
 }
 bc_carpod25 {
-	+ keyboard	F5
+	+ keyboard	F10
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2936,7 +2936,7 @@ bc_fedpod15 {
 	- keyboard	Alt
 }
 bc_fedpod25 {
-	+ keyboard	F5
+	+ keyboard	F10
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2948,7 +2948,7 @@ bc_klipod15 {
 	- keyboard	Alt
 }
 bc_klipod25 {
-	+ keyboard	F5
+	+ keyboard	F10
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -2960,7 +2960,7 @@ bc_rompod15 {
 	- keyboard	Alt
 }
 bc_rompod25 {
-	+ keyboard	F5
+	+ keyboard	F10
 	- keyboard 	Control
 	- keyboard	Shift
 	- keyboard	Alt
@@ -3779,4 +3779,253 @@ cleanshot {
 	+ keyboard	Control
 	- keyboard	Shift
 	+ keyboard	Alt
+}
+
+######################
+# THERE BE MODS HERE #
+######################
+
+#### Universal stuff
+# Planetary shield
+bc_shield {
+	+ keyboard	F1
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Halt queue procsesing - "H" is for "Halt"
+bc_all_halt {
+	+ keyboard	H
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Sell more dilithium
+wc_uniRW-sell-di {
+	+ keyboard	D
+	+ keyboard	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+	- keyboard	BackQuote
+}
+
+# Sell more metal
+wc_uniRW-sell-metal {
+	+ keyboard	M
+	+ keyboard	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+	- keyboard	BackQuote
+}
+
+# Buy more dilithium
+wc_uniRW-buy-di {
+	+ keyboard	D
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+	- keyboard	BackQuote
+}
+
+# Buy more metal
+wc_uniRW-buy-metal {
+	+ keyboard	M
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+	- keyboard	BackQuote
+}
+
+
+
+##### Klingon stations
+# Field Yard - Y is for "Yard"
+bc_kli_field_yardZ {
+	+ keyboard	Y
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Central Facility
+bc_kli_field_yardP1Z {
+	+ keyboard	F2
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Bird of Prey Extension
+bc_kli_field_yardP2Z {
+	+ keyboard	F1
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Special Forces Extension
+bc_kli_field_yardP3Z {
+	+ keyboard	F3
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Starbase Commando Station Refit
+wc_kbase-cmdo-upgrade {
+	+ keyboard	F9
+	- keyboard	Control
+	- keyboard	Alt
+	- keyboard	Shift
+}
+
+# Orbital starbase - M is for "Mining"
+bc_kbase-orbital {
+	+ keyboard	M
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##### Klingon Special Weapons
+# Klingon Cargo Ship Cloak
+wc_gkcloak-cargo {
+	+ keyboard	C
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+
+
+##### Borg Stations
+# Assimilation Nexus - A is for "Assimilation"
+bc_bbase-assim {
+	+ keyboard	A
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##### Borg Special Weapons
+wc_gTechAssim {
+	+ keyboard	F7
+	- keyboard	Control
+	- keyboard	Alt
+	- keyboard	Shift
+}
+
+
+
+##### Federation Stations
+# Federation Advanceable Shipyard - "Y" is for "Yard"
+bc_fwfwerft {
+	+ keyboard	Y
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Advanceable Shipyard - First Upgrade
+wc_fwwerftevo1 {
+	+ keyboard	F6
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Advanceable Shipyard - Second Upgrade
+wc_fwwerftevo2 {
+	+ keyboard	F6
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Advanceable Shipyard - Third Upgrade
+wc_fwwerftevo3 {
+	+ keyboard	F6
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Federation Turnstile 911 - "O" is for "Outpost"
+bc_fwcntstati {
+	+ keyboard	O
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Federation orbital starbase - M is for "Mining"
+bc_fbase-orbital {
+	+ keyboard	M
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+
+
+##### Romulan Stations
+# Romulan orbital starbase - M is for "Mining"
+bc_rbase-orbital {
+	+ keyboard	M
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##### Romulan Special Weapons
+# Romulan Scout Cloak
+wc_grcloak-scout {
+	+ keyboard	C
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Cargo Ship Cloak
+wc_grcloak-cargo {
+	+ keyboard	C
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Turret Cloak
+wc_grcloak-turret {
+	+ keyboard	C
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+
+
+##### Cardassian Stations
+# Cardassian orbital starbase - M is for "Mining"
+bc_cbase-orbital {
+	+ keyboard	M
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Terok Nor - "O" is for "Outpost"
+bc_terok-nor {
+	+ keyboard	O
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##### Cardassian Special Weapons
+# Cardassian Scout Cloak
+wc_gccloak-scout {
+	+ keyboard	C
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Cargo Ship Cloak
+wc_gccloak-cargo {
+	+ keyboard	C
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
 }

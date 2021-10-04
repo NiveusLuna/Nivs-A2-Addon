@@ -211,12 +211,11 @@ multiplayer_setup {
 	+ hide_minimap_off	{Minimap Hidden}
 	+ replay_on			{Replay}
 	+ replay_off		{No Replay}
-	+ tech_level_zero	{Standard Tech}
-	+ tech_level_one	{No Super Weapons}
-	+ tech_level_two	{No Science ships}
-	+ tech_level_three	{No Special Weapons}
-	+ tech_level_four	{Free Tech}
-	+ tech_level_five       {Early Upgrades}
+	+ tech_level_zero	{Standard Tech - XML}
+	+ tech_level_one	{Standard Tech - TT}
+	+ tech_level_two	{Classic Standard Tech - XML}
+	+ tech_level_three	{Free Tech - XML}
+	+ tech_level_four	{Free Tech - TT}
 	+ timed_peace_one 	{No Cease Fire}
 	+ timed_peace_two 	{5 Minute Cease Fire}
 	+ timed_peace_three	{10 Minute Cease Fire}

@@ -386,12 +386,12 @@ float BEAM_MISS_LIFETIME = 0.1;
 // Use team color for normal weapons?
 int NORMAL_WEAPON_TEAM_COLOR = 0;
 
-// UI Limits for each resource
+// Limits for each resource
 int MAX_DILITHIUM =	999999;
-int MAX_CREW =		99999;
-int MAX_LATINUM =	99999;
+int MAX_CREW =		999999;
+int MAX_LATINUM =	999999;
 int MAX_METAL =		999999;
-int MAX_OFFICERS =	999;
+int MAX_OFFICERS =	9999;
 
 int MAX_BIOMATTER =	9999999;
 
