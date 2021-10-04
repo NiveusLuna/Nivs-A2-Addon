@@ -1,0 +1,3782 @@
+##########################################
+#
+# STAR TREK Input Map
+#
+# Modify these to update the keyboard and
+# mouse configuration.
+#
+##########################################
+
+####################
+# Key Descriptions #
+####################
+
+# Control Key
+control {
+	+ keyboard	Control
+}
+# Shift Key
+shift {
+	+ keyboard	Shift
+}
+# Alt Key
+alt {
+	+ keyboard	Alt
+}
+
+
+# Cursor movement.
+cursor_x {
+	+ mouse	HorizPos
+}
+cursor_y {
+	+ mouse	VertPos
+}
+cursor_dx {
+	+ mouse HorizVel
+}
+cursor_dy {
+	+ mouse VertVel
+}
+
+
+# Mouse button click, double click, and drag.
+left_click {
+	+ mouse	LeftBtn
+}
+left_hold {
+	+ mouse	LeftBtn
+}
+left_double_click {
+	+ mouse	LeftBtnDblClk
+}
+left_double_hold {
+	+ mouse	LeftBtnDblClk
+}
+middle_click {
+	+ mouse	MiddleBtn
+}
+middle_hold {
+	+ mouse	MiddleBtn
+}
+middle_double_click {
+	+ mouse	MiddleBtnDblClk
+}
+middle_double_hold {
+	+ mouse	MiddleBtnDblClk
+}
+right_click {
+	+ mouse	RightBtn
+}
+right_hold {
+	+ mouse	RightBtn
+}
+right_double_click {
+	+ mouse	RightBtnDblClk
+}
+right_double_hold {
+	+ mouse	RightBtnDblClk
+}
+
+
+# Chat Key (enter in-game chat)
+chat {
+	+ keyboard	Enter
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#Okay key, like hitting the okay button on popups
+okay {
+	+ keyboard	Enter
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Skips cutscene
+cineractiveCancel {
+	+ keyboard	Space
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##########
+# Saving #
+##########
+
+# mark replay recording chapter
+chapter_save {
+	+ keyboard	R
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# multiplayer save
+multiplayer_save {
+	+ keyboard	S
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# regular save
+save_game {
+	+ keyboard	S
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Place flag visible to allies
+multiplayer_flag {
+	+ keyboard	F
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+######################
+# Interface Elements #
+######################
+# Toggle fog of war
+tactical_shroud_toggle {
+	+ keyboard	F
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Grid toggle
+grid_toggle {
+	+ keyboard	G
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Objectives Dialog
+objectives_toggle {
+	+ keyboard	O
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Interface toggle
+toggle_interface {
+	+ keyboard	I
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#####################
+# Camera navigation #
+#####################
+
+### Rotate camera
+# Rotate camera clockwise (in Cinematic View Mode)
+camera_rotate_minus {
+	+ keyboard	GreyLeftArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Rotate camera counter-clockwise (in Cinematic View Mode)
+camera_rotate_plus {
+	+ keyboard	GreyRightArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Zoom camera
+# Zoom camera in
+zoom_factor_plus {
+	+ keyboard	GreyUpArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Zoom camera out
+zoom_factor_minus {
+	+ keyboard	GreyDownArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Reset zoom
+zoom_factor_reset {
+	+ keyboard	GreyEnd
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Pan (scroll) camera
+# Pan (scroll) camera right
+scroll_right {
+	+ keyboard	GreyRightArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Pan (scroll) camera left
+scroll_left {
+	+ keyboard	GreyLeftArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Pan (scroll) camera up
+scroll_up {
+	+ keyboard	GreyUpArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Pan (scroll) camera down
+scroll_down {
+	+ keyboard	GreyDownArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### View mode
+# Toggle in or out of "tactical" (immersive, ship-level) view
+toggle_tactical {
+	+ keyboard	CAPSLock
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Reset the view for the current camera
+reset_view {
+	+ keyboard	V
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+## Camera angles
+# Switch camera angle in cinematic ("Tactical") view
+# Also switch to position of last event message?
+switch_camera_shot {
+	+ keyboard  Space
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Recenter camera on mission start
+center_player {
+	+ keyboard	GreyHome
+	- keyboard 	Control
+	- keyboard	Shift
+}
+
+# Keypad enter key
+hitKeypadEnter {
+	+ keyboard KeypadEnter
+	- keyboard 	Control
+	- keyboard	Shift
+}
+
+
+# Take screenshot
+snapshot {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+#############
+# Selection #
+#############
+
+# select all shortcut
+select_all {
+	+ keyboard	A
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# select next visible ship shortcut
+select_next_ship {
+	+ keyboard	LeftBracket
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# select next idle combat ship shortcut
+select_next_combat_ship {
+	+ keyboard	RightBracket
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# select next idle non-combat ship shortcut
+select_next_non_combat_ship {
+	+ keyboard	Comma
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# select next idle construction unit
+select_next_construction_ship {
+	+ keyboard	Period
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# select next trade station
+select_next_trade_station {
+	+ keyboard	Slash
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Put the focus on the next selected ship
+focus_next_selected {
+	+ keyboard	BackSlash
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Command grouping (create each group by holding ctrl and the given key)
+group_select_0 {
+	+ keyboard	Zero
+}
+group_select_1 {
+	+ keyboard	One
+}
+group_select_2 {
+	+ keyboard	Two
+}
+group_select_3 {
+	+ keyboard	Three
+}
+group_select_4 {
+	+ keyboard	Four
+}
+group_select_5 {
+	+ keyboard	Five
+}
+group_select_6 {
+	+ keyboard	Six
+}
+group_select_7 {
+	+ keyboard	Seven
+}
+group_select_8 {
+	+ keyboard	Eight
+}
+group_select_9 {
+	+ keyboard	Nine
+}
+group_deselect {
+	+ keyboard Minus
+	+ keyboard Control
+}
+other_group_deselect {
+	+ keyboard GreyMinus
+	+ keyboard Control
+}
+
+#############################
+# Button Bar Menu Shortcuts #
+#############################
+
+# Show the Button Palette (formerly Popup Palette, the floating version of the Button Bar)
+# Toggles, so if it's up already, turns it off.
+# if it's on some submenu palette, goes to normal.
+toggle_popup {
+	+ keyboard	X
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Show sub-menu shortcuts
+# These all toggle, if currently in
+# that menu, hides it if in popup or 
+# restores it to normal if in horizontal.
+
+# Show the orders menu
+toggle_orders {
+	+ keyboard	C
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Show the trade menu
+toggle_trade {
+	+ keyboard	V
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Show the build/evolve/research menu
+toggle_build {
+	+ keyboard	B
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#Show the AI menu token
+toggle_AI {
+	+ keyboard	N
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Show the Formations menu
+toggle_formations {
+	+ keyboard	F
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+###########################################################
+# Action Menu Shortcuts (top level of Button Bar/Palette) #
+###########################################################
+
+# Recrew
+recrew {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Transport
+transport {
+	+ keyboard	T
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Comandeer
+capture {
+	+ keyboard	T
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# Set rally point
+rally {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Harvest (dilithium/latinum)
+harvest {
+	+ keyboard	H
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Colonize a planet
+colonize {
+	+ keyboard	GreyInsert
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+
+# Modifier key to enter a waypoint
+enter_waypoint {
+	+ keyboard	Tab
+	- keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+###################
+# Special weapons #
+###################
+# In general:
+# Scout			F1
+# Destroyer 2	none
+# Destroyer		F2
+# Colony		GreyInsert
+# Cruiser 1		F3
+# Cruiser 2		F4
+# Assault		BackQuote, T
+# Cruiser 3		none
+
+# Frigate		F5
+# Old Battle	F6, Backspace
+# New Battle	F7, Backspace
+
+# Special		F9, F10, F11, F12
+
+# Super			Backspace
+
+# Tractor Beam (8472 Active Embryo, 8472 Passive Embryo, 8472 Defender, Borg Wedge, Borg Assembler, Cardassian Janissary class, Cardassian Construction Ship, Federation Iwo Jima class, Federation Construction Ship, Klingon Chava'Kal class, Klingon Construction Ship, Romulan Kestrel class, Romulan Construction Ship)
+wc_gtracbm {
+	+ keyboard	BackQuote
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Repair beam (Cardassian Repair Ship, Federation Repair Ship, Klingon Repair Ship, Romulan Repair Ship)
+wc_gRepairBeam {
+	+ keyboard	BackQuote
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Cardassian Cloak (Keldon class, Brinok class, Gul Vystan class, Hideki class)
+wc_gccloak {
+	+ keyboard	BackQuote
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Cloak (Cardassian Cargo Ship)
+wc_gcloak {
+	+ keyboard	BackQuote
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Cloak (Vor-cha class, Chuq'Beh class, B'Rel class, Martok's Negh'var)
+wc_gkcloak {
+	+ keyboard	BackQuote
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Cloak (Talon class, Shrike class, Griffin class, Raptor class, Osprey class, Venator class, D'Deridex class, Wraith class, Phoenix class)
+wc_grcloak {
+	+ keyboard	BackQuote
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Self-Destruct (Cube, Tactical Cube, Fusion Cube, Tactical Fusion Cube, Cardassian Galor class, Cardassian Keldon class, Federation Sovereign class, Enterprise-E, Klingon Negh'Var class, Klingon Qeh'Ral class, IKS Sad'taj, Romulan Venator class, Romulan D'deridex class)
+wc_gselfdes {
+	+ keyboard	Backspace
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# Colonization pod (Pyramid - Borg Colony Ship, Cardassian Colony Ship, Federation Colony Ship, Klingon Colony Ship, Romulan Colony Ship)
+wc_gcolpod {
+	+ keyboard	GreyInsert
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Species 8472
+# Clairvoyance (Species 8472 Scout)
+wc_gclairvoyance {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Clairvoyant Link (Species 8472 Destroyer)
+wc_gclairvoyantLink {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Psionic Disruption (Species 8472 Cruiser)
+wc_gpsionicDisruption {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Bio-Pulse Conduit (Species 8472 Frigate)
+wc_gbioPulse {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Psionic Insanity (Species 8472 Battleship)
+wc_gpsionicInsanity {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Nebula Generation (Species 8472 Behemoth) 1
+wc_gnebulaGeneration {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Nebula Flux (Species 8472 Behemoth) 2
+wc_gnebulaFlux {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Transient Rift (Species 8472 Behemoth) 3
+wc_gtransientRift {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Borg
+# Transwarp Drive (Interceptor)
+wc_gtwarpd {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Regeneration (Sphere)
+wc_gregen {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Auto-Assimilating Bore (Assimilator)
+wc_gborgbor {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Special Energy Recharger (Harmonic Defender)
+wc_gengyemt {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Holding Beam (Cube, Tactical Cube, Fusion Cube, Tactical Fusion Cube) 4
+wc_gholdbm {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Holding Beam (Locutus' Cube) 
+wc_hholdbm {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Technology Assimilation Beam (Cube, Tactical Cube, Fusion Cube, Tactical Fusion Cube) 6
+wc_gTechAssimBeam {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Fusion Cube Integrator (Cube) 2
+wc_gcubeintegrator {
+	+ keyboard	F8
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Tactical Fusion Cube Integrator (Tactical Cube) 2
+wc_gtcubeintegrator {
+	+ keyboard	F8
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield Remodulation (Diamond) 1
+wc_gremod {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield Remodulation (Borg Queen's Diamond) 1
+wc_hremod {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Computer Override (Diamond) 2
+wc_goverrid {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Computer Override (Borg Queen's Diamond) 2
+wc_hoverrid {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Nanites (Diamond) 3
+wc_gnanites {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Nanites (Borg Queen's Diamond) 3
+wc_hnanites {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Ultritium Burst (Diamond) 4
+wc_gutribm {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Ultritium Burst (Borg Queen's Diamond) 4
+wc_hutribm {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Open Transwarp Gate / Mass Transport (Transwarp Gate)
+wc_gmastran {
+	+ keyboard	Backspace
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Cardassian
+# Micro-organisms (Rasilak class)
+wc_gmicroorgs {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Drones (Brinok class)
+wc_gdrones {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Flux Wave (Gul Vystan class)
+wc_gfluxwave {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Sensor Scrambler (Vasad class)
+wc_gsensorscram {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Engine Overload (Galor class)
+wc_hwcover {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Plasma Bank Overload (Keldon class)
+wc_gplasmabank {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Accelerator Cannon (Kulinor class) 1
+wc_gaccelcannon {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Quantum Singularity Effect (Kulinor class) 2
+wc_gquanteffect {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Speed Boost (Kulinor class) 3
+wc_gwarpboost {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield Harmonics Disruptor (Kulinor class) 4
+wc_gsdisruptor {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Plasma Banks (Dreadnought missile)
+wc_csuplas {
+	+ keyboard	Backspace
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+
+### Federation
+# Anti-Matter Mines (Defiant class)
+wc_gamine {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Chain Reaction Pulsar (Akira class)
+wc_gchainp {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Warp Core Overload (Steamrunner class)
+wc_gwcover {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield Enhancer (Andor class)
+wc_gshldemt {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Saucer Section Separation (Galaxy class)
+wc_ggalseparator {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Saucer Section Integration (Galaxy class battle bridge, saucer section)
+wc_ggalintegrator {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Corbomite Reflector (Sovereign class)
+wc_gcorbom {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Corbomite Relector (Enterprise-E)
+wc_hcorbom {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Gemini Effect (Nebula class) 1
+# THIS IS RESEARCH ITEM 1, WEAPON 2, BUTTONSLOT 1
+wc_gmanheim {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield Harmonics Disruptor (Nebula class) 2
+# THIS IS RESEARCH ITEM 2, WEAPON 1, BUTTONSLOT 2
+wc_gshieldh {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Engineering Team (Nebula class) 3
+# THIS IS RESEARCH ITEM 3, WEAPON 4, BUTTONSLOT 3
+wc_gfedrep {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Point Defense Phaser (Nebula class) 4
+# THIS IS RESEARCH ITEM 4, WEAPON 3, BUTTONSLOT 4
+wc_gpdlaser {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Stop Time (Manheim Research Facility)
+wc_gtempor {
+	+ keyboard	Backspace
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Incursion class HoloGenerator
+wc_ghologen {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+
+### Klingon
+# Gravity Mines (B'Rel class)
+wc_ggrvmine {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Poleron Torpedo (Vor'cha class)
+wc_gpoleron {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Commando Team (SuQ'jagh class)
+wc_gkcteam {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Weapons Enhancer (Koloth class)
+wc_wenhance {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Plasma Cannon (Negh'Var class)
+wc_gplasmac {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Plasma Cannon (Martok's Negh'Var class)
+wc_hplasmac {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Death Chant (Fek'lhr class) 1
+# THIS IS RESEARCH ITEM 1, WEAPON 2, BUTTONSLOT 1
+wc_gdchant {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Repulsion Wave (Fek'lhr class) 2
+# THIS IS RESEARCH ITEM 2, WEAPON 3, BUTTONSLOT 2
+wc_grfield {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Ion Storm (Fek'lhr class) 3
+# THIS IS RESEARCH ITEM 3, WEAPON 1, BUTTONSLOT 3
+wc_gionstm {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Energy Dissipator (Fek'lhr class) 4
+# THIS IS RESEARCH ITEM 4, WEAPON 4, BUTTONSLOT 4
+wc_gmicro {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Sub Space Ripple (Jach'eng class)
+wc_grwave {
+	+ keyboard	Backspace
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Romulan
+# Romulan Spy (Shrike class)
+wc_gromspy {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Sensor Jammer (Griffin class)
+wc_gposijam {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Myotron Burst (Raptor class)
+wc_gmyotron {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cloak Enhancer (Wraith class)
+wc_gclkenh {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield Inversion Beam (D'deridex class)
+wc_gshieldi {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield Inversion Beam (Sela's Warbird)
+wc_hshieldi {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Holo-Emitter (Shadow class) 1
+# THIS IS RESEARCH ITEM 1, WEAPON , BUTTONSLOT 1
+wc_gholoemt {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Psychonic Blast (Shadow class) 2
+# THIS IS RESEARCH ITEM 2, WEAPON , BUTTONSLOT 2
+wc_gpsyblst {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield Projector (Shadow class) 3
+# THIS IS RESEARCH ITEM 3, WEAPON , BUTTONSLOT 3
+wc_gesconv {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Phase Cloak (Shadow class) 4
+# THIS IS RESEARCH ITEM 4, WEAPON , BUTTONSLOT 4
+wc_gpcloak {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Rift (Phoenix class)
+wc_gbholeg {
+	+ keyboard	Backspace
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#######################################
+# Orders menu, corresponds to buttons #
+#######################################
+# Attack
+attack {
+	+ keyboard	A
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Stop
+stop {
+	+ keyboard	S
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+guard {
+	+ keyboard	G
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+patrol {
+	+ keyboard	P
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to repair mode
+repair {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+#Priority repair
+priorityRepair {
+	+ keyboard	R
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# Set to explore mode (formerly scout mode)
+scout {
+	+ keyboard	E
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set search and destroy 
+searchAndDestroy {
+	+ keyboard	K
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Decommision
+decomm {
+	+ keyboard	GreyDelete
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+###########
+# AI menu #
+###########
+# Set to green alert
+green {
+	+ keyboard	Home
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to yellow alert
+yellow {
+	+ keyboard	UpArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to red alert
+red {
+	+ keyboard	PageUp
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Set to no movement autonomy
+move_low {
+	+ keyboard	LeftArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to medium movement autonomy
+move_med {
+	+ keyboard	Keypad5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to high movement autonomy
+move_high {
+	+ keyboard	RightArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Set to no special weapon autonomy
+special_weapon_autonomy_none {
+	+ keyboard	End
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to medium special weapon autonomy
+special_weapon_autonomy_med {
+	+ keyboard	DownArrow
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Set to high special weapon automony
+special_weapon_autonomy_high {
+	+ keyboard	PageDown
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+
+##############
+# Trade menu #
+##############
+### Cargo Ship
+start_trade {
+	+ keyboard	V
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+end_trade {
+	+ keyboard	V
+	+ keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+load_dilithium {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+load_latinum {
+	+ keyboard	L
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+load_metal {
+	+ keyboard	M
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+load_crew {
+	+ keyboard	O
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Trading Station
+buy_dilithium {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+buy_metal {
+	+ keyboard	M
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+sell_dilithium {
+	+ keyboard	D
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+sell_metal {
+	+ keyboard	M
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# Recycler station
+recycle_metal {
+	+ keyboard	M
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+recycle_dilithium {
+	+ keyboard	D
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##############
+# Build menu #
+##############
+### global keys
+### Cancel build/evolve/research
+cancel {
+	+ keyboard	C
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Starbase / Nexus
+# In general:
+# Construction	F1
+# Freighter		F2
+# Cargo			(F3)
+# Repair		(F4)
+
+# Construction Ship / Assembler
+# Borg Assembler
+bc_bconst {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Construction Ship
+bc_cconst {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Construction Ship
+bc_fconst {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Construction Ship
+bc_kconst {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Construction Ship
+bc_rconst {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Mining Freighter / Collector
+# Borg Collector
+bc_bfreight {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Dilithium Freighter
+bc_cfreight {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Dilithium Freighter
+bc_ffreight {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Dilithium Freighter
+bc_kfreight {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Dilithium Freighter
+bc_rfreight {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cargo ship
+# Cardassian Cargo Ship
+bc_ccargo {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Cargo Ship
+bc_fcargo {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Cargo Ship
+bc_kcargo {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Cargo Ship
+bc_rcargo {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Repair ship
+# Cardassian Repair Ship
+bc_csrepair {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Repair Ship
+bc_fsrepair {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Repair Ship
+bc_ksrepair {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Repair Ship
+bc_rsrepair {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# In general:
+# Scout			F1
+# Destroyer 2	(F2)
+# Destroyer		F2(F3)
+# Colony		F3(F4)
+# Cruiser 1		F4(F5)
+# Cruiser 2		F5(F6)
+# Assault		F6(F7)
+# Cruiser 3		F7(F8)	
+
+# Frigate		F1
+# Old Battle	F2
+# Special		F3
+# New Battle	F4
+
+
+### Borg Assembly Matrix
+# Detector
+bc_bscout {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Interceptor
+bc_bdestroy {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Borg Colony Ship (Pyramid)
+bc_bcolony {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Sphere
+bc_bcruise1 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Assimilator
+bc_bcruise2 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Wedge token
+bc_bassault {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Harbinger token
+bc_bcruise3 {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Borg Advanced Assembly Matrix
+# Harmonic Defender
+bc_bfrigate {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cube
+bc_bbattle1 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Diamond
+bc_bspecial {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Tactical Cube
+bc_bbattle2 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Cardassian shipyard
+# Hideki class
+bc_cscout {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Sartan class
+bc_cdestroy2 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Rasilak class
+bc_cdestroy {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Colony ship
+bc_ccolony {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Brinok class
+bc_ccruise1 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Gul Vystan class
+bc_ccruise2 {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Janissary class
+bc_cassault {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Legate class
+bc_ccruise3 {
+	+ keyboard	F8
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+## Cardassian Advanced Shipyard
+# Vasad class
+bc_cfrigate {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Galor class
+bc_cbattle {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Kulinor class
+bc_cspecial {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Keldon class
+bc_cbattle2 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Dreadnought Missile Facility
+# Dreadnought Missile
+bc_csuper {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Federation shipyard
+# Venture class
+bc_fscout {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Sabre class token
+bc_fdestroy2 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Defiant class
+bc_fdestroy {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation colony ship
+bc_fcolony {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Akira class 
+bc_fcruise1 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Intrepid class
+bc_fcruise3 {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Iwo Jima class token
+bc_fassault {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Steamrunner class
+bc_fcruise2 {
+	+ keyboard	F8
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Federation Advanced Shipyard
+# Andor class
+bc_ffrigate {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Galaxy class
+bc_fgalaxy {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Nebula class
+bc_fspecial {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Sovereign class
+bc_fbattle {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Klingon shipyard
+# NuQ'duj class
+bc_kscout {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# B'rel class (Bird of Prey)
+bc_kdestroy {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon colony ship
+bc_kcolony {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Vor'cha class
+bc_kcruise1 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# SuQ'jagh class
+bc_kcruise2 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Chava'Kal class
+bc_kassault {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Chuq'Beh class
+bc_kcruise3 {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Klingon Imperial Shipyard
+# Koloth class
+bc_kfrigate {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Qeh'Ral class
+bc_kbattle2 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Fek'lhr class
+bc_kspecial {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Negh'Var class
+bc_kbattle {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Shockwave Station
+# Jach'eng class
+bc_ksuper {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Romulan shipyard
+# Talon class
+bc_rscout {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shrike class
+bc_rdestroy {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Colony ship
+bc_rcolony {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Griffin class
+bc_rcruise1 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Osprey class
+bc_rcruise3 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Kestrel class
+bc_rassault {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Raptor class
+bc_rcruise2 {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+## Romulan Advanced Shipyard
+# Wraith class
+bc_rfrigate {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Venator class
+bc_rbattle2 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shadow class
+bc_rspecial {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# D'deridex class (Warbird)
+bc_rbattle {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Phoenix Facility
+# Phoenix class
+bc_rsuper {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Species 8472 Mother
+# Active Embryo
+bc_8472_active {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Passive Embryo
+bc_8472_passive {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Species 8472 Active Embryo
+# 8472 Collector
+bc_8472_collector {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Scout
+bc_8472_scout {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Destroyer
+bc_8472_destroy {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Cruiser
+bc_8472_cruise1 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Launcher
+bc_8472_cruise2 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Species 8472 Passive Embryo
+# 8472 Transmuter
+bc_8472_transmuter {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Basic Research
+bc_8472_basicresearch {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Advanced Research
+bc_8472_advancedresearch {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Ship Upgrade Research
+bc_8472_shipupgraderesearch {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Fluidic Gate
+bc_8472_fluidicgate {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Mother
+bc_8472_mothership {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Species 8472 Fluidic Gate
+# 8472 Defender
+bc_8472_defender {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Frigate
+bc_8472_frigate {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Behemoth
+bc_8472_behemoth {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Battleship
+bc_8472_battle {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Species 8472 Defender
+# 8472 Mine
+bc_8472_mine {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Sentinel
+bc_8472_sentinel {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+
+### Construction Ship (Assembler)
+# Starbase / Nexus
+# Borg Nexus
+bc_bbase {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Starbase
+bc_cbase {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Starbase
+bc_fbase {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Starbase
+bc_kbase {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Starbase
+bc_rbase {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+
+# Shipyard / Assembly Matrix
+# Borg Assembly Matrix
+bc_byard {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Shipyard
+bc_cyard {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Shipyard
+bc_fyard {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Shipyard
+bc_kyard {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Shipyard
+bc_ryard {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Sensor Array / Station / Spy Satellite
+# Borg Detection Array
+bc_bsensor {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Sensor Array
+bc_csensor {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Sensor Array
+bc_fsensor {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Sensor Array
+bc_ksensor {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Spy Satellite
+bc_rsensor {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Pulse / Disruptor / Energy Cannon
+# Borg Energy Cannon
+bc_bturret {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Phaser Turret
+bc_cturret {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Pulse Cannon
+bc_fturret {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Disruptor Cannon
+bc_kturret {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Plasma Cannon
+bc_rturret {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Mining Station / Facility / Processing Node
+# Borg Processing Node
+bc_bmining {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Mining Station
+bc_cmining {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Mining Station
+bc_fmining {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Dilithium Refinery
+bc_kmining {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Mining Facility
+bc_rmining {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Research Facility / Weapons Center / Covert Ops Facility / Modification Center
+# Borg Modification Center
+bc_bresear {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Military Research Center
+bc_cresear {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Research Facility
+bc_fresear {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Weapons Center
+bc_kresear {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Covert Ops Facility
+bc_rresear {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Science Station / Gre'thor Armory / Tal Shiar Facility / Technology Node
+# Borg Technology Node
+bc_bresear2 {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Advanced Research Station
+bc_cresear2 {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Science Station
+bc_fresear2 {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Gre'thor Armory
+bc_kresear2 {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Tal Shiar Facility
+bc_rresear2 {
+	+ keyboard	F7
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Advanced / Imperial Shipyard / Assembly Matrix
+# Borg Advanced Assembly Matrix
+bc_byard2 {
+	+ keyboard	F8
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Advanced Shipyard
+bc_cyard2 {
+	+ keyboard	F8
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Advanced Shipyard
+bc_fyard2 {
+	+ keyboard	F8
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Imperial Shipyard
+bc_kyard2 {
+	+ keyboard	F8
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Advanced Shipyard
+bc_ryard2 {
+	+ keyboard	F8
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Torpedo Turret
+# Borg Torpedo Turret
+bc_bturret2 {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian Plasma Turret
+bc_cturret2 {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Federation Torpedo Turret
+bc_fturret2 {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon Torpedo Turret
+bc_kturret2 {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan Torpedo Turret
+bc_rturret2 {
+	+ keyboard	F9
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Transwarp Gate
+bc_bsuperbl {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Advanced Robotics Institute
+bc_cardassian_super_station {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Temporal Research Center
+bc_fsuperbl {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shockwave Station
+bc_ksuperbl {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Phoenix Facility
+bc_rsuperbl {
+	+ keyboard	F10
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Borg Technology Assimilator
+bc_btechass {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Orbital Processing Station
+bc_corbital {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_forbital {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_korbital {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rorbital {
+	+ keyboard	F11
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Borg Recycler
+bc_brecycle {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Trading Station
+bc_ctrading {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_ftrading {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_ktrading {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rtrading {
+	+ keyboard	F12
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Ship Upgrade Facility
+bc_bupgrade {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_cupgrade {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fupgrade {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_kupgrade {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rupgrade {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#################
+# Research menu #
+#################
+# Tachyon Detection Grid Pod
+bc_borpod5 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod5 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod5 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod5 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod5 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Weapon Upgrade 1 & 2
+bc_8472_podshipresearch1 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_8472_podshipresearch21 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_borpod11 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_borpod21 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod11 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod21 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod11 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod21 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod11 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod21 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod11 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod21 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Shield Upgrade 1 & 2
+bc_8472_podshipresearch2 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_8472_podshipresearch22 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_borpod12 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_borpod22 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod12 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod22 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod12 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod22 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod12 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod22 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod12 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod22 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Sensor Upgrade 1 & 2
+bc_8472_podshipresearch3 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_8472_podshipresearch23 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_borpod13 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_borpod23 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod13 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod23 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod13 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod23 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod13 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod23 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod13 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod23 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Engine Upgrade 1 & 2
+bc_8472_podshipresearch4 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_8472_podshipresearch24 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_borpod14 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_borpod24 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod14 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod24 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod14 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod24 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod14 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod24 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod14 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod24 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+bc_borpod15 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_borpod25 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod15 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_carpod25 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod15 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_fedpod25 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod15 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_klipod25 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod15 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+bc_rompod25 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Species 8472 Basic Research
+bc_8472_podbasic0 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Clairvoyant Link (?) 1
+bc_8472_podbasic1 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Psionic Disruptor (?) 2
+bc_8472_podbasic2 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Psionic Insanity (?) 3
+bc_8472_podbasic3 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Detection Grid (?) 4
+bc_8472_podbasic4 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Species 8472 Advanced Research
+bc_8472_podadvanced0 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Nebula Generation (?) 1
+bc_8472_podadvanced1 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Nebula Flux (?) 2
+bc_8472_podadvanced2 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# 8472 Transient Rift (?) 3
+bc_8472_podadvanced3 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Borg Modification Center
+# Transwarp drive (Interceptor) 4
+bc_borpod4 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Regeneration (Sphere) 3
+bc_borpod3 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Auto-assimilator (Assimilator) 1
+bc_borpod1 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Holding beam (Cube) 2
+bc_borpod2 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Special Energy Recharger (Harmonic Defender) 16
+bc_borpod16 {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Borg Technology Node
+# Shield remodulation (Diamond) 6
+bc_borpod6 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Computer override (Diamond) 7
+bc_borpod7 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Nanites (Diamond) 8
+bc_borpod8 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Ultritium burst (Diamond) 9
+bc_borpod9 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Cardassian Military Research Center
+# Micro-organisms (Rasilak) 2
+bc_carpod2 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Drones (Brinok) 3
+bc_carpod3 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Flux Wave (Gul Vystan) 4
+bc_carpod4 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Plasma Bank Overload (Keldon) 1
+bc_carpod1 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Sensor Scrambler (Vasad) 16
+bc_carpod16 {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Cardassian Advanced Research
+# Accelerator Cannon (Kulinor) 6
+bc_carpod6 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Quantum Singularity Effect (Kulinor) 7
+bc_carpod7 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Speed Boost (Kulinor) 8
+bc_carpod8 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield Harmonics Disruptor (Kulinor) 9
+bc_carpod9 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Federation Research Facility
+# Antimatter Mines (Defiant) 4
+bc_fedpod4 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Chain Reaction Pulsar (Akira) 2
+bc_fedpod2 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Engine Overload (Steamrunner) 3
+bc_fedpod3 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Corbomite Reflector (Sovereign) 1
+bc_fedpod1 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield Enhancer (Andor) 16
+bc_fedpod16 {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Federation Science Station 
+# Gemini effect (Nebula) 6
+bc_fedpod6 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield disruptor (Nebula) 7
+bc_fedpod7 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Engineering team (Nebula) 8
+bc_fedpod8 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Point defense phaser (Nebula) 9
+bc_fedpod9 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Klingon Weapons Center
+# Gravity mines (B'rel) 4
+bc_klipod4 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Poleron torpedo (Vor'cha) 2
+bc_klipod2 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Commando team (SuQ'jagh) 3
+bc_klipod3 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Ion Cannon (Negh'Var) 1
+bc_klipod1 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Weapon Enhancer (Koloth) 16
+bc_klipod16 {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Klingon Gre'thor Armory
+# Death chant (Fek'lhr) 6
+bc_klipod6 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Repulsion Wave (Fek'lhr) ? 7
+bc_klipod7 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Ion storm (Fek'lhr) 8
+bc_klipod8 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Energy Dissipator (Fek'lhr) ? 9
+bc_klipod9 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Romulan Covert Ops Facility
+# Romulan spy (Shrike) 2
+bc_rompod2 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Sensor jammer (Griffin) 3
+bc_rompod3 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Myotronic inhibitor (Raptor) 4
+bc_rompod4 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Shield inversion beam (D'deridex) 1
+bc_rompod1 {
+	+ keyboard	F5
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cloak Enhancer (Wraith) 16
+bc_rompod16 {
+	+ keyboard	F6
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Tal Shiar Facility
+# Holo-emitter (Shadow) 6
+bc_rompod6 {
+	+ keyboard	F1
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Psychonic blast (Shadow) 7
+bc_rompod7 {
+	+ keyboard	F2
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Energy-shield converter (Shadow) 8
+bc_rompod8 {
+	+ keyboard	F3
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Phase cloak (Shadow) 9
+bc_rompod9 {
+	+ keyboard	F4
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#############
+# Debugging #
+#############
+
+### Cursor
+
+# Detach/attach game mouse to windows mouse (for debugging purposes to allow game cursor to stay in place while moving Windows cursor in outside of Armada running in a window)
+mouse_toggle {
+	+ keyboard	Z
+	+ keyboard	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+### Rendering
+# Switch into/out of windowed mode
+toggle_fullscreen {
+	+ keyboard	Enter
+	- keyboard  Control
+	- keyboard	Shift
+	+ keyboard  Alt
+}
+# Toggle the fog and shroud on and off
+radar_toggle {
+	+ keyboard	V
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of the object bounding sphere
+bounding_sphere {
+	+ keyboard	I
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of bounding boxes
+bounding_boxes {
+	+ keyboard	U
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of debugging info
+debugging_toggle {
+	+ keyboard	Y
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# timing of the single player or network game
+timing_toggle {
+	+ keyboard	T
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle the display of the quadtree
+quadtree_toggle {
+	+ keyboard	Q
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle showing memory information
+memory_toggle {
+	+ keyboard	M
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+### Object properties
+# Toggle team flags
+team_flag_toggle {
+	+ keyboard	F
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Toggle VTune sampling
+vtune_toggle {
+	+ keyboard	Tab
+	+ keyboard	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Add dilithium
+debug_add_dilithium {
+	+ keyboard	Equal
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# Subtract dilithium
+debug_sub_dilithium {
+	+ keyboard	Minus
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+##########################################
+#
+# Edit Mode Key
+#
+##########################################
+
+### Object placement
+# Federation
+mode_select_0 {
+	+ keyboard	F1
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+# Klingon
+mode_select_1 {
+	+ keyboard	F2
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+# Romulan
+mode_select_2 {
+	+ keyboard	F3
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+# Borg
+mode_select_3 {
+	+ keyboard	F4
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+# Cardassian
+mode_select_4 {
+	+ keyboard	F5
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+# Species 8472
+mode_select_5 {
+	+ keyboard	F6
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+# Other races
+mode_select_6 {
+	+ keyboard	F7
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_7 {
+	+ keyboard	F8
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_8 {
+	+ keyboard	F9
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+# Planets
+mode_select_9 {
+	+ keyboard	F10
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_10 {
+	+ keyboard	F11
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+mode_select_11 {
+	+ keyboard	F12
+	- keyboard 	Control
+#	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Up one level in edit menu
+menu_back {
+	+ keyboard	Tab
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+### Object team selection
+# Cycle object's team back
+team_up {
+	+ keyboard	GreyUpArrow
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+# Cycle object's team forward
+team_down {
+	+ keyboard	GreyDownArrow
+	- keyboard 	Control
+	+ keyboard	Shift
+	- keyboard	Alt
+}
+
+# AI debug team selection
+AI_team_up {
+	+ keyboard	GreyUpArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+AI_team_down {
+	+ keyboard	GreyDownArrow
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Delete object or path point
+erase {
+	+ keyboard	GreyDelete
+	- keyboard 	Control
+	- keyboard	Shift
+}
+
+# Delete all pathpoints for a path in the editor
+deleteAllPathPoints {
+	+ keyboard	Backspace
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Restore object to ODF settings.
+restore {
+	+ keyboard	R
+	- keyboard 	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Restore ALL objects to ODF settings
+restoreAll {
+	+ keyboard	R
+	- keyboard 	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Edit the map size and map parameters
+change_map {
+	+ keyboard	R
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Bring up the property dialog for an object
+object_dialog {
+	+ keyboard	P
+	- keyboard	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Make nebulae and map objects span map top to bottom
+topToBottom {
+	+ keyboard	GreyPlus
+	- keyboard	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Open the Dialog box which shows all game objects
+all_objects {
+	+ keyboard A
+	+ keyboard Control
+	+ keyboard Shift
+}
+
+# Open the obstacle avoidance dialog box
+#Why use Y? Because it's not used yet. :)
+avoidance_dialog {
+	+ keyboard	Y
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Save path to file
+save_3d_path {
+	+ keyboard  D
+	+ keyboard	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Show AI debugging info
+AI_onscreen_display {
+	+ keyboard	A
+	- keyboard	I
+	- keyboard 	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+# Turn on AI logging
+AI_logging_toggle {
+	+ keyboard	A
+	+ keyboard	I
+	- keyboard 	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+### Standard edit commands
+# Cut a bunch of objects.
+cut {
+	+ keyboard	X
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Copy a bunch of objects.
+copy {
+	+ keyboard	C
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+# Paste a bunch of objects.
+paste {
+	+ keyboard	V
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# toggle nebula selecting in editor mode
+toggleNebulaSelect {
+	+ keyboard	N
+	+ keyboard 	Control
+	+ keyboard	Shift
+	+ keyboard	Alt
+}
+
+setFormationOrientation {
+	+ keyboard	F
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Game Control Keys
+toggleEditMode {
+	+ keyboard	E
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+saveMission {
+	+ keyboard	S
+	+ keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+#loadGame {
+#	+ keyboard	O
+#	+ keyboard 	Control
+#	- keyboard	Shift
+#	- keyboard	Alt
+#}
+
+mainMenu {
+	+ keyboard	*Esc
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+pauseGame {
+	+ keyboard	Pause
+	- keyboard 	Control
+	- keyboard	Shift
+	- keyboard	Alt
+}
+
+# Take cleanshot
+cleanshot {
+	+ keyboard	P
+	+ keyboard	Control
+	- keyboard	Shift
+	+ keyboard	Alt
+}
