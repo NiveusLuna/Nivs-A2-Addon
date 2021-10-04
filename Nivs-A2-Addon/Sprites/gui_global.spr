@@ -1,0 +1,17 @@
+sprite_table
+
+@include gui_global-orig.spr
+
+@include gui_addon-klingon.spr
+
+@include gui_addon-borg.spr
+
+@include gui_addon-federation.spr
+
+@include gui_addon-romulan.spr
+
+@include gui_addon-cardassian.spr
+
+@include gui_addon-all.spr
+
+@include gui_addon-faster-trading.spr

@@ -1,0 +1,9 @@
+sprite_table
+
+@reference=64
+@tmaterial=interface
+
+b_uniRW-buy-di			gbbuydil		0	0	64	64
+b_uniRW-buy-metal		gbbuymet		0	0	64	64
+b_uniRW-sell-di			gbseldil		0	0	64	64
+b_uniRW-sell-metal		gbselmet		0	0	64	64

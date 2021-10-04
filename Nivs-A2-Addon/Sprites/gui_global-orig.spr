@@ -1,0 +1,2163 @@
+sprite_table
+
+# Shared GUI sprites, a.k.a. non-race specific.
+
+## SPRITE DATA ##
+
+# @reference=texture size in pixels from which the u,v,w, and h values
+# were measured.  This value will effect all subsequent textures until
+# a different value is specified.
+
+# Must include this first to ensure texture animations are found
+@include tex_anim_gui.spr
+
+# Name      		File       		U 	V 	W 	H 	
+
+# Bridge Components
+# -----------------
+
+######## Default Bridge Scene
+
+@skip=off
+@reference=256
+@tmaterial=interface
+
+
+# Drop Player Pop-up Components
+# -----------------------------
+
+# Drop Player Screen
+@reference=256
+@tmaterial=interface
+drop_player_panel.0		dropPlayer0		0	0	256	256
+drop_player_panel.1		dropPlayer1		0	0	256	256
+drop_player_panel.2		dropPlayer2		0	0	256	256
+drop_player_panel.3		dropPlayer9		0	0	0	256
+drop_player_panel.4		dropPlayer3		0	0	256	256
+drop_player_panel.5		dropPlayer4		0	0	256	256
+drop_player_panel.6		dropPlayer5		0	0	256	256
+drop_player_panel.7		dropPlayer9		0	0	0	256
+drop_player_panel.8		dropPlayer6		0	0	256	256
+drop_player_panel.9		dropPlayer7		0	0	256	256
+drop_player_panel.10		dropPlayer8		0	0	256	256
+drop_player_panel.11		dropPlayer9		0	0	0	256
+drop_player_panel.12		dropPlayer9		0	0	256	128
+drop_player_panel.13		dropPlayer9		0	128	256	128
+drop_player_panel.14		dropPlayer10	0	0	256	128
+drop_player_panel.15		dropPlayer9		0	0	0	128
+
+drop_drop_button			uiObjectives20		0	0	252	60
+
+# Pause Pop-up Components
+# -----------------------------
+
+# Pause Screen
+@reference=256
+@tmaterial=interface
+
+pauseGame.0				uiPause0		0	0	256	192
+pauseGame.1				uiPause1		0	0	128	192
+pause_unpause_button		uiPause0		0	192	176	28
+
+
+# Objective Pop-up Components
+# ---------------------------
+
+# Objectives Screen
+@reference=256
+@tmaterial=interface
+
+
+objectives_panel.0		uiObjectives0		0	0	256	256
+objectives_panel.1		uiObjectives1		0	0	256	256
+objectives_panel.2		uiObjectives2		0	0	256	256
+objectives_panel.3		uiObjectives3		0	0	256	256
+objectives_panel.4		uiObjectives4		0	0	256	256
+objectives_panel.5		uiObjectives5		0	0	256	256
+objectives_panel.6		uiObjectives6		0	0	256	256
+objectives_panel.7		uiObjectives7		0	0	256	256
+objectives_panel.8		uiObjectives8		0	0	256	256
+objectives_panel.9		uiObjectives9		0	0	256	256
+objectives_panel.10		uiObjectives10		0	0	256	256
+objectives_panel.11		uiObjectives11		0	0	256	256
+objectives_panel.12		uiObjectives12		0	0	256	256
+objectives_panel.13		uiObjectives13		0	0	256	256
+objectives_panel.14		uiObjectives14		0	0	256	256
+objectives_panel.15		uiObjectives15		0	0	256	256
+objectives_panel.16		uiObjectives16		0	0	256	256
+objectives_panel.17		uiObjectives17		0	0	256	256
+objectives_panel.18		uiObjectives18		0	0	256	256
+objectives_panel.19		uiObjectives19		0	0	256	256
+
+obj_okay_button			uiObjectives20		0	0	252	60
+
+# Comm Pop-up Components
+# ----------------------
+
+# Comm Screen
+@reference=256
+@tmaterial=interface
+
+
+
+comm_panel.0		commMenu0		0	0	256	256
+comm_panel.1		commMenu1		0	0	256	256
+comm_panel.2		commMenu2		0	0	256	256
+comm_panel.3		commMenu3		0	0	256	256
+comm_panel.4		commMenu4		0	0	256	256
+comm_panel.5		commMenu10		0	0	0	256
+comm_panel.6		commMenu5		0	0	256	256
+comm_panel.7		commMenu6		0	0	256	256
+comm_panel.8		commMenu7		0	0	256	256
+comm_panel.9		commMenu8		0	0	256	256
+comm_panel.10		commMenu9		0	0	256	256
+comm_panel.11		commMenu10		0	0	0	256
+comm_panel.12		commMenu10		0	0	256	128
+comm_panel.13		commMenu10		0	128	256	128
+comm_panel.14		commMenu11		0	0	256	128
+comm_panel.15		commMenu11		0	128	256	128
+comm_panel.16		commMenu12		0	0	256	128
+comm_panel.17		commMenu10		0	0	0	128
+
+
+
+comm_down_button			commMenu12		0	220	32	20
+comm_up_button			commMenu12		32	220	32	20
+
+
+comm_toggle_button		commMenu13		0	132	44	44
+comm_toggle_check			commMenu13		176	88	44	44
+comm_bar_player			commMenu12		0	176	256	44
+comm_bar_team			commMenu13		0	44	140	44
+comm_select_button		commMenu13		132	88	44	44
+comm_resource_button		commMenu13		0	0	240	44
+comm_alliance_red			commMenu13		0	88	44	44
+comm_alliance_yellow		commMenu13		44	88	44	44
+comm_alliance_green		commMenu13		88	88	44	44
+comm_generic_button		commMenu12		0	128	236	48
+
+comm_amount_display		commMenu13		140	44	108	44
+
+
+comm_alliance_red_him		commMenu13		176	132	44	44
+comm_alliance_yellow_him	commMenu13		88	132	44	44
+comm_alliance_green_him		commMenu13		132	132	44	44
+comm_select_check			commMenu13		44	132	44	44
+
+comm_indicator			commMenu3		119	136	1	1
+
+//comm_generic_button		CommMenu		52	95	98	20
+//comm_toggle_button		CommMenu		205	165	19	19
+//comm_toggle_check		CommMenu		110	120	19	19
+//comm_okay_button		CommMenu		32	165	126	23
+//comm_bar_player			CommMenu		32	146	173	19
+//comm_bar_team			CommMenu		53	120	57	19
+//comm_alliance_red		CommMenu		53	71	19	19
+//comm_alliance_yellow		CommMenu		72	71	19	19
+//comm_alliance_green		CommMenu		91	71	19	19
+//comm_alliance_red_him		CommMenu		179	165	19	19
+//comm_alliance_yellow_him	CommMenu		205	146	19	19
+//comm_alliance_green_him	CommMenu		160	165	19	19
+//comm_select_button		CommMenu		129	71	19	19
+//comm_select_check		CommMenu		129	120	19	19
+//comm_indicator			CommMenu		34	106	2	2
+
+
+
+# Minimap Components
+# ------------------
+
+# Minimap Layers
+@reference=128
+@tmaterial=default
+map_background			gminimap		0	0	128	128
+map_fog				gfog			0	0	128	128 @chromakey
+map_shroud				gshroud		0	0	128	128 @chromakey
+
+# Selection Components
+# --------------------
+
+# Selection Reticle
+@reference=64
+@tmaterial=additive
+selection.00			GCselect	0	0	22	22			#upper left
+selection.10			GCselect	21	0	22	22			#upper mid
+selection.20			GCselect	43	0	21	22			#upper right
+selection.01			GCselect	0	21	22	22			#center left
+selection.11			GCselect	21	21	22	22			#center mid
+selection.21			GCselect	43	21	21	22			#center right
+selection.02			GCselect	0	43	22	21			#bottom left
+selection.12			GCselect	21	43	22	21			#bottom mid
+selection.22			GCselect	43	43	21	21			#bottom right
+
+# Drop down selection circle.
+@reference=64
+@tmaterial=add_nomipf
+selectionCircle			Gshadow		0	0	64	64
+selectionBillboard		Gshadow		0	0	64	64
+gridFXSprite			GgridFX		0	0	64	64
+
+# Selection Bars
+@reference=256
+select_shield_bar		fguib04		126	184	96	10		@snap_to_pixel
+select_hull_bar		fguib04		126	184	96	10		@snap_to_pixel
+select_energy_bar		fguib04		126	172	96	10		@snap_to_pixel
+select_crew_dot		fguib04		214	74	14	14		@snap_to_pixel
+large_shield_bar		fguib04		126	184	96	10		@snap_to_pixel
+large_hull_bar		fguib04		126	184	96	10		@snap_to_pixel
+large_energy_bar		fguib04		126	172	96	10		@snap_to_pixel
+large_construction_bar	fguib04		156	224	96	10		@snap_to_pixel
+large_dilithium_bar	fguib04		85	236	170	10		@snap_to_pixel
+small_shield_bar		fguib04		142	252	86	4		@snap_to_pixel
+small_energy_bar		fguib04		142	248	86	4		@snap_to_pixel
+small_crew_dot		fguib04		232	248	6	6		@snap_to_pixel
+large_metal_bar		fguib04		126	200	98	10		@snap_to_pixel
+race_icon_bar		fguib04		126	184	96	10		@snap_to_pixel
+
+# Selection Systems
+@reference=32
+@tmaterial=additive
+select_system.0			gminisys	21	1	9	9		
+select_system.1			gminisys	11	11	9	9		
+select_system.2			gminisys	11	1	9	9		
+select_system.3			gminisys	1	11	9	9		
+select_system.4			gminisys	1	1	9	9		
+
+# Backing for the groups...
+@reference=8
+@tmaterial=additive
+group_background		colors		5	5	2	2
+
+# Button Panel Background and Buttons
+# --------------------
+@reference=256
+@tmaterial=interface
+
+buttonBackgroundPanel.0		uiButtons		61	40	21	40
+buttonBackgroundPanel.1		uiButtons		40	40	21	40
+
+comm_button				uiButtons		120	0	40	40
+help_button				uiButtons		160	0	40	40
+toggle_button			uiButtons		0	0	40	40
+palette_button			uiButtons		0	40	40	40
+objectives_button			uiButtons		80	0	40	40
+
+#some more buttons for the panel
+menu_button				uiButtons		200	0	40	40
+more_button				uiButtons		40	0	40	40
+
+# Replay Panel Buttons
+# --------------------
+@reference=256
+repeat_button		replay0		38	0	38	40
+restart_button		replay0		0	160	38	40
+restart_button_h		replay0		38	160	38	40
+prev_button			replay0		152	120	38	40
+prev_button_h		replay0		190	120	38	40
+next_button			replay0		152	40	38	40
+next_button_h		replay0		190	40	38	40
+pause_button		replay0		0	120	38	40
+pause_button_h		replay0		38	120	38	40
+slow_button			replay0		190	160	38	40
+slow_button_h		replay0		0	40	38	40
+normal_button		replay0		152	80	38	40
+normal_button_h		replay0		190	80	38	40
+fast_button			replay0		38	200	38	40
+fast_button_h		replay0		38	40	38	40
+fogOn_button		replay0		152	160	38	40
+fogOn_button_h		replay0		0	200	38	40
+nextPlayer_button		replay0		0	80	38	40
+nextPlayer_button_h	replay0		38	80	38	40
+
+chapter_end_continue	replay0		0	0	38	40
+chapter_end_loop		replay0		76	40	38	40
+chapter_end_loop_h	replay0		114	40	38	40
+chapter_end_once		replay0		76	120	38	40
+chapter_end_once_h	replay0		114	120	38	40
+
+player_show_all		replay0		76	80	38	40
+player_show_all_h		replay0		114	80	38	40
+player_show_fog		replay0		76	160	38	40
+player_show_fog_h		replay0		114	160	38	40
+
+# Buttons
+# -------
+
+# General Buttons
+
+@reference=128
+@tmaterial=interface
+b_move				gbgenorders1	64	0	64	64	
+b_attack				gbgenorders1	0	0	64	64	
+b_stop				gbgenorders1	0	64	64	64	
+b_transport				gbgenorders1	64	64	64	64	
+b_guard				gbgenorders2	64	64	64	64	
+b_patrol				gbgenorders2	0	0	64	64	
+b_scout				gbgenorders2	64	0	64	64	
+b_sandd				gbgenorders2	0	64	64	64	
+b_decom				gbgenorders3	64	64	64	64	
+b_galert				gbgenorders3	0	0	64	64	
+b_yalert				gbgenorders3	64	0	64	64	
+b_ralert				gbgenorders3	0	64	64	64	
+@reference=64
+@tmaterial=interface
+b_flag				gbflag00		0	0	64	64		
+b_recrew				gbrecrew00		0	0	64	64		
+b_order				gbforder00		0	0	64	64		
+b_standdown				gbstnddn00		0	0	64	64		
+b_repair				gbrepair00		0	0	64	64		
+b_build	   			gbbuild00		0	0	64	64		
+b_harvest				gbharve00		0	0	64	64		
+b_rally				gbrally00		0	0	64	64		
+b_frupgrade				gbfrupgrd00		0	0	64	64		
+b_brupgrade				gbbrupgrd00		0	0	64	64		
+b_krupgrade				gbkrupgrd00		0	0	64	64		
+b_rrupgrade				gbrrupgrd00		0	0	64	64		
+b_research				gbresrch00		0	0	64	64		
+b_back				gbback00		0	0	64	64		
+b_cancel				gbcancel00		0	0	64	64		
+b_close				gbclose		0	0	64	64		
+b_capture				gbtransattack	0	0	64	64		
+
+b_strade				gbstrade		0	0	64	64
+b_etrade				gbetrade		0	0	64	64
+b_trade				gbtrade		0	0	64	64
+b_trad_dil				gbtradedil		0	0	64	64
+b_trad_lat				gbtradelat		0	0	64	64
+b_trad_met				gbtrademetal	0	0	64	64
+b_trad_off				gbtradeoff		0	0	64	64
+b_tradcrew				gbtradecrew		0	0	64	64
+b_colonize				gbcolonize		0	0	64	64
+b_buydil				gbbuydil		0	0	64	64
+b_buymet				gbbuymet		0	0	64	64
+b_selldil				gbseldil		0	0	64	64
+b_sellmet				gbselmet		0	0	64	64
+b_repother				gbrepother		0	0	64	64
+b_evolve				gbevolve		0	0	64	64
+
+# Formation buttons
+b_form				gbformation		0	0	64	64
+b_form1				gbform1		0	0	64	64
+b_form2				gbform2		0	0	64	64
+b_form3				gbform3		0	0	64	64
+b_form4				gbform4		0	0	64	64
+b_formx				gbformx		0	0	64	64
+b_formwall				gbwall		0	0	64	64
+
+b_fclover			gbfclover		0	0	64	64
+b_fcircle			gbfcircle		0	0	64	64
+b_farrow			gbfarrow		0	0	64	64
+
+b_aiMenu			gbai			0	0	64	64
+b_superRepair		gbRepairS		0	0	64	64
+
+// special weapon control
+b_swNone			gbSWNone		0	0	64	64
+b_swMed			gbSWMed		0	0	64	64
+b_swHigh			gbSWHigh		0	0	64	64
+
+// movement autonomy
+b_moveLow			gbMoveLow		0	0	64	64
+b_moveMed			gbMoveMed		0	0	64	64
+b_moveHigh			gbMoveHigh		0	0	64	64
+
+b_recyclemet		gbRecycleMet 	0	0	64	64
+b_recycledil		gbRecycleDil	0	0 	64	64
+
+
+# Federation build buttons
+@reference=128
+@tmaterial=default
+		
+b_fbattle			gbfbld100		0	0	64	64		
+b_fedpod1			gbfpod100		0	0	64	64		
+b_fedpod2			gbfpod100		64	0	64	64	
+b_fedpod3			gbfpod100		0	64	64	64	
+b_fedpod4	    		gbfpod100		64	64	64	64	
+b_fedpod5			gbfpod200		0	0	64	64		
+b_fedpod6			gbfpod200		64	0	64	64		
+b_fedpod7			gbfpod200		0	64	64	64		
+b_fedpod8			gbfpod200		64	64	64	64		
+	
+@reference=64
+b_fmining			gbfmining		0	0	64	64		
+b_fsensor			gbfsensor		0	0	64	64		
+b_fyard			gbfyard		0	0	64	64
+b_fbase			gbfbase		0	0	64	64
+b_fconst			gbfconst		0	0	64	64		
+b_ffreight			gbffreight		0	0	64	64
+b_fedpod9			gbfpod900		0	0	64	64
+b_fedpod10			gbfedpod10		0	0	64	64
+b_fedpod11			gbfedpod11		0	0	64	64
+b_fedpod12			gbfedpod12		0	0	64	64
+b_fedpod13			gbfedpod13		0	0	64	64
+b_fedpod14			gbfedpod14		0	0	64	64
+b_fedpod15			gbfedpod15		0	0	64	64
+b_fedpod16			gbfedpod16    	0   	0  	64 	64
+
+b_fedpod21			gbfedpod21    	0   0   64  64
+b_fedpod22			gbfedpod22    	0   0   64  64
+b_fedpod23			gbfedpod23    	0   0   64  64
+b_fedpod24			gbfedpod24    	0   0   64  64
+b_fedpod25			gbfedpod25    	0   0   64  64
+
+
+b_fresear			gbfresear		0	0	64	64		
+b_fsuperbl			gbfsuper00		0	0	64	64			
+b_fresear2			gbfrsrch200		0	0	64	64		
+b_fturret			gbfturret00		0	0	64	64		
+b_fturret2			gbfturret200	0	0	64	64
+b_fyard2			gbfyard200		0	0	64	64	
+b_fassault			gbfassault		0	0	64	64	
+b_fcolony			gbfcolony		0	0	64	64
+b_fcargo			gbfcargo		0 	0	64	64
+b_fsrepair			gbfsrepair		0	0	64	64
+b_ffrigate			gbffrigate		0	0	64	64
+b_forbital			gbforbital		0	0	64	64
+b_ftrading			gbftrading		0	0	64	64
+b_fupgrade			gbfupgrade		0	0	64	64
+b_fcruise3			gbfcruise3		0  	0   	64  	64
+b_fdestroy2			gbfdestroy2		0  	0   	64  	64
+b_fgalaxy			gbfgalaxy		0  	0   	64  	64	
+b_fsaucer			gbfsaucer		0	0	64	64
+b_fbbridge			gbfbbridge		0	0	64	64
+b_fcruise1			gbfcruise1		0	0	64	64		
+b_fcruise2			gbfcruise2		0	0	64	64		
+b_fdestroy			gbfdestroy		0	0	64	64		
+b_fscout			gbfscout		0	0	64	64
+b_fspecial			gbfspecial		0	0	64	64	
+
+# for the planetary shield
+b_shield			gbshield		0	0	64	64
+
+
+# Klingon build buttons
+@reference=128
+@tmaterial=default
+b_kbase			gbkbld300		0	0	64	64		
+		
+		
+
+b_klipod1			gbkpod100		0	0	64	64		
+b_klipod2			gbkpod100		64	0	64	64		
+b_klipod3			gbkpod100		0	64	64	64		
+b_klipod4			gbkpod100		64	64	64	64		
+b_klipod5			gbkpod200		0	0	64	64		
+b_klipod6			gbkpod200		64	0	64	64		
+b_klipod7			gbkpod200		0	64	64	64
+b_klipod8			gbkpod200		64	64	64	64
+			
+@reference=64
+
+b_kmining			gbkmining		0	0	64	64		
+b_ksuperbl			gbksuperbl		0	0	64	64		
+b_kyard			gbkyard		0	0	64	64
+b_kscout			gbkscout		0	0	64	64		
+b_kspecial			gbkspecial		0	0	64	64	
+b_kdestroy			gbkdestroy		0	0	64	64		
+b_kfreight			gbkfreight		0	0	64	64
+b_kbattle			gbkbattle		0	0	64	64
+b_kcruise1			gbkcruise1		0	0	64	64		
+b_kcruise2			gbkcruise2		0	0	64	64
+b_kconst			gbkconst		0	0	64	64	
+b_kresear			gbkrsrch00		0	0	64	64		
+b_ksensor			gbksensor00		0	0	64	64		
+b_klipod9			gbkpod900		0	0	64	64			
+b_klipod10			gbklipod10		0	0	64	64
+b_klipod11			gbklipod11		0	0	64	64
+b_klipod12			gbklipod12		0	0	64	64
+b_klipod13			gbklipod13		0	0	64	64
+b_klipod14			gbklipod14		0	0	64	64
+b_klipod15			gbklipod15		0	0	64	64
+b_klipod16			gbklipod16		0	0	64	64
+b_klipod21			gbklipod21		0	0	64	64
+b_klipod22			gbklipod22		0	0	64	64
+b_klipod23			gbklipod23		0	0	64	64
+b_klipod24			gbklipod24		0	0	64	64
+b_klipod25			gbklipod25		0	0	64	64
+
+b_kresear2			gbkresear2		0	0	64	64		
+b_kturret			gbkturret00		0	0	64	64
+b_kturret2			gbkturret200 	0	0	64	64		
+b_kyard2			gbkyard200		0	0	64	64
+b_ksuper			gbksuper		0	0	64	64
+b_kassault			gbkassault  	0     0     64    64
+b_kcolony			gbkcolony		0	0	64	64
+b_ksrepair			gbksrepair		0	0	64	64
+b_kcargo			gbkcargo		0	0	64	64
+b_kfrigate			gbkfrigate		0	0	64	64
+b_korbital			gbkorbital		0	0	64	64
+b_ktrading			gbktrading		0	0	64	64
+b_kupgrade			gbkupgrade		0	0	64	64
+b_kcruise3			gbkcruise3		0	0  	64  	64
+b_kbattle2			gbkbattle2		0	0	64	64				
+
+# Cardassian build buttons
+@reference=64
+@tmaterial=default
+
+b_cbase			gbcbase		0	0	64	64
+b_cyard			gbcyard		0	0	64	64
+b_cyard2			gbcyard2		0	0	64	64
+b_csensor			gbcsensor		0	0	64	64
+b_cturret			gbcturret		0	0	64	64
+b_cturret2			gbcturret2		0	0	64	64
+b_cmining			gbcmining		0	0	64	64
+b_cresear			gbcresear		0	0	64	64
+b_cresear2			gbcresear2		0	0	64	64
+b_corbital			gbcorbital		0	0	64	64
+b_ctrading			gbctrading		0	0	64	64
+b_cupgrade			gbcupgrade		0	0	64	64
+b_cconst			gbcconst		0	0	64	64
+b_cfreight			gbcfreight		0	0	64	64
+b_csrepair			gbcsrepair		0	0	64	64
+b_cscout			gbcscout		0	0	64	64
+b_cdestroy			gbcdestroy		0	0	64	64
+b_ccruise1			gbccruise1		0	0	64	64
+b_ccruise2			gbccruise2		0	0	64	64
+b_ccolony			gbccolony		0	0	64	64
+b_cbattle			gbcbattle		0	0	64	64
+b_cbattle2			gbcbattle2		0	0	64	64
+b_cfrigate			gbcfrigate		0	0	64	64
+b_cspecial			gbcspecial		0	0	64	64
+b_csuper			gbcsuper		0	0	64	64
+b_cassault			gbcassault		0	0	64	64
+b_ccargo			gbccargo		0	0	64	64
+b_carpod1			gbcarpod1		0	0	64	64
+b_carpod2			gbcarpod2		0	0	64	64
+b_carpod3			gbcarpod3		0	0	64	64
+b_carpod4			gbcarpod4		0	0	64	64
+b_carpod5			gbcarpod5		0	0	64	64
+b_carpod6			gbcarpod6		0	0	64	64
+b_carpod7			gbcarpod7		0	0	64	64
+b_carpod8			gbcarpod8		0	0	64	64
+b_carpod9			gbcarpod9		0	0	64	64
+b_carpod10			gbcarpod10		0	0	64	64
+b_carpod11			gbcarpod11		0	0	64	64
+b_carpod12			gbcarpod12		0	0	64	64
+b_carpod13			gbcarpod13		0	0	64	64
+b_carpod14			gbcarpod14		0	0	64	64
+b_carpod15			gbcarpod15		0	0	64	64
+b_carpod16			gbcarpod16		0	0	64	64
+b_carpod21			gbcarpod21		0	0	64	64
+b_carpod22			gbcarpod22		0	0	64	64
+b_carpod23			gbcarpod23		0	0	64	64
+b_carpod24			gbcarpod24		0	0	64	64
+b_carpod25			gbcarpod25		0	0	64	64
+b_ccruise3			gbccruise3		0	0	64	64
+b_cdestroy2			gbcdestroy2		0	0	64	64
+b_cardassian_super_station	gbcsupersta	0	0	64	64
+b_cquantum			gbcquantum		0	0	64	64
+
+# temporary
+# b_ccolony			gbfcolony		0	0	64	64
+
+# Romulan build buttons
+@reference=128
+b_rompod1			gbrpod100	0	0	64	64		
+b_rompod2        		gbrpod100	64	0	64	64		
+b_rompod3			gbrpod100	0	64	64	64		
+b_rompod4			gbrpod100	64	64	64	64		
+b_rompod5			gbrpod200	0	0	64	64		
+b_rompod6			gbrpod200	64	0	64	64		
+b_rompod7			gbrpod200	0	64	64	64		
+b_rompod8			gbrpod200	64	64	64	64		
+
+
+@reference=64
+b_rconst			gbrconst	0	0	64	64
+b_rsuperbl			gbrsuperbl	0	0	64	64
+b_ryard			gbryard	0	0	64	64
+b_rmining			gbrmining	0	0	64	64
+b_rfreight			gbrfreight	0	0	64	64
+b_rbase			gbrbase	0	0	64	64
+b_rspecial			gbrspecial	0	0	64	64
+b_rcruise1			gbrcruise1	0	0	64	64
+b_rscout			gbrscout	0	0	64	64
+b_rsensor			gbrsensor	0	0	64	64		
+b_rresear			gbrresear	0	0	64	64			
+b_rompod9			gbrpod900	0	0	64	64		
+b_rresear2			gbrresear2	0	0	64	64		
+b_rturret			gbrturret	0	0	64	64
+b_rturret2			gbrturret2 	0	0	64	64		
+b_ryard2			gbryard2	0	0	64	64	
+b_rsuper			gbrsuper	0	0	64	64
+b_rassault			gbrassault  0    	0	64	64
+b_rsrepair			gbrrepair	0	0	64	64
+b_rcolony			gbrcolony	0	0	64	64
+b_rcargo			gbrcargo	0	0	64	64
+b_rfrigate			gbrfrigate	0	0	64	64
+b_rorbital			gbrorbital	0	0	64	64
+b_rtrading			gbrtrading	0	0	64	64
+b_rupgrade			gbrupgrade	0	0	64	64
+b_rbattle2			gbrbattle2	0	0	64	64		
+b_rcruise3			gbrcruise3	0	0	64	64	
+b_rompod10			gbrompod10	0	0	64	64
+b_rompod11			gbrompod11	0	0	64	64
+b_rompod12			gbrompod12	0	0	64	64
+b_rompod13			gbrompod13	0	0	64	64
+b_rompod14			gbrompod14	0	0	64	64
+b_rompod15			gbrompod15	0	0	64	64
+b_rompod16			gbrompod16	0	0	64	64	
+b_rompod21			gbrompod21	0	0	64	64	
+b_rompod22			gbrompod22	0	0	64	64	
+b_rompod23			gbrompod23	0	0	64	64	
+b_rompod24			gbrompod24	0	0	64	64	
+b_rompod25			gbrompod25	0	0	64	64	
+b_rbattle			gbrbattle	0	0	64	64
+b_rcruise2			gbrcruise2	0	0	64	64
+b_rdestroy			gbrdestroy	0	0	64	64
+
+# Borg build buttons
+@reference=128
+b_borpod1			gbbpod100	0	0	64	64
+b_borpod2			gbbpod100	64	0	64	64		
+b_borpod4			gbbpod100	64	64	64	64	
+b_borpod5			gbbpod200	0	0	64	64		
+b_borpod6			gbbpod200	64	0	64	64		
+b_borpod7			gbbpod200	64	64	64	64		
+b_borpod8			gbbpod200	0	64	64	64
+			
+@reference=64
+b_bfreight			gbbfreight	0	0	64	64
+b_bbase				gbbbase		0	0	64	64
+b_btechass			gbbtechass	0	0	64	64
+b_bhub				gbbhub		0	0	64	64
+b_borpod3			gbborpod3	0	0	64	64
+b_bconst			gbbconst	0	0	64	64	
+b_bcruise1			gbbcruise1 	0	0	64	64		
+b_bcruise2			gbbcruise2 	0	0	64	64		
+b_bcruise3			gbbcruise3	0	0	64	64		
+b_borpod9			gbbpod900	0	0	64	64
+b_borpod10			gbborpod10	0	0	64	64
+b_borpod11			gbborpod11	0	0	64	64
+b_borpod12			gbborpod12	0	0	64	64
+b_borpod13			gbborpod13	0	0	64	64
+b_borpod14			gbborpod14	0	0	64	64
+b_borpod15			gbborpod15	0	0	64	64
+b_borpod16			gbborpod16	0	0	64	64
+b_borpod21			gbborpod21	0	0	64	64	
+b_borpod22			gbborpod22	0	0	64	64	
+b_borpod23			gbborpod23	0	0	64	64	
+b_borpod24			gbborpod24	0	0	64	64	
+b_borpod25			gbborpod25	0	0	64	64	
+b_bmining			gbbmining	0	0	64	64	
+b_bsensor			gbbsensor	0	0	64	64		
+b_bspecial			gbbspecial	0	0	64	64
+b_bqueen			gbbspecial	0	0	64	64					
+b_bresear			gbbresear	0	0	64	64	
+b_bresear2			gbbresear2	0	0	64	64		
+b_bturret			gbbturret 	0	0	64	64
+b_bturret2			gbbturret2	0	0	64	64		
+b_bbattle1			gbbbattle1	0	0	64	64
+b_bbattle2			gbbbattle2	0	0	64	64
+b_bbattle3			gbbbattle3	0	0	64	64
+b_bbattle4			gbbbattle4	0	0	64	64
+b_bassault			gbbassault	0	0	64	64
+b_bdestroy			gbbdestroy	0	0	64	64
+b_bscout			gbbscout	0	0	64	64
+b_byard			gbbyard	0	0	64	64
+b_byard2			gbbyard2	0	0	64	64
+b_bcolony			gbbcolony	0	0	64	64
+b_bfrigate			gbbfrigate	0	0	64	64
+b_bupgrade			gbbupgrade	0	0	64	64
+b_brecycle			gbbrecycle	0	0	64	64
+b_bsuperbl			gbbsuperbl	0	0	64	64
+
+# 8472 build buttons
+@reference=64
+@tmaterial=default
+
+b_8472_mother				gb8472_mother			0	0	64	64		
+b_8472_active				gb8472_active			0	0	64	64		
+b_8472_passive				gb8472_passive			0	0	64	64		
+b_8472_scout				gb8472_scout			0	0	64	64		
+b_8472_destroy				gb8472_destroy			0	0	64	64		
+b_8472_cruise1				gb8472_cruise1			0	0	64	64		
+b_8472_cruise2				gb8472_cruise2			0	0	64	64		
+b_8472_collector				gb8472_collector			0	0	64	64		
+b_8472_defender				gb8472_defender			0	0	64	64		
+b_8472_transmuter				gb8472_transmuter			0	0	64	64		
+b_8472_frigate				gb8472_frigate			0	0	64	64		
+b_8472_battle				gb8472_battle			0	0	64	64
+b_8472_behemoth				gb8472_behemoth			0	0	64	64		
+b_8472_Mine					gb8472_Mine				0	0	64	64		
+b_8472_Sentinel				gb8472_Sentinel			0	0	64	64		
+b_8472_BasicResearch			gb8472_BasicResearch		0	0	64	64		
+b_8472_AdvancedResearch			gb8472_AdvancedResearch		0	0	64	64		
+b_8472_ShipUpgradeResearch		gb8472_ShipUpgradeResearch	0	0	64	64		
+b_8472_FluidicGate			gb8472_FluidicGate		0	0	64	64		
+b_8472_PodBasic0				gb8472_PodBasic0			0	0	64	64		
+b_8472_PodBasic1				gb8472_PodBasic0			0	0	64	64		
+b_8472_PodBasic2				gb8472_PodBasic0			0	0	64	64		
+b_8472_PodBasic3				gb8472_PodBasic0			0	0	64	64		
+b_8472_PodBasic4				gb8472_PodBasic0			0	0	64	64		
+b_8472_PodAdvanced0			gb8472_PodAdvanced0		0	0	64	64		
+b_8472_PodAdvanced1			gb8472_PodAdvanced0		0	0	64	64		
+b_8472_PodAdvanced2			gb8472_PodAdvanced0		0	0	64	64		
+b_8472_PodAdvanced3			gb8472_PodAdvanced0		0	0	64	64		
+b_8472_PodShipResearch0			gb8472_PodShipResearch0		0	0	64	64		
+b_8472_PodShipResearch1			gb8472_PodShipResearch1		0	0	64	64		
+b_8472_PodShipResearch2			gb8472_PodShipResearch2		0	0	64	64		
+b_8472_PodShipResearch3			gb8472_PodShipResearch3		0	0	64	64		
+b_8472_PodShipResearch4			gb8472_PodShipResearch4		0	0	64	64		
+b_8472_PodShipResearch5			gb8472_PodShipResearch5		0	0	64	64		
+b_8472_PodShipResearch20		gb8472_PodShipResearch20	0	0	64	64		
+b_8472_PodShipResearch21		gb8472_PodShipResearch21	0	0	64	64		
+b_8472_PodShipResearch22		gb8472_PodShipResearch22	0	0	64	64		
+b_8472_PodShipResearch23		gb8472_PodShipResearch23	0	0	64	64		
+b_8472_PodShipResearch24		gb8472_PodShipResearch24	0	0	64	64		
+b_8472_PodShipResearch25		gb8472_PodShipResearch25	0	0	64	64		
+
+
+@tmaterial=interface
+
+b_gclairvoyance					gbclairvoyance		0	0	64	64
+b_gclairvoyantLink				gbclairvoyantLink	0	0	64	64
+b_gpsionicDisruption				gbpsionicDisruption	0	0	64	64
+b_gpsionicInsanity				gbpsionicInsanity	0	0	64	64
+b_gbioPulse						gbbioPulse			0	0	64	64
+b_gnebulaGeneration				gbnebulaGeneration	0	0	64	64
+b_gnebulaFlux					gbnebulaFlux		0	0	64	64
+b_gtransientRift					gbtransientRift		0	0	64	64
+b_gresourceExtractionBeam			gbresourceExtractionBeam	0	0	64	64
+
+@tmaterial=default
+# end 8472 build buttons
+
+
+# Dominion build buttons
+@reference=128
+b_zjemdest			gbzships	0	0	64	64
+b_zjembat			gbzships	64	0	64	64
+b_zcarddes			gbzships	0	64	64	64
+b_zcardbat			gbzships	64	64	64	64
+
+# Alien build buttons.
+b_zentity			gbzships	0	0	64	64
+
+# Special weapon buttons
+@reference=64
+
+@tmaterial=interface
+
+b_hremod			hremod00		0	0	64	64
+b_hoverrid			hcompovr00		0	0	64	64
+b_hutribm			hutritium00		0	0	64	64
+b_hnanites			hnanite00		0	0	64	64
+b_gtempor			gbtmpdis00		0	0	64	64		
+b_gbholeg			gbbhole00		0	0	64	64		
+b_grwave			gbripple00		0	0	64	64		
+b_grfield			gbrwave00		0	0	64	64		
+b_gposijam			gbsensjam00		0	0	64	64		
+b_gplasmac			gbplasmac00		0	0	64	64			
+b_gshieldh			gbshieldd00		0	0	64	64		
+b_ggrvmine			gbgrvmine00		0	0	64	64		
+b_gionstm			gbionstm00		0	0	64	64		
+b_gdchant			gbdchant00		0	0	64	64		
+b_gshieldi			gbshieldi00		0	0	64	64		
+b_gesconv			gbenrcvr00		0	0	64	64			
+b_gkcteam			gbkcteam00		0	0	64	64		
+b_gmicro			gbmicro00		0	0	64	64		
+b_goverrid			gbcompovr00		0	0	64	64		
+b_gpdlaser			gbpdl00		0	0	64	64		
+b_gromspy			gbromspy00		0	0	64	64		
+b_gborgbor			gbbaabore00		0	0	64	64			
+b_gwcover			gbengovr00		0	0	64	64		
+b_gmyotron			gbmyotron00		0	0	64	64		
+b_gripple			gbripple00		0	0	64	64			
+b_gselfdes			gbselfdes00		0	0	64	64		
+b_gcloak			gbcloak00		0	0	64	64		
+b_grcloak			gbcloak00		0	0	64	64		
+b_gkcloak			gbcloak00		0	0	64	64		
+b_gccloak			gbcloak00		0	0	64	64
+b_gmastran			gbmastran00		0	0	64	64	
+b_gporthole			gbmastran00		0	0	64	64	
+b_gtracbm			gbtrcbm00		0	0	64	64		
+b_gtracbmo			gbtrcbm00		0	0	64	64
+b_gholdbm			gbholdbm00		0	0	64	64		
+b_fusiongholdbm		gbholdbm00		0	0	64	64		
+b_gchainp			gbchnrxn00		0	0	64	64		
+b_gamine			gbamine00		0	0	64	64		
+b_gremod			gbremod00		0	0	64	64		
+b_gfeedbk			gbfdbk00		0	0	64	64		
+b_gcorbom			gbcorbom00		0	0	64	64		
+b_gTechAssimBeam   	 gbTechAssimBm00 	0	0	64	64
+b_gmanheim			gbmanheim00		0	0	64	64
+b_hamine			gbamine00		0	0	64	64
+b_hcorbom			gbcorbom00		0	0	64	64
+b_hcloak			gbcloak00		0	0	64	64
+b_hmanheim			gbmanheim00		0	0	64	64
+b_hplasmac			gbplasmac00		0	0	64	64
+b_hshieldi			gbshieldi00		0	0	64	64
+b_hholdbm			gbholdbm00		0	0	64	64
+b_hwcover			gbengovr00		0	0	64	64
+b_hplasma2			gbplasmac00		0	0	64	64
+b_gomegbm			gbotrcbm00		0	0	64	64		
+b_hmicro			gbmicro00		0	0	64	64		
+b_hpoleron  		gbpolrntrp00	0	0	64	64
+b_hshieldh			gbshieldd00		0	0	64	64			
+b_gdetect2			gbtachyon00		0	0	64	64		
+b_gdetect3			gbbsensary00	0	0	64	64			
+b_gpcloak			gbpcloak00		0	0	64	64		
+b_gnanites			gbnanite00		0	0	64	64		
+b_gtwarpd			gbtwarpd00		0	0	64	64		
+b_gregen			gbregen00		0  	0	64	64			
+b_gpsyblst			gbpblast00		0	0	64	64		
+b_gholoemt			gbholoem00		0	0	64	64			
+b_gengyemt			gbbengyemt		0	0	64	64			
+b_gshldemt			gbshldemt00		0	0	64	64			
+b_gclkenh			gbclkenh00		0	0	64	64			
+b_wenhance			gbwenhance00	0	0	64	64			
+b_gutribm			gbutritium00	0	0	64	64			
+b_gpoleron  		gbpolrntrp00	0	0	64	64
+b_gfedrep  			gbfrepair00		0	0	64	64
+b_gnttblst			gbpblast00		0	0	64	64		
+b_gplasmabank		gbplasmabank00	0	0	64	64		
+b_gmicroorgs		gbmicroorgs00	0	0	64	64		
+b_gdrones			gbdrones00		0	0	64	64		
+b_gfluxwave			gbfluxwave00	0	0	64	64		
+b_gtachdetgrid		gbtachdetgrid00	0	0	64	64		
+b_gsensorscram		gbsensorscram00	0	0	64	64		
+b_gaccelcannon		gbaccelcannon00	0	0	64	64		
+b_gborgionbeam		gbborgionbeam00	0	0	64	64		
+b_gquanteffect		gbquanteffect00	0	0	64	64		
+b_gwarpboost		gbwarpboost00	0	0	64	64		
+b_gsdisruptor		gbsdisruptor00	0	0	64	64
+b_gcubeintegrator		gbcubeintegrator00	0	0 	64	64
+b_gtcubeintegrator	gbtcubeintegrator00 	0	0	64	64
+b_gtechassim		gbtechassim00	0	0	64	64
+b_ggalintegrator		gbgalintegrator00		0	0	64	64
+b_ggalseparator		gbgalseparator00	0	0	64	64
+b_ghologen		gbhologen		0	0	64	64
+
+@tmaterial=default
+
+# Wireframes
+# ----------
+
+## SPRITE DATA  ##
+
+# Ship Wireframes
+@reference=128
+@tmaterial=interface
+
+# Borg wireframes
+
+@reference=256
+
+bbattle1w1			borgwireframe01	0	0	48	48		
+bbattle1w2			borgwireframe01	48	0	48	48		
+bbattle1w3			borgwireframe01	96	0	48	48		
+bbattle1w4			borgwireframe01	144	0	48	48		
+bbattle1w5			borgwireframe01	192	0	48	48
+
+bbattle2w1			borgwireframe01	0	48	48	48		
+bbattle2w2			borgwireframe01	48	48	48	48		
+bbattle2w3			borgwireframe01	96	48	48	48		
+bbattle2w4			borgwireframe01	144	48	48	48		
+bbattle2w5			borgwireframe01	192	48	48	48	
+
+bcruise1w1			borgwireframe01	0	96	48	48		
+bcruise1w2			borgwireframe01	48	96	48	48		
+bcruise1w3			borgwireframe01	96	96	48	48		
+bcruise1w4			borgwireframe01	144	96	48	48		
+bcruise1w5			borgwireframe01	192	96	48	48
+
+bcruise2w1			borgwireframe01	0	144	48	48		
+bcruise2w2			borgwireframe01	48	144	48	48		
+bcruise2w3			borgwireframe01	96	144	48	48		
+bcruise2w4			borgwireframe01	144	144	48	48		
+bcruise2w5			borgwireframe01	192	144	48	48
+
+bcruise3w1			borgwireframe01	0	192	48	48		
+bcruise3w2			borgwireframe01	48	192	48	48		
+bcruise3w3			borgwireframe01	96	192	48	48		
+bcruise3w4			borgwireframe01	144	192	48	48		
+bcruise3w5			borgwireframe01	192	192	48	48
+
+bdestroyw1			borgwireframe02	0	0	48	48		
+bdestroyw2			borgwireframe02	48	0	48	48		
+bdestroyw3			borgwireframe02	96	0	48	48		
+bdestroyw4			borgwireframe02	144	0	48	48		
+bdestroyw5			borgwireframe02	192	0	48	48
+
+bfrigatew1			borgwireframe02	0	48	48	48		
+bfrigatew2			borgwireframe02	48	48	48	48		
+bfrigatew3			borgwireframe02	96	48	48	48		
+bfrigatew4			borgwireframe02	144	48	48	48		
+bfrigatew5			borgwireframe02	192	48	48	48	
+
+bspecialw1			borgwireframe02	0	96	48	48		
+bspecialw2			borgwireframe02	48	96	48	48		
+bspecialw3			borgwireframe02	96	96	48	48		
+bspecialw4			borgwireframe02	144	96	48	48		
+bspecialw5			borgwireframe02	192	96	48	48	
+
+bbattle3w1			borgwireframe02	0	144	48	48		
+bbattle3w2			borgwireframe02	48	144	48	48		
+bbattle3w3			borgwireframe02	96	144	48	48		
+bbattle3w4			borgwireframe02	144	144	48	48		
+bbattle3w5			borgwireframe02	192	144	48	48
+
+bbattle4w1			borgwireframe02	0	192	48	48		
+bbattle4w2			borgwireframe02	48	192	48	48		
+bbattle4w3			borgwireframe02	96	192	48	48		
+bbattle4w4			borgwireframe02	144	192	48	48		
+bbattle4w5			borgwireframe02	192	192	48	48
+
+bassaultw1			borgwireframe03	0	0	48	48		
+bassaultw2			borgwireframe03	48	0	48	48		
+bassaultw3			borgwireframe03	96	0	48	48		
+bassaultw4			borgwireframe03	144	0	48	48		
+bassaultw5			borgwireframe03	192	0	48	48
+
+bscoutw1			borgwireframe03	0	48	48	48		
+bscoutw2			borgwireframe03	48	48	48	48		
+bscoutw3			borgwireframe03	96	48	48	48		
+bscoutw4			borgwireframe03	144	48	48	48		
+bscoutw5			borgwireframe03	192	48	48	48	
+
+bconstw1			borgwireframe03	0	96	48	48		
+bconstw2			borgwireframe03	48	96	48	48		
+bconstw3			borgwireframe03	96	96	48	48		
+bconstw4			borgwireframe03	144	96	48	48		
+bconstw5			borgwireframe03	192	96	48	48
+
+bfreightw1			borgwireframe03	0	144	48	48		
+bfreightw2			borgwireframe03	48	144	48	48		
+bfreightw3			borgwireframe03	96	144	48	48		
+bfreightw4			borgwireframe03	144	144	48	48		
+bfreightw5			borgwireframe03	192	144	48	48
+
+bcolonyw1			borgwireframe03	0	192	48	48		
+bcolonyw2			borgwireframe03	48	192	48	48		
+bcolonyw3			borgwireframe03	96	192	48	48		
+bcolonyw4			borgwireframe03	144	192	48	48		
+bcolonyw5			borgwireframe03	192	192	48	48
+
+bqueenw1			borgwireframe04	0	0	48	48		
+bqueenw2			borgwireframe04	48	0	48	48		
+bqueenw3			borgwireframe04	96	0	48	48		
+bqueenw4			borgwireframe04	144	0	48	48		
+bqueenw5			borgwireframe04	192	0	48	48
+
+bbasew1				borgwireframe04	0	48	48	48		
+bbasew2				borgwireframe04	48	48	48	48		
+bbasew3				borgwireframe04	96	48	48	48		
+bbasew4				borgwireframe04	144	48	48	48		
+bbasew5				borgwireframe04	192	48	48	48	
+
+bminingw1			borgwireframe04	0	96	48	48		
+bminingw2			borgwireframe04	48	96	48	48		
+bminingw3			borgwireframe04	96	96	48	48		
+bminingw4			borgwireframe04	144	96	48	48		
+bminingw5			borgwireframe04	192	96	48	48
+
+byardw1				borgwireframe04	0	144	48	48		
+byardw2				borgwireframe04	48	144	48	48		
+byardw3				borgwireframe04	96	144	48	48		
+byardw4				borgwireframe04	144	144	48	48		
+byardw5				borgwireframe04	192	144	48	48
+
+byard2w1			borgwireframe04	0	192	48	48		
+byard2w2			borgwireframe04	48	192	48	48		
+byard2w3			borgwireframe04	96	192	48	48		
+byard2w4			borgwireframe04	144	192	48	48		
+byard2w5			borgwireframe04	192	192	48	48
+
+bsensorw1			borgwireframe05	0	0	48	48		
+bsensorw2			borgwireframe05	48	0	48	48		
+bsensorw3			borgwireframe05	96	0	48	48		
+bsensorw4			borgwireframe05	144	0	48	48		
+bsensorw5			borgwireframe05	192	0	48	48
+
+bturretw1			borgwireframe05	0	48	48	48		
+bturretw2			borgwireframe05	48	48	48	48		
+bturretw3			borgwireframe05	96	48	48	48		
+bturretw4			borgwireframe05	144	48	48	48		
+bturretw5			borgwireframe05	192	48	48	48	
+
+bturret2w1			borgwireframe05	0	96	48	48		
+bturret2w2			borgwireframe05	48	96	48	48		
+bturret2w3			borgwireframe05	96	96	48	48		
+bturret2w4			borgwireframe05	144	96	48	48		
+bturret2w5			borgwireframe05	192	96	48	48
+
+bsuperblw1			borgwireframe05	0	144	48	48		
+bsuperblw2			borgwireframe05	48	144	48	48		
+bsuperblw3			borgwireframe05	96	144	48	48		
+bsuperblw4			borgwireframe05	144	144	48	48		
+bsuperblw5			borgwireframe05	192	144	48	48
+
+brecyclew1			borgwireframe05	0	192	48	48		
+brecyclew2			borgwireframe05	48	192	48	48		
+brecyclew3			borgwireframe05	96	192	48	48		
+brecyclew4			borgwireframe05	144	192	48	48		
+brecyclew5			borgwireframe05	192	192	48	48
+
+bportalw1			borgwireframe06	0	0	48	48		
+bportalw2			borgwireframe06	48	0	48	48		
+bportalw3			borgwireframe06	96	0	48	48		
+bportalw4			borgwireframe06	144	0	48	48		
+bportalw5			borgwireframe06	192	0	48	48
+
+bresearw1			borgwireframe06	0	96	48	48		
+bresearw2			borgwireframe06	48	96	48	48		
+bresearw3			borgwireframe06	96	96	48	48		
+bresearw4			borgwireframe06	144	96	48	48		
+bresearw5			borgwireframe06	192	96	48	48
+
+bresear2w1			borgwireframe06	0	144	48	48		
+bresear2w2			borgwireframe06	48	144	48	48		
+bresear2w3			borgwireframe06	96	144	48	48		
+bresear2w4			borgwireframe06	144	144	48	48		
+bresear2w5			borgwireframe06	192	144	48	48
+
+bupgradew1			borgwireframe06	0	192	48	48		
+bupgradew2			borgwireframe06	48	192	48	48		
+bupgradew3			borgwireframe06	96	192	48	48		
+bupgradew4			borgwireframe06	144	192	48	48		
+bupgradew5			borgwireframe06	192	192	48	48
+
+btechassw1			borgwireframe07	0	0	48	48		
+btechassw2			borgwireframe07	48	0	48	48		
+btechassw3			borgwireframe07	96	0	48	48		
+btechassw4			borgwireframe07	144	0	48	48		
+btechassw5			borgwireframe07	192	0	48	48
+
+
+# Federation wireframes
+
+@reference=256
+
+fbattlew1			fedwireframe01	0	0	48	48		
+fbattlew2			fedwireframe01	48	0	48	48		
+fbattlew3			fedwireframe01	96	0	48	48		
+fbattlew4			fedwireframe01	144	0	48	48		
+fbattlew5			fedwireframe01	192	0	48	48
+
+fgalaxyw1			fedwireframe01	0	48	48	48		
+fgalaxyw2			fedwireframe01	48	48	48	48		
+fgalaxyw3			fedwireframe01	96	48	48	48		
+fgalaxyw4			fedwireframe01	144	48	48	48		
+fgalaxyw5			fedwireframe01	192	48	48	48	
+
+fcruise1w1			fedwireframe01	0	96	48	48		
+fcruise1w2			fedwireframe01	48	96	48	48		
+fcruise1w3			fedwireframe01	96	96	48	48		
+fcruise1w4			fedwireframe01	144	96	48	48		
+fcruise1w5			fedwireframe01	192	96	48	48
+
+fcruise2w1			fedwireframe01	0	144	48	48		
+fcruise2w2			fedwireframe01	48	144	48	48		
+fcruise2w3			fedwireframe01	96	144	48	48		
+fcruise2w4			fedwireframe01	144	144	48	48		
+fcruise2w5			fedwireframe01	192	144	48	48
+
+fcruise3w1			fedwireframe01	0	192	48	48		
+fcruise3w2			fedwireframe01	48	192	48	48		
+fcruise3w3			fedwireframe01	96	192	48	48		
+fcruise3w4			fedwireframe01	144	192	48	48		
+fcruise3w5			fedwireframe01	192	192	48	48
+
+fdestroyw1			fedwireframe02	0	0	48	48		
+fdestroyw2			fedwireframe02	48	0	48	48		
+fdestroyw3			fedwireframe02	96	0	48	48		
+fdestroyw4			fedwireframe02	144	0	48	48		
+fdestroyw5			fedwireframe02	192	0	48	48
+
+fdestroy2w1			fedwireframe02	0	48	48	48		
+fdestroy2w2			fedwireframe02	48	48	48	48		
+fdestroy2w3			fedwireframe02	96	48	48	48		
+fdestroy2w4			fedwireframe02	144	48	48	48		
+fdestroy2w5			fedwireframe02	192	48	48	48	
+
+ffrigatew1			fedwireframe02	0	96	48	48		
+ffrigatew2			fedwireframe02	48	96	48	48		
+ffrigatew3			fedwireframe02	96	96	48	48		
+ffrigatew4			fedwireframe02	144	96	48	48		
+ffrigatew5			fedwireframe02	192	96	48	48
+
+fspecialw1			fedwireframe02	0	144	48	48		
+fspecialw2			fedwireframe02	48	144	48	48		
+fspecialw3			fedwireframe02	96	144	48	48		
+fspecialw4			fedwireframe02	144	144	48	48		
+fspecialw5			fedwireframe02	192	144	48	48
+
+fassaultw1			fedwireframe02	0	192	48	48		
+fassaultw2			fedwireframe02	48	192	48	48		
+fassaultw3			fedwireframe02	96	192	48	48		
+fassaultw4			fedwireframe02	144	192	48	48		
+fassaultw5			fedwireframe02	192	192	48	48
+
+fscoutw1			fedwireframe03	0	0	48	48		
+fscoutw2			fedwireframe03	48	0	48	48		
+fscoutw3			fedwireframe03	96	0	48	48		
+fscoutw4			fedwireframe03	144	0	48	48		
+fscoutw5			fedwireframe03	192	0	48	48
+
+fcargow1			fedwireframe03	0	48	48	48		
+fcargow2			fedwireframe03	48	48	48	48		
+fcargow3			fedwireframe03	96	48	48	48		
+fcargow4			fedwireframe03	144	48	48	48		
+fcargow5			fedwireframe03	192	48	48	48	
+
+fcolonyw1			fedwireframe03	0	96	48	48		
+fcolonyw2			fedwireframe03	48	96	48	48		
+fcolonyw3			fedwireframe03	96	96	48	48		
+fcolonyw4			fedwireframe03	144	96	48	48		
+fcolonyw5			fedwireframe03	192	96	48	48
+
+fconstw1			fedwireframe03	0	144	48	48		
+fconstw2			fedwireframe03	48	144	48	48		
+fconstw3			fedwireframe03	96	144	48	48		
+fconstw4			fedwireframe03	144	144	48	48		
+fconstw5			fedwireframe03	192	144	48	48
+
+ffreightw1			fedwireframe03	0	192	48	48		
+ffreightw2			fedwireframe03	48	192	48	48		
+ffreightw3			fedwireframe03	96	192	48	48		
+ffreightw4			fedwireframe03	144	192	48	48		
+ffreightw5			fedwireframe03	192	192	48	48
+
+fsrepairw1			fedwireframe04	0	0	48	48		
+fsrepairw2			fedwireframe04	48	0	48	48		
+fsrepairw3			fedwireframe04	96	0	48	48		
+fsrepairw4			fedwireframe04	144	0	48	48		
+fsrepairw5			fedwireframe04	192	0	48	48
+
+fentew1				fedwireframe04	0	48	48	48		
+fentew2				fedwireframe04	48	48	48	48		
+fentew3				fedwireframe04	96	48	48	48		
+fentew4				fedwireframe04	144	48	48	48		
+fentew5				fedwireframe04	192	48	48	48	
+
+fdataw1				fedwireframe04	0	96	48	48		
+fdataw2				fedwireframe04	48	96	48	48		
+fdataw3				fedwireframe04	96	96	48	48		
+fdataw4				fedwireframe04	144	96	48	48		
+fdataw5				fedwireframe04	192	96	48	48
+
+fincursionw1			fedwireframe04	0	144	48	48		
+fincursionw2			fedwireframe04	48	144	48	48		
+fincursionw3			fedwireframe04	96	144	48	48		
+fincursionw4			fedwireframe04	144	144	48	48		
+fincursionw5			fedwireframe04	192	144	48	48
+
+fsaucerw1			fedwireframe04	0	192	48	48		
+fsaucerw2			fedwireframe04	48	192	48	48		
+fsaucerw3			fedwireframe04	96	192	48	48		
+fsaucerw4			fedwireframe04	144	192	48	48		
+fsaucerw5			fedwireframe04	192	192	48	48
+
+fbbridgew1			fedwireframe05	0	0	48	48		
+fbbridgew2			fedwireframe05	48	0	48	48		
+fbbridgew3			fedwireframe05	96	0	48	48		
+fbbridgew4			fedwireframe05	144	0	48	48		
+fbbridgew5			fedwireframe05	192	0	48	48
+
+fbasew1				fedwireframe05	0	48	48	48		
+fbasew2				fedwireframe05	48	48	48	48		
+fbasew3				fedwireframe05	96	48	48	48		
+fbasew4				fedwireframe05	144	48	48	48		
+fbasew5				fedwireframe05	192	48	48	48	
+
+fminingw1			fedwireframe05	0	96	48	48		
+fminingw2			fedwireframe05	48	96	48	48		
+fminingw3			fedwireframe05	96	96	48	48		
+fminingw4			fedwireframe05	144	96	48	48		
+fminingw5			fedwireframe05	192	96	48	48
+
+fyardw1				fedwireframe05	0	144	48	48		
+fyardw2				fedwireframe05	48	144	48	48		
+fyardw3				fedwireframe05	96	144	48	48		
+fyardw4				fedwireframe05	144	144	48	48		
+fyardw5				fedwireframe05	192	144	48	48
+
+fyard2w1			fedwireframe05	0	192	48	48		
+fyard2w2			fedwireframe05	48	192	48	48		
+fyard2w3			fedwireframe05	96	192	48	48		
+fyard2w4			fedwireframe05	144	192	48	48		
+fyard2w5			fedwireframe05	192	192	48	48
+
+fsensorw1			fedwireframe06	0	0	48	48		
+fsensorw2			fedwireframe06	48	0	48	48		
+fsensorw3			fedwireframe06	96	0	48	48		
+fsensorw4			fedwireframe06	144	0	48	48		
+fsensorw5			fedwireframe06	192	0	48	48
+
+fturretw1			fedwireframe06	0	48	48	48		
+fturretw2			fedwireframe06	48	48	48	48		
+fturretw3			fedwireframe06	96	48	48	48		
+fturretw4			fedwireframe06	144	48	48	48		
+fturretw5			fedwireframe06	192	48	48	48	
+
+fturret2w1			fedwireframe06	0	96	48	48		
+fturret2w2			fedwireframe06	48	96	48	48		
+fturret2w3			fedwireframe06	96	96	48	48		
+fturret2w4			fedwireframe06	144	96	48	48		
+fturret2w5			fedwireframe06	192	96	48	48
+
+fsuperblw1			fedwireframe06	0	144	48	48		
+fsuperblw2			fedwireframe06	48	144	48	48		
+fsuperblw3			fedwireframe06	96	144	48	48		
+fsuperblw4			fedwireframe06	144	144	48	48		
+fsuperblw5			fedwireframe06	192	144	48	48
+
+fbasehqw1			fedwireframe06	0	192	48	48		
+fbasehqw2			fedwireframe06	48	192	48	48		
+fbasehqw3			fedwireframe06	96	192	48	48		
+fbasehqw4			fedwireframe06	144	192	48	48		
+fbasehqw5			fedwireframe06	192	192	48	48
+
+forbitalw1			fedwireframe07	0	0	48	48		
+forbitalw2			fedwireframe07	48	0	48	48		
+forbitalw3			fedwireframe07	96	0	48	48		
+forbitalw4			fedwireframe07	144	0	48	48		
+forbitalw5			fedwireframe07	192	0	48	48
+
+ftradingw1			fedwireframe07	0	48	48	48		
+ftradingw2			fedwireframe07	48	48	48	48		
+ftradingw3			fedwireframe07	96	48	48	48		
+ftradingw4			fedwireframe07	144	48	48	48		
+ftradingw5			fedwireframe07	192	48	48	48	
+
+fresearw1			fedwireframe07	0	96	48	48		
+fresearw2			fedwireframe07	48	96	48	48		
+fresearw3			fedwireframe07	96	96	48	48		
+fresearw4			fedwireframe07	144	96	48	48		
+fresearw5			fedwireframe07	192	96	48	48
+
+fresear2w1			fedwireframe07	0	144	48	48		
+fresear2w2			fedwireframe07	48	144	48	48		
+fresear2w3			fedwireframe07	96	144	48	48		
+fresear2w4			fedwireframe07	144	144	48	48		
+fresear2w5			fedwireframe07	192	144	48	48
+
+fupgradew1			fedwireframe07	0	192	48	48		
+fupgradew2			fedwireframe07	48	192	48	48		
+fupgradew3			fedwireframe07	96	192	48	48		
+fupgradew4			fedwireframe07	144	192	48	48		
+fupgradew5			fedwireframe07	192	192	48	48
+
+# Klingon wireframes
+@reference=256
+
+kbattlew1			klingwireframe01	0	0	48	48		
+kbattlew2			klingwireframe01	48	0	48	48		
+kbattlew3			klingwireframe01	96	0	48	48		
+kbattlew4			klingwireframe01	144	0	48	48		
+kbattlew5			klingwireframe01	192	0	48	48
+
+kbattle2w1			klingwireframe01	0	48	48	48		
+kbattle2w2			klingwireframe01	48	48	48	48		
+kbattle2w3			klingwireframe01	96	48	48	48		
+kbattle2w4			klingwireframe01	144	48	48	48		
+kbattle2w5			klingwireframe01	192	48	48	48	
+
+kcruise1w1			klingwireframe01	0	96	48	48		
+kcruise1w2			klingwireframe01	48	96	48	48		
+kcruise1w3			klingwireframe01	96	96	48	48		
+kcruise1w4			klingwireframe01	144	96	48	48		
+kcruise1w5			klingwireframe01	192	96	48	48
+
+kcruise2w1			klingwireframe01	0	144	48	48		
+kcruise2w2			klingwireframe01	48	144	48	48		
+kcruise2w3			klingwireframe01	96	144	48	48		
+kcruise2w4			klingwireframe01	144	144	48	48		
+kcruise2w5			klingwireframe01	192	144	48	48
+
+kcruise3w1			klingwireframe01	0	192	48	48		
+kcruise3w2			klingwireframe01	48	192	48	48		
+kcruise3w3			klingwireframe01	96	192	48	48		
+kcruise3w4			klingwireframe01	144	192	48	48		
+kcruise3w5			klingwireframe01	192	192	48	48
+
+kdestroyw1			klingwireframe02	0	0	48	48		
+kdestroyw2			klingwireframe02	48	0	48	48		
+kdestroyw3			klingwireframe02	96	0	48	48		
+kdestroyw4			klingwireframe02	144	0	48	48		
+kdestroyw5			klingwireframe02	192	0	48	48
+
+kfrigatew1			klingwireframe02	0	48	48	48		
+kfrigatew2			klingwireframe02	48	48	48	48		
+kfrigatew3			klingwireframe02	96	48	48	48		
+kfrigatew4			klingwireframe02	144	48	48	48		
+kfrigatew5			klingwireframe02	192	48	48	48	
+
+kspecialw1			klingwireframe02	0	96	48	48		
+kspecialw2			klingwireframe02	48	96	48	48		
+kspecialw3			klingwireframe02	96	96	48	48		
+kspecialw4			klingwireframe02	144	96	48	48		
+kspecialw5			klingwireframe02	192	96	48	48
+
+ksuperw1			klingwireframe02	0	144	48	48		
+ksuperw2			klingwireframe02	48	144	48	48		
+ksuperw3			klingwireframe02	96	144	48	48		
+ksuperw4			klingwireframe02	144	144	48	48		
+ksuperw5			klingwireframe02	192	144	48	48
+
+kassaultw1			klingwireframe02	0	192	48	48		
+kassaultw2			klingwireframe02	48	192	48	48		
+kassaultw3			klingwireframe02	96	192	48	48		
+kassaultw4			klingwireframe02	144	192	48	48		
+kassaultw5			klingwireframe02	192	192	48	48
+
+kscoutw1			klingwireframe03	0	0	48	48		
+kscoutw2			klingwireframe03	48	0	48	48		
+kscoutw3			klingwireframe03	96	0	48	48		
+kscoutw4			klingwireframe03	144	0	48	48		
+kscoutw5			klingwireframe03	192	0	48	48
+
+kcargow1			klingwireframe03	0	48	48	48		
+kcargow2			klingwireframe03	48	48	48	48		
+kcargow3			klingwireframe03	96	48	48	48		
+kcargow4			klingwireframe03	144	48	48	48		
+kcargow5			klingwireframe03	192	48	48	48	
+
+kcolonyw1			klingwireframe03	0	96	48	48		
+kcolonyw2			klingwireframe03	48	96	48	48		
+kcolonyw3			klingwireframe03	96	96	48	48		
+kcolonyw4			klingwireframe03	144	96	48	48		
+kcolonyw5			klingwireframe03	192	96	48	48
+
+kconstw1			klingwireframe03	0	144	48	48		
+kconstw2			klingwireframe03	48	144	48	48		
+kconstw3			klingwireframe03	96	144	48	48		
+kconstw4			klingwireframe03	144	144	48	48		
+kconstw5			klingwireframe03	192	144	48	48
+
+kfreightw1			klingwireframe03	0	192	48	48		
+kfreightw2			klingwireframe03	48	192	48	48		
+kfreightw3			klingwireframe03	96	192	48	48		
+kfreightw4			klingwireframe03	144	192	48	48		
+kfreightw5			klingwireframe03	192	192	48	48
+
+ksrepairw1			klingwireframe04	0	0	48	48		
+ksrepairw2			klingwireframe04	48	0	48	48		
+ksrepairw3			klingwireframe04	96	0	48	48		
+ksrepairw4			klingwireframe04	144	0	48	48		
+ksrepairw5			klingwireframe04	192	0	48	48
+
+kmartokw1			klingwireframe04	0	48	48	48		
+kmartokw2			klingwireframe04	48	48	48	48		
+kmartokw3			klingwireframe04	96	48	48	48		
+kmartokw4			klingwireframe04	144	48	48	48		
+kmartokw5			klingwireframe04	192	48	48	48	
+
+kbektaw1			klingwireframe04	0	96	48	48		
+kbektaw2			klingwireframe04	48	96	48	48		
+kbektaw3			klingwireframe04	96	96	48	48		
+kbektaw4			klingwireframe04	144	96	48	48		
+kbektaw5			klingwireframe04	192	96	48	48
+
+kbasew1				klingwireframe04	0	144	48	48		
+kbasew2				klingwireframe04	48	144	48	48		
+kbasew3				klingwireframe04	96	144	48	48		
+kbasew4				klingwireframe04	144	144	48	48		
+kbasew5				klingwireframe04	192	144	48	48
+
+kminingw1			klingwireframe04	0	192	48	48		
+kminingw2			klingwireframe04	48	192	48	48		
+kminingw3			klingwireframe04	96	192	48	48		
+kminingw4			klingwireframe04	144	192	48	48		
+kminingw5			klingwireframe04	192	192	48	48
+
+kyardw1				klingwireframe05	0	0	48	48		
+kyardw2				klingwireframe05	48	0	48	48		
+kyardw3				klingwireframe05	96	0	48	48		
+kyardw4				klingwireframe05	144	0	48	48		
+kyardw5				klingwireframe05	192	0	48	48
+
+kyard2w1			klingwireframe05	0	48	48	48		
+kyard2w2			klingwireframe05	48	48	48	48		
+kyard2w3			klingwireframe05	96	48	48	48		
+kyard2w4			klingwireframe05	144	48	48	48		
+kyard2w5			klingwireframe05	192	48	48	48	
+
+ksensorw1			klingwireframe05	0	96	48	48		
+ksensorw2			klingwireframe05	48	96	48	48		
+ksensorw3			klingwireframe05	96	96	48	48		
+ksensorw4			klingwireframe05	144	96	48	48		
+ksensorw5			klingwireframe05	192	96	48	48
+
+kturretw1			klingwireframe05	0	144	48	48		
+kturretw2			klingwireframe05	48	144	48	48		
+kturretw3			klingwireframe05	96	144	48	48		
+kturretw4			klingwireframe05	144	144	48	48		
+kturretw5			klingwireframe05	192	144	48	48
+
+kturret2w1			klingwireframe05	0	192	48	48		
+kturret2w2			klingwireframe05	48	192	48	48		
+kturret2w3			klingwireframe05	96	192	48	48		
+kturret2w4			klingwireframe05	144	192	48	48		
+kturret2w5			klingwireframe05	192	192	48	48
+
+ksuperblw1			klingwireframe06	0	0	48	48		
+ksuperblw2			klingwireframe06	48	0	48	48		
+ksuperblw3			klingwireframe06	96	0	48	48		
+ksuperblw4			klingwireframe06	144	0	48	48		
+ksuperblw5			klingwireframe06	192	0	48	48
+
+korbitalw1			klingwireframe06	0	48	48	48		
+korbitalw2			klingwireframe06	48	48	48	48		
+korbitalw3			klingwireframe06	96	48	48	48		
+korbitalw4			klingwireframe06	144	48	48	48		
+korbitalw5			klingwireframe06	192	48	48	48	
+
+ktradingw1			klingwireframe06	0	96	48	48		
+ktradingw2			klingwireframe06	48	96	48	48		
+ktradingw3			klingwireframe06	96	96	48	48		
+ktradingw4			klingwireframe06	144	96	48	48		
+ktradingw5			klingwireframe06	192	96	48	48
+
+kresearw1			klingwireframe06	0	144	48	48		
+kresearw2			klingwireframe06	48	144	48	48		
+kresearw3			klingwireframe06	96	144	48	48		
+kresearw4			klingwireframe06	144	144	48	48		
+kresearw5			klingwireframe06	192	144	48	48
+
+kresear2w1			klingwireframe06	0	192	48	48		
+kresear2w2			klingwireframe06	48	192	48	48		
+kresear2w3			klingwireframe06	96	192	48	48		
+kresear2w4			klingwireframe06	144	192	48	48		
+kresear2w5			klingwireframe06	192	192	48	48
+
+kupgradew1			klingwireframe07	0	0	48	48		
+kupgradew2			klingwireframe07	48	0	48	48		
+kupgradew3			klingwireframe07	96	0	48	48		
+kupgradew4			klingwireframe07	144	0	48	48		
+kupgradew5			klingwireframe07	192	0	48	48
+
+#Romulan Wireframes
+
+@reference=256
+
+rbattlew1			romwireframe01	0	0	48	48		
+rbattlew2			romwireframe01	48	0	48	48		
+rbattlew3			romwireframe01	96	0	48	48		
+rbattlew4			romwireframe01	144	0	48	48		
+rbattlew5			romwireframe01	192	0	48	48
+
+rbattle2w1			romwireframe01	0	48	48	48		
+rbattle2w2			romwireframe01	48	48	48	48		
+rbattle2w3			romwireframe01	96	48	48	48		
+rbattle2w4			romwireframe01	144	48	48	48		
+rbattle2w5			romwireframe01	192	48	48	48	
+
+rcruise1w1			romwireframe01	0	96	48	48		
+rcruise1w2			romwireframe01	48	96	48	48		
+rcruise1w3			romwireframe01	96	96	48	48		
+rcruise1w4			romwireframe01	144	96	48	48		
+rcruise1w5			romwireframe01	192	96	48	48
+
+rcruise2w1			romwireframe01	0	144	48	48		
+rcruise2w2			romwireframe01	48	144	48	48		
+rcruise2w3			romwireframe01	96	144	48	48		
+rcruise2w4			romwireframe01	144	144	48	48		
+rcruise2w5			romwireframe01	192	144	48	48
+
+rcruise3w1			romwireframe01	0	192	48	48		
+rcruise3w2			romwireframe01	48	192	48	48		
+rcruise3w3			romwireframe01	96	192	48	48		
+rcruise3w4			romwireframe01	144	192	48	48		
+rcruise3w5			romwireframe01	192	192	48	48
+
+rdestroyw1			romwireframe02	0	0	48	48		
+rdestroyw2			romwireframe02	48	0	48	48		
+rdestroyw3			romwireframe02	96	0	48	48		
+rdestroyw4			romwireframe02	144	0	48	48		
+rdestroyw5			romwireframe02	192	0	48	48
+
+rfrigatew1			romwireframe02	0	48	48	48		
+rfrigatew2			romwireframe02	48	48	48	48		
+rfrigatew3			romwireframe02	96	48	48	48		
+rfrigatew4			romwireframe02	144	48	48	48		
+rfrigatew5			romwireframe02	192	48	48	48	
+
+rsuperw1			romwireframe02	0	96	48	48		
+rsuperw2			romwireframe02	48	96	48	48		
+rsuperw3			romwireframe02	96	96	48	48		
+rsuperw4			romwireframe02	144	96	48	48		
+rsuperw5			romwireframe02	192	96	48	48
+
+rspecialw1			romwireframe02	0	144	48	48		
+rspecialw2			romwireframe02	48	144	48	48		
+rspecialw3			romwireframe02	96	144	48	48		
+rspecialw4			romwireframe02	144	144	48	48		
+rspecialw5			romwireframe02	192	144	48	48
+
+rassaultw1			romwireframe02	0	192	48	48		
+rassaultw2			romwireframe02	48	192	48	48		
+rassaultw3			romwireframe02	96	192	48	48		
+rassaultw4			romwireframe02	144	192	48	48		
+rassaultw5			romwireframe02	192	192	48	48
+
+rscoutw1			romwireframe03	0	0	48	48		
+rscoutw2			romwireframe03	48	0	48	48		
+rscoutw3			romwireframe03	96	0	48	48		
+rscoutw4			romwireframe03	144	0	48	48		
+rscoutw5			romwireframe03	192	0	48	48
+
+rcargow1			romwireframe03	0	48	48	48		
+rcargow2			romwireframe03	48	48	48	48		
+rcargow3			romwireframe03	96	48	48	48		
+rcargow4			romwireframe03	144	48	48	48		
+rcargow5			romwireframe03	192	48	48	48	
+
+rcolonyw1			romwireframe03	0	96	48	48		
+rcolonyw2			romwireframe03	48	96	48	48		
+rcolonyw3			romwireframe03	96	96	48	48		
+rcolonyw4			romwireframe03	144	96	48	48		
+rcolonyw5			romwireframe03	192	96	48	48
+
+rconstw1			romwireframe03	0	144	48	48		
+rconstw2			romwireframe03	48	144	48	48		
+rconstw3			romwireframe03	96	144	48	48		
+rconstw4			romwireframe03	144	144	48	48		
+rconstw5			romwireframe03	192	144	48	48
+
+rfreightw1			romwireframe03	0	192	48	48		
+rfreightw2			romwireframe03	48	192	48	48		
+rfreightw3			romwireframe03	96	192	48	48		
+rfreightw4			romwireframe03	144	192	48	48		
+rfreightw5			romwireframe03	192	192	48	48
+
+rsrepairw1			romwireframe04	0	0	48	48		
+rsrepairw2			romwireframe04	48	0	48	48		
+rsrepairw3			romwireframe04	96	0	48	48		
+rsrepairw4			romwireframe04	144	0	48	48		
+rsrepairw5			romwireframe04	192	0	48	48
+
+rselaw1				romwireframe04	0	48	48	48		
+rselaw2				romwireframe04	48	48	48	48		
+rselaw3				romwireframe04	96	48	48	48		
+rselaw4				romwireframe04	144	48	48	48		
+rselaw5				romwireframe04	192	48	48	48	
+
+rbasew1				romwireframe04	0	96	48	48		
+rbasew2				romwireframe04	48	96	48	48		
+rbasew3				romwireframe04	96	96	48	48		
+rbasew4				romwireframe04	144	96	48	48		
+rbasew5				romwireframe04	192	96	48	48
+
+rminingw1			romwireframe04	0	144	48	48		
+rminingw2			romwireframe04	48	144	48	48		
+rminingw3			romwireframe04	96	144	48	48		
+rminingw4			romwireframe04	144	144	48	48		
+rminingw5			romwireframe04	192	144	48	48
+
+ryardw1				romwireframe04	0	192	48	48		
+ryardw2				romwireframe04	48	192	48	48		
+ryardw3				romwireframe04	96	192	48	48		
+ryardw4				romwireframe04	144	192	48	48		
+ryardw5				romwireframe04	192	192	48	48
+
+ryard2w1			romwireframe05	0	0	48	48		
+ryard2w2			romwireframe05	48	0	48	48		
+ryard2w3			romwireframe05	96	0	48	48		
+ryard2w4			romwireframe05	144	0	48	48		
+ryard2w5			romwireframe05	192	0	48	48
+
+rsensorw1			romwireframe05	0	48	48	48		
+rsensorw2			romwireframe05	48	48	48	48		
+rsensorw3			romwireframe05	96	48	48	48		
+rsensorw4			romwireframe05	144	48	48	48		
+rsensorw5			romwireframe05	192	48	48	48	
+
+rturretw1			romwireframe05	0	96	48	48		
+rturretw2			romwireframe05	48	96	48	48		
+rturretw3			romwireframe05	96	96	48	48		
+rturretw4			romwireframe05	144	96	48	48		
+rturretw5			romwireframe05	192	96	48	48
+
+rturret2w1			romwireframe05	0	144	48	48		
+rturret2w2			romwireframe05	48	144	48	48		
+rturret2w3			romwireframe05	96	144	48	48		
+rturret2w4			romwireframe05	144	144	48	48		
+rturret2w5			romwireframe05	192	144	48	48
+
+rsuperblw1			romwireframe05	0	192	48	48		
+rsuperblw2			romwireframe05	48	192	48	48		
+rsuperblw3			romwireframe05	96	192	48	48		
+rsuperblw4			romwireframe05	144	192	48	48		
+rsuperblw5			romwireframe05	192	192	48	48
+
+rorbitalw1			romwireframe06	0	0	48	48		
+rorbitalw2			romwireframe06	48	0	48	48		
+rorbitalw3			romwireframe06	96	0	48	48		
+rorbitalw4			romwireframe06	144	0	48	48		
+rorbitalw5			romwireframe06	192	0	48	48
+
+rtradingw1			romwireframe06	0	48	48	48		
+rtradingw2			romwireframe06	48	48	48	48		
+rtradingw3			romwireframe06	96	48	48	48		
+rtradingw4			romwireframe06	144	48	48	48		
+rtradingw5			romwireframe06	192	48	48	48	
+
+rresearw1			romwireframe06	0	96	48	48		
+rresearw2			romwireframe06	48	96	48	48		
+rresearw3			romwireframe06	96	96	48	48		
+rresearw4			romwireframe06	144	96	48	48		
+rresearw5			romwireframe06	192	96	48	48
+
+rresear2w1			romwireframe06	0	144	48	48		
+rresear2w2			romwireframe06	48	144	48	48		
+rresear2w3			romwireframe06	96	144	48	48		
+rresear2w4			romwireframe06	144	144	48	48		
+rresear2w5			romwireframe06	192	144	48	48
+
+rupgradew1			romwireframe06	0	192	48	48		
+rupgradew2			romwireframe06	48	192	48	48		
+rupgradew3			romwireframe06	96	192	48	48		
+rupgradew4			romwireframe06	144	192	48	48		
+rupgradew5			romwireframe06	192	192	48	48
+
+#Cardassian wireframes
+@reference=256
+
+cbattlew1			cardwireframe01	0	0	48	48		
+cbattlew2			cardwireframe01	48	0	48	48		
+cbattlew3			cardwireframe01	96	0	48	48		
+cbattlew4			cardwireframe01	144	0	48	48		
+cbattlew5			cardwireframe01	192	0	48	48
+
+cbattle2w1			cardwireframe01	0	48	48	48		
+cbattle2w2			cardwireframe01	48	48	48	48		
+cbattle2w3			cardwireframe01	96	48	48	48		
+cbattle2w4			cardwireframe01	144	48	48	48		
+cbattle2w5			cardwireframe01	192	48	48	48	
+
+ccruise1w1			cardwireframe01	0	96	48	48		
+ccruise1w2			cardwireframe01	48	96	48	48		
+ccruise1w3			cardwireframe01	96	96	48	48		
+ccruise1w4			cardwireframe01	144	96	48	48		
+ccruise1w5			cardwireframe01	192	96	48	48
+
+ccruise2w1			cardwireframe01	0	144	48	48		
+ccruise2w2			cardwireframe01	48	144	48	48		
+ccruise2w3			cardwireframe01	96	144	48	48		
+ccruise2w4			cardwireframe01	144	144	48	48		
+ccruise2w5			cardwireframe01	192	144	48	48
+
+ccruise3w1			cardwireframe01	0	192	48	48		
+ccruise3w2			cardwireframe01	48	192	48	48		
+ccruise3w3			cardwireframe01	96	192	48	48		
+ccruise3w4			cardwireframe01	144	192	48	48		
+ccruise3w5			cardwireframe01	192	192	48	48
+
+cdestroyw1			cardwireframe02	0	0	48	48		
+cdestroyw2			cardwireframe02	48	0	48	48		
+cdestroyw3			cardwireframe02	96	0	48	48		
+cdestroyw4			cardwireframe02	144	0	48	48		
+cdestroyw5			cardwireframe02	192	0	48	48
+
+cdestroy2w1			cardwireframe02	0	48	48	48		
+cdestroy2w2			cardwireframe02	48	48	48	48		
+cdestroy2w3			cardwireframe02	96	48	48	48		
+cdestroy2w4			cardwireframe02	144	48	48	48		
+cdestroy2w5			cardwireframe02	192	48	48	48	
+
+cfrigatew1			cardwireframe02	0	96	48	48		
+cfrigatew2			cardwireframe02	48	96	48	48		
+cfrigatew3			cardwireframe02	96	96	48	48		
+cfrigatew4			cardwireframe02	144	96	48	48		
+cfrigatew5			cardwireframe02	192	96	48	48
+
+csuperw1			cardwireframe02	0	144	48	48		
+csuperw2			cardwireframe02	48	144	48	48		
+csuperw3			cardwireframe02	96	144	48	48		
+csuperw4			cardwireframe02	144	144	48	48		
+csuperw5			cardwireframe02	192	144	48	48
+
+cspecialw1			cardwireframe02	0	192	48	48		
+cspecialw2			cardwireframe02	48	192	48	48		
+cspecialw3			cardwireframe02	96	192	48	48		
+cspecialw4			cardwireframe02	144	192	48	48		
+cspecialw5			cardwireframe02	192	192	48	48
+
+cassaultw1			cardwireframe03	0	0	48	48		
+cassaultw2			cardwireframe03	48	0	48	48		
+cassaultw3			cardwireframe03	96	0	48	48		
+cassaultw4			cardwireframe03	144	0	48	48		
+cassaultw5			cardwireframe03	192	0	48	48
+
+cscoutw1			cardwireframe03	0	48	48	48		
+cscoutw2			cardwireframe03	48	48	48	48		
+cscoutw3			cardwireframe03	96	48	48	48		
+cscoutw4			cardwireframe03	144	48	48	48		
+cscoutw5			cardwireframe03	192	48	48	48	
+
+ccargow1			cardwireframe03	0	96	48	48		
+ccargow2			cardwireframe03	48	96	48	48		
+ccargow3			cardwireframe03	96	96	48	48		
+ccargow4			cardwireframe03	144	96	48	48		
+ccargow5			cardwireframe03	192	96	48	48
+
+ccolonyw1			cardwireframe03	0	144	48	48		
+ccolonyw2			cardwireframe03	48	144	48	48		
+ccolonyw3			cardwireframe03	96	144	48	48		
+ccolonyw4			cardwireframe03	144	144	48	48		
+ccolonyw5			cardwireframe03	192	144	48	48
+
+cconstw1			cardwireframe03	0	192	48	48		
+cconstw2			cardwireframe03	48	192	48	48		
+cconstw3			cardwireframe03	96	192	48	48		
+cconstw4			cardwireframe03	144	192	48	48		
+cconstw5			cardwireframe03	192	192	48	48
+
+cfreightw1			cardwireframe04	0	0	48	48		
+cfreightw2			cardwireframe04	48	0	48	48		
+cfreightw3			cardwireframe04	96	0	48	48		
+cfreightw4			cardwireframe04	144	0	48	48		
+cfreightw5			cardwireframe04	192	0	48	48
+
+csrepairw1			cardwireframe04	0	48	48	48		
+csrepairw2			cardwireframe04	48	48	48	48		
+csrepairw3			cardwireframe04	96	48	48	48		
+csrepairw4			cardwireframe04	144	48	48	48		
+csrepairw5			cardwireframe04	192	48	48	48	
+
+ckentarw1			cardwireframe04	0	96	48	48		
+ckentarw2			cardwireframe04	48	96	48	48		
+ckentarw3			cardwireframe04	96	96	48	48		
+ckentarw4			cardwireframe04	144	96	48	48		
+ckentarw5			cardwireframe04	192	96	48	48
+
+cbasew1				cardwireframe04	0	144	48	48		
+cbasew2				cardwireframe04	48	144	48	48		
+cbasew3				cardwireframe04	96	144	48	48		
+cbasew4				cardwireframe04	144	144	48	48		
+cbasew5				cardwireframe04	192	144	48	48
+
+cminingw1			cardwireframe04	0	192	48	48		
+cminingw2			cardwireframe04	48	192	48	48		
+cminingw3			cardwireframe04	96	192	48	48		
+cminingw4			cardwireframe04	144	192	48	48		
+cminingw5			cardwireframe04	192	192	48	48
+
+cyardw1				cardwireframe05	0	0	48	48		
+cyardw2				cardwireframe05	48	0	48	48		
+cyardw3				cardwireframe05	96	0	48	48		
+cyardw4				cardwireframe05	144	0	48	48		
+cyardw5				cardwireframe05	192	0	48	48
+
+cyard2w1			cardwireframe05	0	48	48	48		
+cyard2w2			cardwireframe05	48	48	48	48		
+cyard2w3			cardwireframe05	96	48	48	48		
+cyard2w4			cardwireframe05	144	48	48	48		
+cyard2w5			cardwireframe05	192	48	48	48	
+
+csensorw1			cardwireframe05	0	96	48	48		
+csensorw2			cardwireframe05	48	96	48	48		
+csensorw3			cardwireframe05	96	96	48	48		
+csensorw4			cardwireframe05	144	96	48	48		
+csensorw5			cardwireframe05	192	96	48	48
+
+cturretw1			cardwireframe05	0	144	48	48		
+cturretw2			cardwireframe05	48	144	48	48		
+cturretw3			cardwireframe05	96	144	48	48		
+cturretw4			cardwireframe05	144	144	48	48		
+cturretw5			cardwireframe05	192	144	48	48
+
+cturret2w1			cardwireframe05	0	192	48	48		
+cturret2w2			cardwireframe05	48	192	48	48		
+cturret2w3			cardwireframe05	96	192	48	48		
+cturret2w4			cardwireframe05	144	192	48	48		
+cturret2w5			cardwireframe05	192	192	48	48
+
+corbitalw1			cardwireframe06	0	0	48	48		
+corbitalw2			cardwireframe06	48	0	48	48		
+corbitalw3			cardwireframe06	96	0	48	48		
+corbitalw4			cardwireframe06	144	0	48	48		
+corbitalw5			cardwireframe06	192	0	48	48
+
+ctradingw1			cardwireframe06	0	48	48	48		
+ctradingw2			cardwireframe06	48	48	48	48		
+ctradingw3			cardwireframe06	96	48	48	48		
+ctradingw4			cardwireframe06	144	48	48	48		
+ctradingw5			cardwireframe06	192	48	48	48	
+
+cardassian_super_stationw1	cardwireframe06	0	96	48	48		
+cardassian_super_stationw2	cardwireframe06	48	96	48	48		
+cardassian_super_stationw3	cardwireframe06	96	96	48	48		
+cardassian_super_stationw4	cardwireframe06	144	96	48	48		
+cardassian_super_stationw5	cardwireframe06	192	96	48	48
+
+cquantumw1			cardwireframe06	0	144	48	48		
+cquantumw2			cardwireframe06	48	144	48	48		
+cquantumw3			cardwireframe06	96	144	48	48		
+cquantumw4			cardwireframe06	144	144	48	48		
+cquantumw5			cardwireframe06	192	144	48	48
+
+cresearw1			cardwireframe06	0	192	48	48		
+cresearw2			cardwireframe06	48	192	48	48		
+cresearw3			cardwireframe06	96	192	48	48		
+cresearw4			cardwireframe06	144	192	48	48		
+cresearw5			cardwireframe06	192	192	48	48
+
+cresear2w1			cardwireframe07	0	0	48	48		
+cresear2w2			cardwireframe07	48	0	48	48		
+cresear2w3			cardwireframe07	96	0	48	48		
+cresear2w4			cardwireframe07	144	0	48	48		
+cresear2w5			cardwireframe07	192	0	48	48
+
+cupgradew1			cardwireframe07	0	48	48	48		
+cupgradew2			cardwireframe07	48	48	48	48		
+cupgradew3			cardwireframe07	96	48	48	48		
+cupgradew4			cardwireframe07	144	48	48	48		
+cupgradew5			cardwireframe07	192	48	48	48
+
+
+#8472 Wireframes
+@reference=256
+
+8472_battlew1			8472wireframe01	0	0	48	48		
+8472_battlew2			8472wireframe01	48	0	48	48		
+8472_battlew3			8472wireframe01	96	0	48	48		
+8472_battlew4			8472wireframe01	144	0	48	48		
+8472_battlew5			8472wireframe01	192	0	48	48
+
+8472_frigatew1			8472wireframe01	0	48	48	48		
+8472_frigatew2			8472wireframe01	48	48	48	48		
+8472_frigatew3			8472wireframe01	96	48	48	48		
+8472_frigatew4			8472wireframe01	144	48	48	48		
+8472_frigatew5			8472wireframe01	192	48	48	48	
+
+8472_cruise1w1			8472wireframe01	0	96	48	48		
+8472_cruise1w2			8472wireframe01	48	96	48	48		
+8472_cruise1w3			8472wireframe01	96	96	48	48		
+8472_cruise1w4			8472wireframe01	144	96	48	48		
+8472_cruise1w5			8472wireframe01	192	96	48	48
+
+8472_cruise2w1			8472wireframe01	0	144	48	48		
+8472_cruise2w2			8472wireframe01	48	144	48	48		
+8472_cruise2w3			8472wireframe01	96	144	48	48		
+8472_cruise2w4			8472wireframe01	144	144	48	48		
+8472_cruise2w5			8472wireframe01	192	144	48	48
+
+8472_behemothw1			8472wireframe01	0	192	48	48		
+8472_behemothw2			8472wireframe01	48	192	48	48		
+8472_behemothw3			8472wireframe01	96	192	48	48		
+8472_behemothw4			8472wireframe01	144	192	48	48		
+8472_behemothw5			8472wireframe01	192	192	48	48
+
+8472_destroyw1			8472wireframe02	0	0	48	48		
+8472_destroyw2			8472wireframe02	48	0	48	48		
+8472_destroyw3			8472wireframe02	96	0	48	48		
+8472_destroyw4			8472wireframe02	144	0	48	48		
+8472_destroyw5			8472wireframe02	192	0	48	48
+
+8472_scoutw1			8472wireframe02	0	48	48	48		
+8472_scoutw2			8472wireframe02	48	48	48	48		
+8472_scoutw3			8472wireframe02	96	48	48	48		
+8472_scoutw4			8472wireframe02	144	48	48	48		
+8472_scoutw5			8472wireframe02	192	48	48	48	
+
+8472_collectorw1			8472wireframe02	0	96	48	48		
+8472_collectorw2			8472wireframe02	48	96	48	48		
+8472_collectorw3			8472wireframe02	96	96	48	48		
+8472_collectorw4			8472wireframe02	144	96	48	48		
+8472_collectorw5			8472wireframe02	192	96	48	48
+
+8472_defenderw1			8472wireframe02	0	144	48	48		
+8472_defenderw2			8472wireframe02	48	144	48	48		
+8472_defenderw3			8472wireframe02	96	144	48	48		
+8472_defenderw4			8472wireframe02	144	144	48	48		
+8472_defenderw5			8472wireframe02	192	144	48	48
+
+8472_transmuterw1			8472wireframe02	0	192	48	48		
+8472_transmuterw2			8472wireframe02	48	192	48	48		
+8472_transmuterw3			8472wireframe02	96	192	48	48		
+8472_transmuterw4			8472wireframe02	144	192	48	48		
+8472_transmuterw5			8472wireframe02	192	192	48	48
+
+8472_activew1			8472wireframe03	0	0	48	48		
+8472_activew2			8472wireframe03	48	0	48	48		
+8472_activew3			8472wireframe03	96	0	48	48		
+8472_activew4			8472wireframe03	144	0	48	48		
+8472_activew5			8472wireframe03	192	0	48	48
+
+8472_passivew1			8472wireframe03	0	48	48	48		
+8472_passivew2			8472wireframe03	48	48	48	48		
+8472_passivew3			8472wireframe03	96	48	48	48		
+8472_passivew4			8472wireframe03	144	48	48	48		
+8472_passivew5			8472wireframe03	192	48	48	48	
+
+8472_motherw1			8472wireframe03	0	96	48	48		
+8472_motherw2			8472wireframe03	48	96	48	48		
+8472_motherw3			8472wireframe03	96	96	48	48		
+8472_motherw4			8472wireframe03	144	96	48	48		
+8472_motherw5			8472wireframe03	192	96	48	48
+
+8472_minew1			8472wireframe03	0	192	48	48		
+8472_minew2			8472wireframe03	48	192	48	48		
+8472_minew3			8472wireframe03	96	192	48	48		
+8472_minew4			8472wireframe03	144	192	48	48		
+8472_minew5			8472wireframe03	192	192	48	48
+
+8472_sentinelw1			8472wireframe04	0	0	48	48		
+8472_sentinelw2			8472wireframe04	48	0	48	48		
+8472_sentinelw3			8472wireframe04	96	0	48	48		
+8472_sentinelw4			8472wireframe04	144	0	48	48		
+8472_sentinelw5			8472wireframe04	192	0	48	48
+
+8472_fluidicgatew1		8472wireframe04	0	48	48	48		
+8472_fluidicgatew2		8472wireframe04	48	48	48	48		
+8472_fluidicgatew3		8472wireframe04	96	48	48	48		
+8472_fluidicgatew4		8472wireframe04	144	48	48	48		
+8472_fluidicgatew5		8472wireframe04	192	48	48	48	
+
+8472_basicresearchw1		8472wireframe04	0	96	48	48		
+8472_basicresearchw2		8472wireframe04	48	96	48	48		
+8472_basicresearchw3		8472wireframe04	96	96	48	48		
+8472_basicresearchw4		8472wireframe04	144	96	48	48		
+8472_basicresearchw5		8472wireframe04	192	96	48	48
+
+8472_advancedresearchw1		8472wireframe04	0	144	48	48		
+8472_advancedresearchw2		8472wireframe04	48	144	48	48		
+8472_advancedresearchw3		8472wireframe04	96	144	48	48		
+8472_advancedresearchw4		8472wireframe04	144	144	48	48		
+8472_advancedresearchw5		8472wireframe04	192	144	48	48
+
+8472_shipupgraderesearchw1	8472wireframe04	0	192	48	48		
+8472_shipupgraderesearchw2	8472wireframe04	48	192	48	48		
+8472_shipupgraderesearchw3	8472wireframe04	96	192	48	48		
+8472_shipupgraderesearchw4	8472wireframe04	144	192	48	48		
+8472_shipupgraderesearchw5	8472wireframe04	192	192	48	48
+
+#Pods_moon_asteroids_planets Wireframes
+@reference=256
+
+borpod1_s			podwireframe01	0	0	48	48		
+borpod2_s			podwireframe01	48	0	48	48		
+borpod3_s			podwireframe01	96	0	48	48		
+borpod4_s			podwireframe01	144	0	48	48		
+borpod5_s			podwireframe01	192	0	48	48
+
+borpod6_s			podwireframe01	0	48	48	48		
+borpod7_s			podwireframe01	48	48	48	48		
+borpod8_s			podwireframe01	96	48	48	48		
+borpod9_s			podwireframe01	144	48	48	48		
+borpod10_s			podwireframe01	192	48	48	48
+
+borpod11_s			podwireframe01	192	48	48	48
+borpod12_s			podwireframe01	192	48	48	48
+borpod13_s			podwireframe01	192	48	48	48
+borpod14_s			podwireframe01	192	48	48	48
+borpod15_s			podwireframe01	192	48	48	48
+
+borpod16_s			podwireframe01	0	96	48	48
+
+borpod21_s			podwireframe01	192	48	48	48
+borpod22_s			podwireframe01	192	48	48	48
+borpod23_s			podwireframe01	192	48	48	48
+borpod24_s			podwireframe01	192	48	48	48
+borpod25_s			podwireframe01	192	48	48	48
+
+carpod1_s			podwireframe01	48	96	48	48		
+carpod2_s			podwireframe01	96	96	48	48		
+carpod3_s			podwireframe01	144	96	48	48		
+carpod4_s			podwireframe01	192	96	48	48
+		
+carpod5_s			podwireframe01	0	144	48	48
+carpod6_s			podwireframe01	48	144	48	48		
+carpod7_s			podwireframe01	96	144	48	48		
+carpod8_s			podwireframe01	144	144	48	48		
+carpod9_s			podwireframe01	192	144	48	48		
+
+carpod10_s			podwireframe01	0	192	48	48
+
+carpod11_s			podwireframe01	0	192	48	48
+carpod12_s			podwireframe01	0	192	48	48
+carpod13_s			podwireframe01	0	192	48	48
+carpod14_s			podwireframe01	0	192	48	48
+carpod15_s			podwireframe01	0	192	48	48
+
+carpod16_s			podwireframe01	48	192	48	48
+
+carpod21_s			podwireframe01	0	192	48	48
+carpod22_s			podwireframe01	0	192	48	48
+carpod23_s			podwireframe01	0	192	48	48
+carpod24_s			podwireframe01	0	192	48	48
+carpod25_s			podwireframe01	0	192	48	48
+
+fedpod1_s			podwireframe01	96	192	48	48
+fedpod2_s			podwireframe01	144	192	48	48
+fedpod3_s			podwireframe01	192	192	48	48
+
+fedpod4_s			podwireframe02	0	0	48	48		
+fedpod5_s			podwireframe02	48	0	48	48		
+fedpod6_s			podwireframe02	96	0	48	48		
+fedpod7_s			podwireframe02	144	0	48	48		
+fedpod8_s			podwireframe02	192	0	48	48
+
+fedpod9_s			podwireframe02	0	48	48	48		
+fedpod10_s			podwireframe02	48	48	48	48		
+
+fedpod11_s			podwireframe02	48	48	48	48		
+fedpod12_s			podwireframe02	48	48	48	48		
+fedpod13_s			podwireframe02	48	48	48	48
+fedpod14_s			podwireframe02	48	48	48	48
+fedpod15_s			podwireframe02	48	48	48	48
+
+fedpod16_s			podwireframe02	96	48	48	48
+
+fedpod21_s			podwireframe02	48	48	48	48
+fedpod22_s			podwireframe02	48	48	48	48
+fedpod23_s			podwireframe02	48	48	48	48
+fedpod24_s			podwireframe02	48	48	48	48
+fedpod25_s			podwireframe02	48	48	48	48
+
+klipod1_s			podwireframe02	144	48	48	48		
+klipod2_s			podwireframe02	192	48	48	48		
+
+klipod3_s			podwireframe02	0	96	48	48		
+klipod4_s			podwireframe02	48	96	48	48
+klipod5_s			podwireframe02	96	96	48	48
+klipod6_s			podwireframe02	144	96	48	48		
+klipod7_s			podwireframe02	192	96	48	48		
+
+klipod8_s			podwireframe02	0	144	48	48		
+klipod9_s			podwireframe02	48	144	48	48		
+klipod10_s			podwireframe02	96	144	48	48
+
+klipod11_s			podwireframe02	96	144	48	48
+klipod12_s			podwireframe02	96	144	48	48
+klipod13_s			podwireframe02	96	144	48	48
+klipod14_s			podwireframe02	96	144	48	48
+klipod15_s			podwireframe02	96	144	48	48
+
+klipod16_s			podwireframe02	144	144	48	48
+
+klipod21_s			podwireframe02	144	144	48	48
+klipod22_s			podwireframe02	144	144	48	48
+klipod23_s			podwireframe02	144	144	48	48
+klipod24_s			podwireframe02	144	144	48	48
+klipod25_s			podwireframe02	144	144	48	48
+
+rompod1_s			podwireframe02	192	144	48	48
+
+rompod2_s			podwireframe02	0	192	48	48
+rompod3_s			podwireframe02	48	192	48	48
+rompod4_s			podwireframe02	96	192	48	48
+rompod5_s			podwireframe02	144	192	48	48
+rompod6_s			podwireframe02	192	192	48	48
+
+rompod7_s			podwireframe03	0	0	48	48
+rompod8_s			podwireframe03	48	0	48	48
+rompod9_s			podwireframe03	96	0	48	48
+rompod10_s			podwireframe03	144	0	48	48
+
+rompod11_s			podwireframe03	144	0	48	48
+rompod12_s			podwireframe03	144	0	48	48
+rompod13_s			podwireframe03	144	0	48	48
+rompod14_s			podwireframe03	144	0	48	48
+rompod15_s			podwireframe03	144	0	48	48
+
+rompod16_s			podwireframe03	192	0	48	48
+
+rompod21_s			podwireframe03	144	0	48	48
+rompod22_s			podwireframe03	144	0	48	48
+rompod23_s			podwireframe03	144	0	48	48
+rompod24_s			podwireframe03	144	0	48	48
+rompod25_s			podwireframe03	144	0	48	48
+
+8472_PodBasic0_s		podwireframe03	0	48	48	48
+8472_PodBasic1_s		podwireframe03	0	48	48	48
+8472_PodBasic2_s		podwireframe03	0	48	48	48
+8472_PodBasic3_s		podwireframe03	0	48	48	48
+8472_PodBasic4_s		podwireframe03	0	48	48	48
+8472_PodBasic5_s		podwireframe03	0	48	48	48
+
+8472_PodAdvanced0_s		podwireframe03	48	48	48	48
+8472_PodAdvanced1_s		podwireframe03	48	48	48	48
+8472_PodAdvanced2_s		podwireframe03	48	48	48	48
+8472_PodAdvanced3_s		podwireframe03	48	48	48	48
+
+8472_PodShipResearch0_s		podwireframe03	96	48	48	48
+8472_PodShipResearch1_s		podwireframe03	96	48	48	48
+8472_PodShipResearch2_s		podwireframe03	96	48	48	48
+8472_PodShipResearch3_s		podwireframe03	96	48	48	48
+8472_PodShipResearch4_s		podwireframe03	96	48	48	48
+8472_PodShipResearch5_s		podwireframe03	96	48	48	48
+
+8472_PodShipResearch21_s	podwireframe03	96	48	48	48
+8472_PodShipResearch22_s	podwireframe03	96	48	48	48
+8472_PodShipResearch23_s	podwireframe03	96	48	48	48
+8472_PodShipResearch24_s	podwireframe03	96	48	48	48
+8472_PodShipResearch25_s	podwireframe03	96	48	48	48
+
+pb_clssd_s			podwireframe03	144	48	48	48
+pb_clssh_s			podwireframe03	192	48	48	48
+pb_clssj_s			podwireframe03	0	96	48	48
+pb_clssk_s			podwireframe03	48	96	48	48
+pb_clssl_s			podwireframe03	96	96	48	48
+pb_clssm_s			podwireframe03	144	96	48	48
+
+
+latinum_s			podwireframe03	192	96	48	48
+mdmoon_s			podwireframe03	0	144	48	48
+mdmoon2_s			podwireframe03	0	144	48	48
+mdmoon3_s			podwireframe03	0	144	48	48
+mmooninf_s			podwireframe03	0	144 48	48
+
+
+#Other misc ships from A1
+@reference=128
+
+zfercargw1			ferwireframe	0	0	48	48
+zfercargw2			ferwireframe	0	0	48	48
+zfercargw3			ferwireframe	0	0	48	48
+zfercargw4			ferwireframe	0	0	48	48
+zfercargw5			ferwireframe	0	0	48	48
+zferengiw1			ferwireframe	48	0	48	48
+zferengiw2			ferwireframe	48	0	48	48
+zferengiw3			ferwireframe	48	0	48	48
+zferengiw4			ferwireframe	48	0	48	48
+zferengiw5			ferwireframe	48	0	48	48
+
+
+# Other Wireframes
+
+@reference=64
+
+gpod1				zpodall		40	0	20	20	
+gpod2				zpodall		40	0	20	20	
+gpod3				zpodall		40	0	20	20		
+gpod4				zpodall		40	0	20	20		
+gpod5				zpodall		0	0	40	40	
+
+# Icons for on wireframes
+@reference=32
+gravmine_icon		gminisys	1	21	10	10
+romspy_icon			gminisys	21	11	10	10
+flag_icon			gminisys	12	21	10	10
+
+# Ship Info icons -- system icons, crew, etc
+@reference=128
+energy_amt			shipinfo		96	0	32	32
+crew_amt			shipinfo		64	0	32	32
+shields			shipinfo		32	0	32	32
+hull				shipinfo		0	0	32	32
+
+
+@tmaterial=additive
+@reference=256
+# sensors, shields, weapons, engines, life support
+infosystem.0		fguib04		142	72	30	30		
+infosystem.1		fguib04		142	40	30	30		
+infosystem.2		fguib04		176	72	30	30		
+infosystem.3		fguib04		176	40	30	30
+infosystem.4		fguib04		210	40	30	30
+
+@tmaterial=interface
+# Race icons
+@reference=256
+federation_icon			allrace		0	0	84	84
+borg_icon				allrace		84	84	84	84
+romulan_icon			allrace		168	0	84	84
+klingon_icon			allrace		84	0	84	84
+cardassian_icon			allrace		0	84	84	84
+species8472_icon		      allrace		168	84	84	84

@@ -1,0 +1,35 @@
+sprite_table
+
+#############################
+######  Build Buttons  ######
+#############################
+@reference=64
+@tmaterial=default
+# Most Definitely Not Deep Space Nine
+b_ds9			gbds9	0	0	64	64
+
+
+
+
+#############################
+######    Wireframe    ######
+#############################
+@reference=128
+@tmaterial=interface
+# Most Definitely Not Deep Space Nine
+ds9w1			ds9w	40	0	40	40		
+ds9w2			ds9w	0	40	40	40		
+ds9w3			ds9w	40	40	40	40		
+ds9w4			ds9w	80	0	40	40		
+ds9w5			ds9w	0	0	40	40
+
+
+
+#############################
+###### Special Weapons ######
+#############################
+# Custom cloaks
+@reference=64
+@tmaterial=interface
+b_gccloak-cargo			gbcloak00		0	0	64	64
+b_gccloak-scout			gbcloak00		0	0	64	64

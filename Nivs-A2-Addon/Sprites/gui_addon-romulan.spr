@@ -1,0 +1,24 @@
+sprite_table
+
+#############################
+######  Build Buttons  ######
+#############################
+
+
+
+#############################
+######    Wireframe    ######
+#############################
+
+
+
+#############################
+###### Special Weapons ######
+#############################
+
+# Custom cloaks
+@reference=64
+@tmaterial=interface
+b_grcloak-scout			gbcloak00		0	0	64	64
+b_grcloak-cargo			gbcloak00		0	0	64	64
+b_grcloak-turret		gbcloak00		0	0	64	64

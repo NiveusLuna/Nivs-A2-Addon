@@ -1,0 +1,61 @@
+sprite_table
+
+#############################
+######  Build Buttons  ######
+#############################
+@reference=64
+@tmaterial=default
+# Advanceable Shipyard
+b_fwfwerft			fwgbfedwerft		0	0	64	64
+# Turnstile 911
+b_fwcntstati		gbfwcntstati		0	0	64	64
+
+@reference=64
+@tmaterial=interface
+# Advanceable Shipyard Upgrade
+b_fwwerftevo1			fwgbevo1		0	0	64	64
+b_fwwerftevo2			fwgbevo2		0	0	64	64
+b_fwwerftevo3			fwgbevo3		0	0	64	64
+
+#############################
+######    Wireframe    ######
+#############################
+# Hope this works!
+@reference=256
+@tmaterial=interface
+@skip=off
+# Advanceable Shipyard
+fwfwerftw1				fwfwerftwf		160	0	80	80
+fwfwerftw2				fwfwerftwf		0	80	80	80
+fwfwerftw3				fwfwerftwf		80	80	80	80
+fwfwerftw4				fwfwerftwf		80	0	80	80
+fwfwerftw5				fwfwerftwf		0	0	80	80
+
+fwfwerfte1w1			fwfwerftwfe1	160	0	80	80
+fwfwerfte1w2			fwfwerftwfe1	0	80	80	80
+fwfwerfte1w3			fwfwerftwfe1	80	80	80	80
+fwfwerfte1w4			fwfwerftwfe1	80	0	80	80
+fwfwerfte1w5			fwfwerftwfe1	0	0	80	80
+
+fwfwerfte2w1			fwfwerftwfe2	160	0	80	80
+fwfwerfte2w2			fwfwerftwfe2	0	80	80	80
+fwfwerfte2w3			fwfwerftwfe2	80	80	80	80
+fwfwerfte2w4			fwfwerftwfe2	80	0	80	80
+fwfwerfte2w5			fwfwerftwfe2	0	0	80	80
+
+fwfwerfte3w1			fwfwerftwfe3	160	0	80	80
+fwfwerfte3w2			fwfwerftwfe3	0	80	80	80
+fwfwerfte3w3			fwfwerftwfe3	80	80	80	80
+fwfwerfte3w4			fwfwerftwfe3	80	0	80	80
+fwfwerfte3w5			fwfwerftwfe3	0	0	80	80
+
+# Turnstile 911
+fwcntstatiw1            	fwcntstatiwf    0       80     80      80
+fwcntstatiw2            	fwcntstatiwf    160     0      80      80
+fwcntstatiw3            	fwcntstatiwf    80      80     80      80
+fwcntstatiw4            	fwcntstatiwf    0       0      80      80
+fwcntstatiw5            	fwcntstatiwf    80      0      80      80
+
+#############################
+###### Special Weapons ######
+#############################

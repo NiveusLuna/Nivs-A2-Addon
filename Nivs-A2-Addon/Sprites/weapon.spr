@@ -1,0 +1,22 @@
+sprite_table
+
+@include weapon-orig.spr
+
+# Blend mode - Defined in ST3D.h - Same values as D3DBLEND.
+# First hex digit - source blend mode
+# Second hex digit - dest blend mode
+
+# @reference=texture size in pixels from which the u,v,w, and h values
+# were measured.  This value will effect all subsequent textures until
+# a different value is specified.
+
+# Name		File			U	V	W	H
+
+#### Federation weapons
+@reference=128
+@tmaterial=additive
+
+# Turnstile 911 Phaser 1
+fwcon1phaser		Wfwcon1phaser	0	0	128	32	@anim=tex1x4
+# Turnstile 911 Phaser 2
+fwcon2phaser		Wfwcon2phaser	0	0	128	32	@anim=tex1x4
